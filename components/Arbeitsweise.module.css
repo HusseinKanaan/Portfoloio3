@@ -1,0 +1,82 @@
+/* components/WieIchArbeite.module.css */
+.container {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.subTitle{
+  font-size: 18px;
+  color: #7A7A7A;
+  font-weight: 500;
+  line-height: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding-bottom: 50px;
+}
+
+.card {
+  letter-spacing: 1px;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  width: 100px;
+  margin: 0 auto;
+  padding-top: 1rem;
+  transition: filter 0.3s ease;
+}
+
+.card-body {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card:hover .card-body {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cardTitle {
+  color: #2C3E50;
+  font-size: 14px;
+}
+
+.cardText {
+  font-size: 18px;
+  color: #7A7A7A;
+  line-height: 1.6em;
+  max-width: 300px; /* begrenzt die Textbreite */
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* orange */
+/* .card:hover .icon {
+  filter: brightness(0) saturate(100%) invert(59%) sepia(74%) saturate(550%) hue-rotate(338deg) brightness(96%) contrast(101%);
+} */
+
+
+/* blue */
+/* 
+.card:hover .icon {
+  filter: brightness(0) saturate(100%) invert(64%) sepia(6%) saturate(2886%) hue-rotate(165deg) brightness(95%) contrast(94%);
+} */
+
+
+/* Terracotta Orange-Rot */
+.card:hover .icon {
+  filter: brightness(0) saturate(100%) invert(46%) sepia(85%) saturate(556%) hue-rotate(356deg) brightness(90%) contrast(92%);
+}

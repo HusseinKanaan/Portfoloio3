@@ -1,0 +1,56 @@
+/* Status.module.css */
+.statusBox {
+    height: auto;
+    /* Höhe des Hero-Bereichs */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #f8f9fa00;
+    /* Hintergrundfarbe des Hero */
+/*     margin-top: 40px; */
+    font-weight: bold;
+    padding: 0px;
+    /* Optional: Padding für den Container */
+}
+.statusIndicator {
+    width: 7px; /* Festgelegte Breite des Indikators */
+    height: 7px; /* Festgelegte Höhe des Indikators */
+    background-color: #16A085; /* Neue Farbe des Indikators */
+    border-radius: 50%; /* Rundes Design */
+    margin-right: 15px; /* Abstand zwischen Punkt und Text */
+    animation: pulse 1.5s infinite; /* Pulsierende Animation */
+    box-shadow: 0 0 10px rgba(22, 160, 133, 0.5); /* Weicher Glüheffekt in der neuen Farbe */
+    flex-shrink: 0; /* Verhindert das Schrumpfen des Indikators */
+}
+
+/* Pulsierende Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Normalgröße */
+        background-color: #16A085; /* Ausgangsfarbe */
+        box-shadow: 0 0 10px rgba(22, 160, 133, 0.5); /* Weicher Glüheffekt */
+    }
+
+    50% {
+        transform: scale(1.2); /* Leichte Vergrößerung */
+        background-color: #48C9B0; /* Hellere Version der ursprünglichen Farbe */
+        box-shadow: 0 0 20px rgba(22, 160, 133, 0.8); /* Intensivierter Glüheffekt */
+    }
+
+    100% {
+        transform: scale(1); /* Geht zurück zur Normalgröße */
+        background-color: #16A085; /* Ausgangsfarbe */
+        box-shadow: 0 0 10px rgba(22, 160, 133, 0.5); /* Weicher Glüheffekt */
+    }
+}
+
+.statusMessage {
+    font-size: 1rem;
+    /* Schriftgröße der Nachricht */
+    color: #37516757;
+    /* Textfarbe */
+    backdrop-filter: blur(12px) saturate(150%);
+    width: 800px;
+    margin-bottom: 0px;
+    text-align: left;
+}

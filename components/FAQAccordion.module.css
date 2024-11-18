@@ -1,0 +1,32 @@
+.faqRow {
+    margin: 0 auto;
+    padding: 20px 0; /* Abstand oben und unten */
+  }
+  
+  .faqItem {
+    /* Optional: Füge hier weitere Styles hinzu, um das Element zu stylen */
+  }
+  
+  .faqCard {
+    transition: transform 0.2s;
+  }
+  
+  .faqCard:hover {
+    transform: translateY(-5px); /* Hebe die Karte bei Hover */
+  }
+  
+  .faqHeader {
+    background-color: #f8f9fa; /* Heller Hintergrund für den Header */
+  }
+  
+  .faqButton {
+    font-weight: 500;
+    font-size: 18px;
+    color: #333; /* Dunkle Schriftfarbe */
+  }
+  
+  .faqBody {
+    background-color: #ffffff; /* Weißer Hintergrund für den Body */
+    border-top: 1px solid #e9ecef; /* Trennlinie oben */
+  }
+  

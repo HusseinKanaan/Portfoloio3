@@ -1,0 +1,263 @@
+.containerGrid{
+
+}
+
+/* Meine Skills */
+.chartHeading {
+    font-weight: 100;
+    text-align: end;
+    width: 100%;
+    top: 10px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+    transform: translateY(20px);
+    color: #606060;
+}
+
+.innerContent{
+    height: 62.5%;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.verticalBarChartBgcolor {
+    background: #FAFAFA;
+    border-top: 1px solid #ddd;
+    border-bottom:1px solid #ddd ;
+}
+
+.BarChartContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontalLineLabel {
+    position: absolute;
+    left: -70px;
+    /* Platzierung links der Linien (angepasst) */
+    color: #757575;
+    /* Farbe der Labels */
+}
+
+.line1Label {
+    top: 0%;
+    /* Position in Prozent für die Höhe der Linie */
+}
+    
+.line2Label {
+    top: 20%;
+}
+
+.line3Label {
+    top: 40%;
+}
+
+.line4Label {
+    top: 60%;
+}
+
+
+.verticalBarChartContainer {
+    background: #FAFAFA;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: calc(70% + 40px);
+    /* Breite des Charts, etwas breiter gemacht */
+    max-width: 1300px;
+    padding-left: 20px;
+    /* Linker Abstand von 20px */
+    padding-right: 20px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    gap: 20px;
+    /* Abstand zwischen den Balken bleibt gleich */
+    height: 500px;
+    background: #FAFAFA;
+    border-left: 1px solid #ddd;
+}
+
+  .loaded {
+    opacity: 1;
+    transform: translateY(0);
+
+  }
+
+/* Balken */
+.barVertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 170px;
+    /* Breite der Balken */
+    height: 100%;
+    /* Höhe des Balkendiagramms */
+    position: relative;
+    overflow: visible;
+    /* Erlaubt Elemente außerhalb des Balkenbereichs */
+}
+
+/* Horizontale Linien */
+.horizontalLine {
+    position: absolute;
+    width: calc(100% + 20px);
+    /* Breite, die die gesamte Breite des Containers abdeckt */
+    border-top: 1px solid #ddd;
+    left: -5px;
+    /* Leichte Verschiebung nach links, damit sie über die Balken hinausgeht */
+    z-index: 0;
+    /* Hinter den Balken anzeigen */
+}
+
+/* Position der Linien */
+.line1 {
+    top: 5%;
+}
+
+.line2 {
+    top: 25%;
+}
+
+.line3 {
+    top: 45%;
+}
+
+.line4 {
+    top: 65%
+}
+
+.line5 {
+    top: 100%;
+    border-top: 1px solid #ddd;
+    left: 0px;
+    /* Leichte Verschiebung nach links, damit sie über die Balken hinausgeht */
+    width: calc(100%);
+    /* Breite, die die gesamte Breite des Containers abdeckt */
+
+}
+
+.barFill {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    background-color: #3498db;
+    transition: height 2s ease;
+    /* Diese Transition bleibt gleich */
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: #FAF1EF;
+    /* Weiße Farbe für die Prozentzahlen */
+    overflow: hidden;
+    /* Verhindert, dass der Inhalt beim Wachstum überläuft */
+    display: flex;
+    padding-bottom: 20px;
+
+}
+
+.barFill::before {
+    content: attr(data-percentage);
+    /* Zeigt den Prozentwert an */
+    font-weight:bold ;
+    font-size: 60px;
+    /* Größe der Zahl */
+    line-height: 1;
+    /* Zeilenhöhe auf 1 setzen, damit die % direkt daneben stehen */
+    position: relative;
+    /* Positionierung auf dem Balken */
+    bottom: 20px;
+    /* Abstand von unten, damit es über dem Balken bleibt */
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.barFill::after {
+    content: '%';
+    font-size: 24px;
+    /* Größe des Prozentzeichens */
+    margin-left: 4px;
+    /* Abstand zwischen Zahl und Prozentzeichen */
+    opacity: 0.8;
+    position: relative;
+    /* relative Positionierung für Flexbox */
+    vertical-align: middle;
+    bottom: 20px;
+    /* Abstand von unten */
+    line-height: 60px;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.barLabel {
+
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    /* Gleiche Schriftgröße wie die Programmiersprachen */
+    color: #ffffff;
+    /* Weiße Farbe für die Programmiersprachen */
+    position: absolute;
+    /* Absolute Positionierung für Platzierung */
+    bottom: 10px;
+    /* Positioniert den Text innerhalb des Balkens */
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Farbverläufe für unterschiedliche Balken */
+.barFill[data-percentage="95"] {
+    background-image: linear-gradient(to top, #5b9bd5, #669fd8, #70a3db, #7aa7df, #84abe2, #8aafe5, #91b3e8, #97b7eb, #9dbbea, #a2bfed, #a7c3f0, #adc7f3);
+}
+
+.barFill[data-percentage="85"] {
+    background-image: linear-gradient(to top, #e1ae9e, #e3b3a4, #e5b7a9, #e7bcaf, #e9c1b5, #eac5ba, #ecc8be, #edccc3, #efd0c8, #f1d4cd, #f2d8d1, #f4dcd6);
+}
+
+.barFill[data-percentage="90"] {
+    background-image: linear-gradient(to top, #e0ae37, #e1b13c, #e2b341, #e4b645, #e5b84a, #e6ba4e, #e8bb51, #e9bd55, #ebbf59, #ecc15c, #eec360, #efc563);
+}
+
+
+.barFill[data-percentage="75"] {
+    background-image: linear-gradient(to top, #60b2a8, #69b6ac, #71bab1, #79beb5, #81c2ba, #87c5be, #8ec9c1, #94ccc5, #9bd0c9, #a2d3ce, #a9d7d2, #b0dbd6);
+}
+
+.barFill[data-percentage="40"] {
+    background-image: linear-gradient(to top, #bc8e5b, #c09360, #c49964, #c89e69, #cca46e, #cfa871, #d1ab75, #d4af78, #d6b27a, #d8b47d, #d9b77f, #dbba82);
+}
+
+.percentageContainer {
+    display: flex;
+    align-items: center;
+}
+
+.percentage {
+    font-size: 24px;
+    /* Größe des Prozentzeichens */
+    vertical-align: middle;
+    /* Vertikale Ausrichtung in der Mitte */
+    margin-left: 5px;
+    /* Abstand zwischen der Zahl und dem Prozentzeichen */
+}
+
+/* Icon über dem Balken */
+.barIcon {
+    margin-bottom: 125px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 5s ease-in-out, transform 3s ease-in-out;
+    transform: translateY(20px);
+}
+  
+  .barIcon.loaded {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

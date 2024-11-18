@@ -1,0 +1,40 @@
+/* components/PieChart.module.css */
+.pie-chart-container {
+    width: 330px; /* Feste Breite */
+    height: 450px; /* Feste Höhe */
+    background-color: #FAFAFA; /* Hintergrundfarbe des Containers */
+    border-radius: 50%; /* Runde Ecken für einen Kreis */
+    transition: transform 0.5s ease; /* Übergangseffekt für das Vergrößern */
+    position: relative; /* Damit Text über dem Diagramm positioniert werden kann */
+    overflow: hidden; /* Verhindert, dass Inhalte außerhalb des Containers angezeigt werden */
+
+}
+
+.pie-chart-container:hover {
+    transform: scale(1.05); /* Vergrößert den Container beim Hover */
+}
+
+.canvas {
+    width: 100% !important; /* Setzt die Canvas-Breite auf 100% des Containers */
+    height: 100% !important; /* Setzt die Canvas-Höhe auf 100% des Containers */
+    display: block; /* Entferne Inline-Block-Stile */
+}
+
+/* Style für den Text unter dem Diagramm */
+.text-container {
+    position: absolute; /* Absolut positioniert im Container */
+    top: 50%; /* Zentriert vertikal */
+    left: 50%; /* Zentriert horizontal */
+    transform: translate(-50%, -50%); /* Zentriert durch negative Verschiebung */
+    text-align: center; /* Text zentriert */
+    color: #333; /* Textfarbe */
+    transition: background-color 0.3s ease; /* Übergangseffekt für die Hintergrundfarbe */
+    background-color: rgba(255, 255, 255, 0.8); /* Hintergrundfarbe des Textes */
+    border-radius: 5px; /* Abgerundete Ecken für den Textbereich */
+    padding: 10px; /* Padding für den Textbereich */
+}
+
+/* Hover-Effekt für den Textbereich */
+.pie-chart-container:hover .text-container {
+    background-color: rgba(0, 0, 0, 0.2); /* Hintergrundfarbe beim Hover über den Container */
+}

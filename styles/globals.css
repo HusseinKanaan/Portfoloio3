@@ -1,0 +1,758 @@
+@font-face {
+  font-family: "Pangea";
+  src: url("/fonts/PangeaAfrikanTrial-Bold.woff") format("woff"),
+    url("/fonts/PangeaAfrikanTrial-Bold.woff2") format("woff2"),
+    url("/fonts/PangeaAfrikanTrial-BoldItalic.woff") format("woff"),
+    url("/fonts/PangeaAfrikanTrial-BoldItalic.woff2") format("woff2"),
+    url("/fonts/PangeaAfrikanTrial-Italic.woff") format("woff"),
+    url("/fonts/PangeaAfrikanTrial-Italic.woff2") format("woff2"),
+    url("/fonts/PangeaAfrikanTrial-Light.woff") format("woff"),
+    url("/fonts/PangeaAfrikanTrial-Light.woff2") format("woff2"),
+    url("/fonts/PangeaAfrikanTrial-LightItalic.woff") format("woff"),
+    url("/fonts/PangeaAfrikanTrial-LightItalic.woff2") format("woff2"),
+    url("/fonts/PangeaAfrikanTrial-Medium.woff") format("woff"),
+    url("/fonts/PangeaAfrikanTrial-Medium.woff2") format("woff2"),
+    url("/fonts/PangeaAfrikanTrial-MediumItalic.woff") format("woff"),
+    url("/fonts/PangeaAfrikanTrial-MediumItalic.woff2") format("woff2"),
+    url("/fonts/PangeaAfrikanTrial-Regular.woff") format("woff"),
+    url("/fonts/PangeaAfrikanTrial-Regular.woff2") format("woff2"),
+    url("/fonts/PangeaAfrikanTrial-SemiBold.woff") format("woff"),
+    url("/fonts/PangeaAfrikanTrial-SemiBold.woff2") format("woff2"),
+    url("/fonts/PangeaAfrikanTrial-SemiBoldItalic.woff") format("woff"),
+    url("/fonts/PangeaAfrikanTrial-SemiBoldItalic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Black.ttf") format("ttf"),
+    url("/fonts/Poppins-BlackItalic.ttf") format("ttf"),
+    url("/fonts/Poppins-Bold.ttf") format("ttf"),
+    url("/fonts/Poppins-BoldItalic.ttf") format("ttf"),
+    url("/fonts/Poppins-ExtraBold.ttf") format("ttf"),
+    url("/fonts/Poppins-ExtraBoldItalic.ttf") format("ttf"),
+    url("/fonts/Poppins-ExtraLight.ttf") format("ttf"),
+    url("/fonts/Poppins-ExtraLightItalic.ttf") format("ttf"),
+    url("/fonts/Poppins-Italic.ttf") format("ttf"),
+    url("/fonts/Poppins-Light.ttf") format("ttf"),
+    url("/fonts/Poppins-LightItalic.ttf") format("ttf"),
+    url("/fonts/Poppins-Medium.ttf") format("ttf"),
+    url("/fonts/Poppins-MediumItalic.ttf") format("ttf"),
+    url("/fonts/Poppins-Regular.ttf") format("ttf"),
+    url("/fonts/Poppins-SemiBold.ttf") format("ttf"),
+    url("/fonts/Poppins-SemiBoldItalic.ttf") format("ttf"),
+    url("/fonts/Poppins-Thin.ttf") format("ttf"),
+    url("/fonts/Poppins-ThinItalic.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* light/dark Function */
+/* :root {
+  --body-bg: #fafafa;
+  --body-color: #555;
+  --link-color: #222;
+  --link-color-hover: #000;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bg: #212529;
+    --body-color: #6c757d;
+    --link-color: #dee2e6;
+    --link-color-hover: #fff;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  img {
+    opacity: .75;
+    transition: opacity .5s ease-in-out;
+  }
+  img:hover {
+    opacity: 1;
+  }
+} */
+
+:root {
+  --font-heading: 'Pangea', 'Arial', sabs-serif;
+  --font-body: 'Poppins', 'Arial', sans-serif;
+  --font-strong: 'Poppins', 'Arial', sans-serif;
+  /* Schriftart für <strong> */
+  --font-small: 'Poppins', 'Arial', sans-serif;
+  /* Schriftart für <strong> */
+}
+
+/* Schriftart für alle Überschriften */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: #2C3E50;
+}
+
+/* Schriftart für den restlichen Text */
+body,
+p,
+a,
+li,
+span,
+div {
+  font-family: var(--font-body);
+}
+
+/* Schriftart für das <strong>-Element */
+strong {
+  font-family: var(--font-strong);
+}
+
+small {
+  font-family: var(--font-small);
+}
+
+/* strong{
+  font-family: "Poppins", "Arial", "sans-serif";
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Pangea", "Arial", "sans-serif";
+}
+
+.cutomTextColor1 {
+  color: #555555;
+}
+
+.cutomTextColor2 {
+  color: #2C3E50;
+}
+
+.custom-logo-color {
+  color: #37516757;
+}
+
+/* Scrollbar-custom */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #2C3E50)
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #3f3f3f);
+  border-radius: 6px;
+}
+
+/* ====== navbar ====== */
+/* Ursprüngliche Sticky-Header-Stile */
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  /* Voller Viewport-Höhe für nahtloses Scrollen */
+  z-index: 1001;
+  /* Hinter der Navbar */
+}
+
+.sticky-header {
+  font-size: 17px;
+  cursor: pointer;
+  position: sticky;
+  top: 0;
+  background: transparent;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, opacity 0.5s ease;
+  z-index: 1000;
+  /* Über dem Hintergrundcontainer */
+}
+
+/* Gescrollter Zustand */
+.sticky-header.scrolled {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Leichte Transparenz */
+}
+
+.sticky-header.hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+
+a {
+  color: #555555;
+}
+
+a:hover {
+  color: #16A085;
+}
+
+.nav-link {
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.navbar-brand {
+  font-size: 1.063em;
+  font-weight: 800;
+}
+
+du kennst denn cod ist das noch korrekt > 
+.navbar li.active a {
+  color: #16A085; /* Beispiel-Farbe für aktiven Link */
+  border-bottom: 2px solid #16A085; /* Unterstreichung für aktiven Link */
+}
+
+
+
+/* ------- */
+.navbar li {
+  position: relative;
+}
+
+.navbar li::after {
+  content: '';  
+  position: absolute;
+  width: 0;
+  height: 2px; /* Höhe des Striches */
+  background-color: #16A085; /* Die Farbe des Striches */
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar li:hover::after {
+  width: 100%;
+  right: auto;
+  left: 0;
+}
+
+.navbar li:hover::after, 
+.navbar li.active::after {
+  width: 100%;
+  right: auto;
+  left: 0;
+}
+/* ------- */
+.logoSpan {
+  font-family: "Pangea", "sans-serif", Courier, monospace;
+  color: #2C3E50;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* ====== header ====== */
+#custom-header {
+  background-image: radial-gradient(circle,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #fdfdfd,
+      #fafafa,
+      #f8f8f8,
+      #f2f2f2,
+      #ededed,
+      #e7e7e7,
+      #e2e2e2);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+h1 {
+  color: #2C3E50;
+}
+.span-header{
+  color: #37516757;
+font-style: italic;
+}
+
+.customText{
+  font-size: 20px;
+  color: #555555;
+}
+
+.customTextHeading{
+  font-size: 52px;
+}
+
+.customTextSmall{
+  color: #37516757;
+  font-size: 16px;
+}
+
+/* h3 {
+  font-size: 1.625em;
+} */
+
+.custom-height {
+  height: 100vh;
+}
+
+.custom-height-header-text {
+  margin-top: 1rem;
+}
+
+/* typewrite */
+.typewrite {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  word-spacing: 14 px;
+  width: 100%;
+  border-right: 0.15em solid black;
+  color: #9F9E9E;
+}
+
+/* porträt hintergrund */
+.freeform {
+  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+  background-color: orange;
+  width: 200px;
+  height: 200px;
+}
+
+
+.abstandhalter {
+  width: 100vw;
+  height: 30vh;
+}
+
+.abstand{
+  height: 100vh;
+}
+
+#divRelative {
+  position: relative;
+
+}
+
+#divAbsolute {
+  position: absolute;
+}
+
+/*  Animation button  */
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+
+/* ====== main ====== */
+
+.overlap {
+  backdrop-filter: blur(12px) saturate(150%);
+  background-color: #37516757;
+  /* Halbtransparente blaue Hintergrundfarbe */
+  color: #ffffff;
+  height: 96px;
+  width: 99vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.custom-text-overlap{
+  font-size: 18px;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.see-more-btn-dark {
+  color: #2C3E50;
+  border: 4px solid #2C3E50 ;
+  
+}
+
+.see-more-btn-light {
+  border: 1px solid #ffffff;
+}
+
+.custom-background-blue {
+  background-color: #2C3E50;
+}
+
+.custom-background-lightblue {
+  background-color: #D6EAF8;
+  /*   background-color: #297fb960; */
+
+}
+
+.custom-text-color-service{
+  color: #DADFE1;
+}
+
+.custom-margin-service {
+  padding-bottom: 8rem;
+  width: 588px;
+}
+
+.custom-height-service {
+  max-height: 200vh;
+}
+
+.container-heading-service {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin-bottom: 200px;
+  padding-top: 200px;
+
+}
+
+.heading-service {
+  width: 700px;
+}
+
+.heading-service-bgcolor {
+  background-color: #AF9075;
+
+}
+
+/* .custom-vw{
+  width:80vw;
+  margin-left: 10rem;
+} */
+
+/* tip 1 */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in.loaded {
+  opacity: 1;
+}
+
+
+.custom-height-container {
+  height: 90vh;
+}
+
+.custom-height-container-umsetzung {
+  height: 70vh;
+}
+
+
+#divAbsoluteAbout {
+  position: absolute;
+  background-image: radial-gradient(circle,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #ffffff,
+      #fdfdfd,
+      #fafafa,
+      #f8f8f8,
+      #f2f2f2,
+      #ededed,
+      #e7e7e7,
+      #e2e2e2);
+  width: 320px;
+  height: 611px;
+}
+
+.custom-height-about {
+  height: 97vh;
+}
+
+.custom-text-container {
+  margin-left: 104px;
+  width: 617px;
+  line-height: 1.75;
+}
+
+.about-heading {
+  line-height: 1.4;
+  font-size: 48px;
+  margin-bottom: 2.5rem;
+  color: #DADFE1;
+
+}
+
+.custom-about-text-div {
+  font-size: 20px;
+  font-weight: 100;
+  color: #DADFE1;
+}
+
+.custom-about-text {
+  margin-bottom: 1rem;
+}
+
+
+#divAbsoluteHero {
+  position: absolute;
+  width: 1304px;
+  height: 997px;
+}
+
+/* smooth text */
+.fade-in-text {
+  opacity: 0;
+  transition: opacity 10s ease-in-out, transform 10s ease-in-out;
+  transform: translateY(20px);
+  /* Der Text wird von unten nach oben erscheinen */
+}
+
+.fade-in-text.visible {
+  opacity: 1;
+  transform: translateY(0);
+  /* Zurück in die Ausgangsposition */
+}
+
+/* --- */
+
+/* Carousel */
+.carousel {
+  perspective: none;
+  /* Entfernt die 3D-Perspektive */
+}
+
+.carousel-inner {
+  position: relative;
+  transform-style: flat;
+  /* Entfernt 3D-Transformation */
+  transition: transform 0.3s ease;
+  /* Schnellere Transition */
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 3s ease;
+  /* Schnellere Überblendung */
+}
+
+.carousel-item.active {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  border-radius: 50%;
+}
+
+.custom-height-portfolio {
+  height: 80vh;
+  /* Erhöhte Höhe für größere Darstellung */
+  margin-top: 30vh;
+  margin-bottom: 30vh;
+}
+
+.custom-height-portfolio img {
+  object-fit: cover;
+  border-radius: 10px;
+  /* Optional: Abgerundete Ecken */
+}
+
+/* Animationbutton */
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.custom-btn {
+  margin: 20px;
+}
+
+.btn-5 {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background: none;
+  color: #445154;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid linear-gradient(0deg, #445154 0%, #445154 100%);
+  ;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Horizontal Border Animation */
+.btn-5::before,
+.btn-5::after {
+  content: "";
+  position: absolute;
+  content: "";
+  background: linear-gradient(45deg,
+      #00FFD5, #002BFF, #2C3E4E, #48FF00,
+      #00FFD5, #002BFF, #2C3E4E, #48FF00);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.3s ease;
+
+}
+
+.btn-5::before {
+  /* Obere Border */
+  height: 2px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  /* Startwert für die Animation */
+}
+
+.btn-5::after {
+  /* Untere Border */
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  /* Startwert für die Animation */
+
+}
+
+/* Vertikale Border Animation */
+.btn-5 .border-left,
+.btn-5 .border-right {
+  content: "";
+  position: absolute;
+  background: #E3E3E3;
+  transition: all 0.3s ease;
+}
+
+.btn-5 .border-left {
+  /* Linke Border */
+  height: 100%;
+  width: 2px;
+  left: 0;
+  top: 0;
+  transform: scaleY(0);
+  /* Startwert für die Animation */
+}
+
+.btn-5 .border-right {
+  /* Rechte Border */
+  height: 100%;
+  width: 2px;
+  right: 0;
+  top: 0;
+  transform: scaleY(0);
+  /* Startwert für die Animation */
+}
+
+/* Animation on hover */
+.btn-5:hover::before {
+  transform: scaleX(1);
+  /* Obere Border auf 100% skalieren */
+  transition-delay: 0.25s;
+  /* Sofortiger Effekt */
+}
+
+.btn-5:hover::after {
+  transform: scaleX(1);
+  /* Untere Border auf 100% skalieren */
+  transition-delay: 0s;
+  /* Verzögerung für den unteren Border */
+}
+
+.btn-5:hover .border-left {
+  transform: scaleY(1);
+  /* Linke Border auf 100% skalieren */
+  transition-delay: 0s;
+  /* Verzögerung für den linken Border */
+}
+
+.btn-5:hover .border-right {
+  transform: scaleY(1);
+  /* Rechte Border auf 100% skalieren */
+  transition-delay: 0.25s;
+  /* Verzögerung für den rechten Border */
+}
+
+.btn-5:hover {
+  background: transparent;
+  /* Der Button wird transparent beim Hover */
+  color: #E3E3E3;
+  /* Textfarbe wird geändert */
+}
+
+.pie-chart-heading-left{
+  color: #606060;
+}
+
+.pie-chart-heading-right{
+  color:#606060;
+}
+
+.pie-chart-text{
+  font-size: 18px;
+}
+
+/* pie-chart height & bg-color */
+.pie-chart-container-height {
+  height: 75vh;
+  background: #FAFAFA;
+  border-bottom: 1px solid #ddd;
+  color:#606060; 
+}
+.pie-char-span{
+  margin-right: 20px;
+  color:#16A085 ;
+}
+
+.footerBackgroundCollor {
+  background-color: #2C3E50;
+}
+
+html {
+  scroll-behavior: smooth;
+}

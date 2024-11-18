@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100px" height="100px" viewBox="0 0 100 100" fill="none">
+  <!-- Person links -->
+  <circle cx="30" cy="30" r="10" stroke="#000" stroke-width="2" fill="none"/>
+  <circle cx="30" cy="55" r="15" stroke="#000" stroke-width="2" fill="none"/>
+  
+  <!-- Person rechts -->
+  <circle cx="70" cy="30" r="10" stroke="#000" stroke-width="2" fill="none"/>
+  <circle cx="70" cy="55" r="15" stroke="#000" stroke-width="2" fill="none"/>
+
+  <!-- Verbindungslinie zwischen den Personen -->
+  <path d="M45 55 Q50 35, 55 55" stroke="#000" stroke-width="2" fill="none"/>
+</svg>

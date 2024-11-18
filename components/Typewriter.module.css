@@ -1,0 +1,59 @@
+
+  
+  .container {
+    text-align: center;
+  }
+  
+  .textContainer {
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    animation: blinkCaret 0.75s step-end infinite;
+    color: rgb(130, 130, 130);
+    font-family: 'Courier New', Courier, monospace;
+    width:auto;
+  }
+  
+  /* Animation für das Erscheinen der Buchstaben */
+  .smooth {
+    display: inline-block;
+    opacity: 0;
+    animation: smoothAppear 2s forwards;
+    letter-spacing: -0.06em;
+    letter-spacing: 3px;
+  }
+  
+  /* Caret-Blinkanimation */
+  @keyframes blinkCaret {
+    from {
+      border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+  
+  /* Animation für das sanfte Erscheinen des Textes */
+  @keyframes smoothAppear {
+    from {
+      transform: translateX(10px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Animation für das sanfte Verschwinden des Textes */
+  @keyframes smoothDisappear {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+ 
