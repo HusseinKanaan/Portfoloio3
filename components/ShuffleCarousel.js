@@ -1,13 +1,15 @@
-import { useEffect, useState } from 'react';
+
+import { useEffect, useState, useMemo } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Image from 'next/image';
 
 export default function ShuffleCarousel() {
-  const slides = [
+  // Verwende useMemo, um das slides-Array zu speichern
+  const slides = useMemo(() => [
     { id: 1, image: '/images/image1.jpg', alt: 'Slide 1' },
     { id: 2, image: '/images/image2.jpg', alt: 'Slide 2' },
-    { id: 3, image: '/images/image3.jpg', alt: 'Slide 3' }
-  ];
+    { id: 3, image: '/images/image3.jpg', alt: 'Slide 3' },
+  ], []);
 
   const [shuffledSlides, setShuffledSlides] = useState([]);
 
@@ -25,7 +27,8 @@ export default function ShuffleCarousel() {
 
     // `image2` als erstes Element hinzufügen
     setShuffledSlides([{ id: 2, image: '/images/image2.jpg', alt: 'Slide 2' }, ...shuffled]);
-  }, []);
+  }, [slides]); // Jetzt bleibt slides stabil
+
 
   return (
     <div
@@ -66,8 +69,6 @@ export default function ShuffleCarousel() {
       </div>
       <div>
       </div>
-
-{/*       <div className='d-flex vh-100'>
         <div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -81,7 +82,7 @@ export default function ShuffleCarousel() {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-      </div> */}
-    </div>
+      </div>
+
   );
 }

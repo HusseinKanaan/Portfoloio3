@@ -26,7 +26,7 @@ const steps = [
     title: `Marken & Menschen
 verstehen`,
     description: "Nur wer eine Marke und die Menschen hinter der Marke versteht, kann auch das gemeinsame Ziel erreichen.",
-    icon: "/icons/highfive.svg",
+    icon: "/icons/highfive.png",
     /* icon: "/images/high-five.png", */
   },
   {
@@ -54,7 +54,7 @@ const Arbeitsweise = () => {
         {steps.map((step, index) => (
           <div className="col-md-4" key={index}>
             <div className={`card  ${styles.card}`}>
-              <img
+              <Image
                 src={step.icon}
                 width={100}
                 height={100}
