@@ -154,19 +154,19 @@ small {
   border-radius: 6px;
 }
 
-/* ====== navbar ====== */
-/* Ursprüngliche Sticky-Header-Stile */
+/* ====== Navbar ====== */
+
+/* Hintergrundcontainer für nahtloses Scrollen */
 .background-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 80px;
-  /* Voller Viewport-Höhe für nahtloses Scrollen */
-  z-index: 1001;
-  /* Hinter der Navbar */
+  z-index: 1001; /* Stellt sicher, dass es über anderen Elementen liegt */
 }
 
+/* Sticky Header-Stile */
 .sticky-header {
   font-size: 17px;
   cursor: pointer;
@@ -175,75 +175,151 @@ small {
   background: transparent;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, opacity 0.5s ease;
-  z-index: 1000;
-  /* Über dem Hintergrundcontainer */
+  z-index: 1000; /* Direkt unter dem Hintergrundcontainer */
 }
 
-/* Gescrollter Zustand */
+/* Zustand: Wenn die Navbar gescrollt ist */
 .sticky-header.scrolled {
-  background-color: rgba(255, 255, 255, 0.8);
-  /* Leichte Transparenz */
+  background-color: rgba(255, 255, 255, 0.8); /* Leichte Transparenz */
+  backdrop-filter: blur(10px); /* Leichter Unschärfeeffekt für modernere Optik */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Feine Trennungslinie */
 }
 
+/* Zustand: Wenn die Navbar ausgeblendet ist */
 .sticky-header.hidden {
   transform: translateY(-100%);
   transition: transform 0.3s ease;
 }
 
+/* Allgemeine Link-Stile */
 a {
-  color: #555555;
+  color: #555555; /* Standardfarbe für Links */
+  text-decoration: none; /* Entfernt Standardunterstreichung */
 }
 
 a:hover {
-  color: #16A085;
+  color: #16A085; /* Hover-Farbe */
 }
 
-.nav-link {
-  font-size: 1em;
-  cursor: pointer;
+
+
+/* Navbar Links */
+/* Allgemeiner Hover-Effekt für Links und Logo in der Navbar */
+.navbar a {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease;
 }
 
-.navbar-brand {
-  font-size: 1.063em;
-  font-weight: 800;
+/* Der untere Strich wird beim Hover angezeigt */
+.navbar a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #16A085; /* Die Farbe des Strichs */
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
 }
 
-du kennst denn cod ist das noch korrekt > 
+/* Wenn der Link (oder Logo) aktiv ist, bleibt der Strich sichtbar */
+.navbar a.active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Beim Hover über das Logo auch der untere Strich */
+.navbar .navbar-brand:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Entfernen der Textdekoration für Links */
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar .navbar-brand::after {
+  /* Kein Strich unter dem Logo, wenn es nicht aktiv ist */
+  transform: scaleX(0);
+}
+
+/* Beim Hover über das Logo */
+.navbar .navbar-brand:hover::after {
+  transform: scaleX(1); /* Der Strich erscheint beim Hover */
+}
+
+/* Wenn das Logo aktiv ist (bei der Startseite) bleibt der Strich */
+.navbar .navbar-brand.active::after {
+  transform: scaleX(1); /* Strich bleibt bei aktivem Zustand */
+}
+
+/* Aktiver Link */
+
+.navbar .menu-item.active a {
+  color: inherit; /* Kein Farbwechsel des Textes */
+  position: relative;
+  display: inline-block;
+}
+
 .navbar li.active a {
-  color: #16A085; /* Beispiel-Farbe für aktiven Link */
-  border-bottom: 2px solid #16A085; /* Unterstreichung für aktiven Link */
+  color: #16A085; /* Farbe für aktiven Link */
+  border-bottom: 2px solid #16A085; /* Unterstreichung für aktive Links */
+  font-weight: bold; /* Stärkerer Text für Hervorhebung */
 }
 
-
-
-/* ------- */
+/* color für unterseite ändern */
 .navbar li {
   position: relative;
+  color: #555555;
 }
 
+/* Animation für Hover-Effekte auf Listen-Elementen */
 .navbar li::after {
   content: '';  
   position: absolute;
   width: 0;
   height: 2px; /* Höhe des Striches */
-  background-color: #16A085; /* Die Farbe des Striches */
+  background-color: #16A085; /* Farbe des Striches */
   bottom: 0;
   left: 0;
   transition: width 0.3s ease, left 0.3s ease;
 }
 
+/* Effekt: Strich breitet sich beim Hover aus */
 .navbar li:hover::after {
   width: 100%;
-  right: auto;
   left: 0;
 }
 
-.navbar li:hover::after, 
-.navbar li.active::after {
-  width: 100%;
-  right: auto;
-  left: 0;
+
+/* Zusätzliche mobile Anpassungen */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  .sticky-header {
+    height: auto;
+    padding: 10px 0;
+  }
 }
+
+/* Optional: Animation bei Ausblenden */
+.sticky-header.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 /* ------- */
 .logoSpan {
   font-family: "Pangea", "sans-serif", Courier, monospace;
@@ -540,7 +616,7 @@ font-style: italic;
 
 /* --- */
 
-/* Carousel */
+/* Allgemeines Carousel-Styling */
 .carousel {
   perspective: none;
   /* Entfernt die 3D-Perspektive */
@@ -550,8 +626,8 @@ font-style: italic;
   position: relative;
   transform-style: flat;
   /* Entfernt 3D-Transformation */
-  transition: transform 0.3s ease;
-  /* Schnellere Transition */
+  transition: transform 0.3s ease-in-out;
+  /* Flüssigere Übergänge */
 }
 
 .carousel-item {
@@ -561,8 +637,8 @@ font-style: italic;
   right: 0;
   bottom: 0;
   opacity: 0;
-  transition: opacity 3s ease;
-  /* Schnellere Überblendung */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  /* Weiche Übergänge für Opazität und Position */
 }
 
 .carousel-item.active {
@@ -570,24 +646,79 @@ font-style: italic;
   transform: rotateY(0deg);
 }
 
-.carousel-control-prev-icon,
+/* Steuerelemente */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  z-index: 10;
+  border: 2px solid white; /* Umrandung */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: black;
   border-radius: 50%;
 }
 
+/* Bilder in den Steuerelementen */
+.carousel-control-prev img,
+.carousel-control-next img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Höhe des Carousels */
 .custom-height-portfolio {
-  height: 80vh;
+  height: 50vh;
   /* Erhöhte Höhe für größere Darstellung */
-  margin-top: 30vh;
-  margin-bottom: 30vh;
+  margin-top: 50vh;
+  margin-bottom: 50vh;
 }
 
 .custom-height-portfolio img {
   object-fit: cover;
   border-radius: 10px;
-  /* Optional: Abgerundete Ecken */
+  /* Abgerundete Ecken */
+  max-height: 100%;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .custom-height-portfolio {
+    height: 30vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px;
+    height: 50px;
+  }
+
+  .carousel-control-prev img,
+  .carousel-control-next img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 
 /* Animationbutton */
 .frame {
