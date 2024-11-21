@@ -52,32 +52,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* light/dark Function */
-/* :root {
-  --body-bg: #fafafa;
-  --body-color: #555;
-  --link-color: #222;
-  --link-color-hover: #000;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --body-bg: #212529;
-    --body-color: #6c757d;
-    --link-color: #dee2e6;
-    --link-color-hover: #fff;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  img {
-    opacity: .75;
-    transition: opacity .5s ease-in-out;
-  }
-  img:hover {
-    opacity: 1;
-  }
-} */
-
 :root {
   --font-heading: 'Pangea', 'Arial', sabs-serif;
   --font-body: 'Poppins', 'Arial', sans-serif;
@@ -207,8 +181,6 @@ a:hover {
   color: #16A085;
   /* Hover-Farbe */
 }
-
-
 
 /* Navbar Links */
 /* Allgemeiner Hover-Effekt für Links und Logo in der Navbar */
@@ -533,10 +505,9 @@ h1 {
   color: #FAFAFA;
 }
 
-
-
 .workflow-container{
   margin-top: 10rem;
+  font-family: "Poppins", "Arial", "sans-serif";
 }
 /* .custom-vw{
   width:80vw;
@@ -687,7 +658,7 @@ h1 {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-carousel-control-prev-icon,
+.carousel-control-prev-icon,
 .carousel-control-next-icon {
   border-radius: 50%;
 }
@@ -735,7 +706,6 @@ carousel-control-prev-icon,
     height: 30px;
   }
 }
-
 
 /* Animationbutton */
 .frame {
@@ -882,6 +852,10 @@ carousel-control-prev-icon,
   padding-left: 1.5rem;
 }
 
+.heading-piechart {
+  padding-left: 5.5em;
+  }
+
 .pie-chart-heading-left {
   color: #606060;
 }
@@ -913,4 +887,10 @@ carousel-control-prev-icon,
 
 html {
   scroll-behavior: smooth;
+}
+
+.heading{
+  color: #606060;
+  font-family: "Poppins", "Arial", "sans-serif";
+  width: 100vw;
 }

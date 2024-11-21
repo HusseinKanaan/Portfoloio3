@@ -125,7 +125,7 @@ export default function Home() {
         <section id='vorteile' className={`container h-25}`} >
           <div className=' text-center vh-100 d-flex justify-content-center align-items-center'>
             <div /* width={1000} */ className={`h-25 fade-in ${visibleTexts[0] ? 'loaded' : ''}`} ref={el => textRefs.current[0] = el}>
-              <h2 className='display-5  fw-bold cutomTextColor2'> Heben Sie sich von der Konkurrenz ab und erreichen Sie mehr Kunden!!</h2>
+              <h2 className='display-5  fw-bold cutomTextColor2'>Heben Sie sich von der Konkurrenz ab und erreichen Sie mehr Kunden!!</h2>
               <strong className='customText'>Ihr digitaler Auftritt – professionell, individuell und suchmaschinenoptimiert.</strong>
               <p className='customText'>Ich entwickle individuelle Website Designs für Unternehmen und bringe Ihre Online-Präsenz auf den neuesten Stand. Kurze Ladezeiten und Responsive Design sind natürlich inklusive. Je nach Projekt und Umfang arbeite ich dabei mit einem Team aus Experten zusammen</p>
               <div className='frame'>
@@ -276,11 +276,11 @@ export default function Home() {
         </section>
         {/* Pie-chart */}
         <div id='service' className='bg-color-heading-piechart'>
-          <div className=' heading-service text-white'>
-            <h1 className={`display-5 text-center fade-in ${visibleTexts[10] ? 'loaded' : ''}`} ref={el => textRefs.current[10] = el}>Meine Webdesign Skills</h1>
+          <div className='heading-piechart text-white container'>
+            <h1 className={`display-5 text-left fade-in heading ${visibleTexts[10] ? 'loaded' : ''}`} ref={el => textRefs.current[10] = el}>Meine Webdesign Skills</h1>
           </div>
         </div>
-        <section className='pie-chart-container-height  d-flex align-items-center'>
+        <section className='pie-chart-container-height d-flex align-items-center'>
           {/*         <div className='pie-chart-heading'></div> */}
           <div className="container d-flex align-items-center justify-content-evenly">
             <div className='pie-chart-text'>
@@ -306,7 +306,7 @@ export default function Home() {
         <section id='regional-services' className={`custom-background-lightblue  h-25`}>
           <div className='custom-height-container-umsetzung d-flex justify-content-center align-items-center'>
             <div /* width={1000} */ className={`text-center h-25 fade-in ${visibleTexts[3] ? 'loaded' : ''}`} ref={el => textRefs.current[3] = el}>
-              <h2 className='display-4 fw-bold cutomTextColor2'> Starten wir mit der Umsetzung
+              <h2 className='display-5 fw-bold cutomTextColor2'> Starten wir mit der Umsetzung
                 Ihrer Website!</h2>
               <p className='customText'>Erläutern Sie Ihre Projektwünsche und erhalten Sie ein unverbindliches und kostenloses Webdesign-Angebot für Ihre neue Webseite.</p>
               <div className='d-flex justify-content-center frame'>
@@ -329,12 +329,8 @@ export default function Home() {
         </div> */}
         <div className='vh-100'>
         </div>
-
         <div className='vh-100'>
-
         </div>
-        <ButtonDark />
-        <ButtonLight />
         <ContactForm />
         {/* Seite 9 FAQ */}
         <div id='faq'>
