@@ -472,38 +472,75 @@ h1 {
 
 .custom-text-color-service {
   color: #DADFE1;
-  padding-bottom: 24px;
+  margin-bottom: 2rem;
 }
 
 .text-left-service {
   letter-spacing: 0.2px;
+  line-height: 1.8; /* Verbesserte Lesbarkeit */
 }
 
 .custom-margin-service {
-  padding-bottom: 8rem;
-  width: 588px;
+  padding-bottom: 6rem; /* Kürzerer Abstand für bessere Balance */
+  width: 90%; /* Dynamische Breite */
+  margin: 0 auto; /* Zentriert */
 }
 
 .custom-height-service {
-  max-height: 200vh;
+  max-height: 180vh;
+  display: flex;
+  flex-wrap: wrap; /* Elemente ordnen sich dynamisch an */
+}
+
+.custom-height-service {
+  max-height: 180vh;
+  display: flex;
+  flex-wrap: wrap; /* Elemente ordnen sich dynamisch an */
+  justify-content: center; /* Zentriert die Inhalte */
+  align-items: flex-start; /* Inhalte starten oben */
 }
 
 .container-heading-service {
   display: flex;
   justify-content: center;
-  width: 100vw;
-  margin-bottom: 200px;
-  padding-top: 200px;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 100px;
+  padding-top: 150px;
 }
 
 .heading-service {
-  width: 700px;
+  width: 90%; /* Erhöhte Flexibilität auf kleinen Bildschirmen */
+  max-width: 700px; /* Begrenzte Breite für größere Bildschirme */
+  text-align: center; /* Zentriert den Text */
+  padding: 20px; /* Zusätzlicher Raum für bessere Lesbarkeit */
+}
+
+.heading-service h1 {
+  font-size: 2.8rem; /* Große Schrift für den Header */
+  font-weight: 700; /* Fettgedruckte Schrift */
+  color: #dadfe1; /* Helle, moderne Farbe */
+  line-height: 1.5; /* Verbessert die Lesbarkeit */
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Leichtes Schatten-Design */
+}
+
+.heading-service .subheading {
+  font-size: 1.2rem; /* Subheading-Größe */
+  font-weight: 400;
+  color: #c7c7c7; /* Dezente Farbe für Untertitel */
+  margin-top: 15px;
+}
+
+.heading-service .highlight {
+  color: #4caf50; /* Optional: Setze eine Akzentfarbe */
+  text-shadow: 0px 0px 8px rgba(76, 175, 80, 0.7);
 }
 
 .heading-service-bgcolor {
-  background-color: #AF9075;
-  color: #FAFAFA;
+  color: inherit; /* Hintergrundfarbe entfernt, Textfarbe erbt */
 }
+
 
 .workflow-container{
   margin-top: 10rem;

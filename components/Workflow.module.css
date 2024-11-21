@@ -2,6 +2,11 @@
 .workflowContainer {
   background-color: #f8f9fa;
   padding: 2rem 0;
+  
+}
+
+.headingWworkflow{
+  font-family: "Pangea", "sans-serif", Courier, monospace;
 }
 
 /* FAQ Item Container */
@@ -34,7 +39,7 @@
   font-size: 22px;
   font-weight: 600;
   margin: 0;
-  color: #16A085;
+  color: #2C3E50;
 }
 
 .workflowTitle:hover{

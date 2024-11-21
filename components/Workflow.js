@@ -23,7 +23,7 @@ const Workflow = () => {
       <div className='container-fluid'>
         <div className='container'>
 
-        <p className={`mb-5 container-fluid display-5 text-center ${styles.headingWworkflow}`}>Workflow</p>
+        <h1 className={`mb-5 container-fluid display-5 text-center ${styles.headingWworkflow}`}>Workflow</h1>
         </div>
       </div>
       <Row className="justify-content-center">
