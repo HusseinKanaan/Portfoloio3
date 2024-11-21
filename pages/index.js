@@ -136,90 +136,131 @@ export default function Home() {
         </section>
         {/* Seite 3 Service */}
         <div className='custom-background-blue'>
-          <div id='service' className={`heading-service-bgcolor container-heading-service fade-in ${visibleTexts[5] ? 'loaded' : ''}`} ref={el => textRefs.current[5] = el}>
-            <div className='heading-service '>
-              <h1 className='display-5 heading-service-bgcolor text-center'>Webdesigner für React, Next und Api-Anbindungen usw....</h1>
+  <div
+    id='service'
+    className={`heading-service-bgcolor container-heading-service fade-in ${
+      visibleTexts[5] ? 'loaded' : ''
+    }`}
+    ref={(el) => (textRefs.current[5] = el)}
+  >
+    <div className='heading-service'>
+      <h1 className='display-5 heading-service-bgcolor text-center'>
+        Webdesigner für React, Next und Api-Anbindungen usw....
+      </h1>
+    </div>
+  </div>
+  <section className='vh-auto container d-flex flex-column align-items-center'>
+    <div className='custom-text-color-service row custom-height-service container-fluid'>
+      {/* Erste Spalte (React / Webdesign und App) */}
+      <div className='col-md-6 d-flex flex-column align-items-center'>
+        {/* React / Webdesign */}
+        <div
+          className={`custom-margin-service col fade-in ${
+            visibleTexts[6] ? 'loaded' : ''
+          }`}
+          ref={(el) => (textRefs.current[6] = el)}
+        >
+          <div className='custom-margin-service col fs-5'>
+            <h2 className='custom-text-color-service display-6 fw-bold text-left-service'>
+              <small>React / Webdesign</small>
+            </h2>
+            <p className='text-left-service'>
+              Ich erstelle für Sie die Website, die Sie wirklich benötigen. Ihr
+              neues Webdesign wird kreativ, seriös, übersichtlich und auf allen
+              gängigen Endgeräten optimal dargestellt. Durch die Anwendung von
+              WordPress wird eine einfache Handhabung sichergestellt. Dadurch
+              können Sie Ihre Website selbstständig pflegen und aktualisieren.
+              In einem Beratungsgespräch erörtern wir gemeinsam Ihre Ziele und
+              die Möglichkeiten der Umsetzung.
+            </p>
+            <div className='d-flex justify-content-left frame'>
+              <ButtonDark text='Mehr erfahren' />
             </div>
           </div>
-          <section className='vh-auto container d-flex'>
-            <div className=' custom-text-color-service row custom-height-service container-fluid  '>
-              {/* Erste Spalte (React / Webdesign und App) */}
-              <div className='col-md-6 d-flex flex-column '>
-                {/* React / Webdesign */}
-                <div className={`custom-margin-service col fade-in ${visibleTexts[6] ? 'loaded' : ''}`} ref={el => textRefs.current[6] = el}>
-                  <div className='custom-margin-service col fs-5'>
-                    <h2 className='custom-text-color-service display-6 fw-bold text-left-service'>
-                      <small> React / Webdesign</small>
-                    </h2>
-                    <p className='text-left-service'>
-                      Ich erstelle für Sie die Website, die Sie wirklich benötigen.
-                      Ihr neues Webdesign wird kreativ, seriös, übersichtlich und auf allen gängigen Endgeräten optimal dargestellt.
-                      Durch die Anwendung von WordPress wird eine einfache Handhabung sichergestellt.
-                      Dadurch können Sie Ihre Website selbstständig pflegen und aktualisieren.
-                      In einem Beratungsgespräch erörtern wir gemeinsam Ihre Ziele und die Möglichkeiten der Umsetzung.
-                    </p>
-                    <div className='d-flex justify-content-left frame'>
-                      <ButtonDark text='Mehr erfahren' />
-                    </div>
-                  </div>
-                </div>
-                {/* App */}
-                <div className={`custom-margin-service col fade-in ${visibleTexts[7] ? 'loaded' : ''}`} ref={el => textRefs.current[7] = el}>
-                  <div className='custom-margin-service col fs-5'>
-                    <h2 className='custom-text-color-service display-6 fw-bold  text-left-service'>
-                      <small> App</small>
-                    </h2>
-                    <p className='text-left-service'>
-                      Ich erstelle für Sie die Website, die Sie wirklich benötigen.
-                      Ihr neues Webdesign wird kreativ, seriös, übersichtlich und auf allen gängigen Endgeräten optimal dargestellt.
-                      Durch die Anwendung von  wird eine einfache Handhabung sichergestellt.
-                      Dadurch können Sie Ihre Website selbstständig pflegen und aktualisieren.
-                      In einem Beratungsgespräch erörtern wir gemeinsam Ihre Ziele und die Möglichkeiten der Umsetzung.
-                    </p>
-                    <div className='d-flex justify-content-left frame '>
-                      <ButtonDark text='Mehr erfahren' />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Zweite Spalte (Api und Support / Wartung) */}
-              <div className={`col-md-6 d-flex flex-column  fade-in ${visibleTexts[8] ? 'loaded' : ''}`} ref={el => textRefs.current[8] = el}>
-                {/* Api */}
-                <div className='custom-margin-service col fs-5'>
-                  <h2 className='custom-text-color-service display-6 fw-bold  text-left-service'>
-                    <small> Api</small>
-                  </h2>
-                  <p className='text-left-service'>
-                    Ich erstelle für Sie die Website, die Sie wirklich benötigen.
-                    Ihr neues Webdesign wird kreativ, seriös, übersichtlich und auf allen gängigen Endgeräten optimal dargestellt.
-                    Durch die Anwendung von WordPress wird eine einfache Handhabung sichergestellt.
-                    Dadurch können Sie Ihre Website selbstständig pflegen und aktualisieren.
-                    In einem Beratungsgespräch erörtern wir gemeinsam Ihre Ziele und die Möglichkeiten der Umsetzung.
-                  </p>
-                  <div className='d-flex justify-content-left frame'>
-                    <ButtonDark text='Mehr erfahren' />
-                  </div>
-                </div>
-                {/*Seite 4 Support / Wartung */}
-                <div className='custom-margin-service col fs-5'>
-                  <h2 className='custom-text-color-service display-6 fw-bold text-left-service'>
-                    <small> Support / Wartung</small>
-                  </h2>
-                  <p className=' text-left-service'>
-                    Ich erstelle für Sie die Website, die Sie wirklich benötigen.
-                    Ihr neues Webdesign wird kreativ, seriös, übersichtlich und auf allen gängigen Endgeräten optimal dargestellt.
-                    Durch die Anwendung von WordPress wird eine einfache Handhabung sichergestellt.
-                    Dadurch können Sie Ihre Website selbstständig pflegen und aktualisieren.
-                    In einem Beratungsgespräch erörtern wir gemeinsam Ihre Ziele und die Möglichkeiten der Umsetzung.
-                  </p>
-                  <div className='d-flex justify-content-left frame'>
-                    <ButtonDark text='Mehr erfahren' />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
         </div>
+        {/* App */}
+        <div
+          className={`custom-margin-service col fade-in ${
+            visibleTexts[7] ? 'loaded' : ''
+          }`}
+          ref={(el) => (textRefs.current[7] = el)}
+        >
+          <div className='custom-margin-service col fs-5'>
+            <h2 className='custom-text-color-service display-6 fw-bold text-left-service'>
+              <small>App</small>
+            </h2>
+            <p className='text-left-service'>
+              Ich erstelle für Sie die Website, die Sie wirklich benötigen. Ihr
+              neues Webdesign wird kreativ, seriös, übersichtlich und auf allen
+              gängigen Endgeräten optimal dargestellt. Durch die Anwendung von
+              wird eine einfache Handhabung sichergestellt. Dadurch können Sie
+              Ihre Website selbstständig pflegen und aktualisieren. In einem
+              Beratungsgespräch erörtern wir gemeinsam Ihre Ziele und die
+              Möglichkeiten der Umsetzung.
+            </p>
+            <div className='d-flex justify-content-left frame'>
+              <ButtonDark text='Mehr erfahren' />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Zweite Spalte (Api und Support / Wartung) */}
+      <div className='col-md-6 d-flex flex-column align-items-center'>
+        {/* Api */}
+        <div
+          className={`custom-margin-service col fade-in ${
+            visibleTexts[8] ? 'loaded' : ''
+          }`}
+          ref={(el) => (textRefs.current[8] = el)}
+        >
+          <div className='custom-margin-service col fs-5'>
+            <h2 className='custom-text-color-service display-6 fw-bold text-left-service'>
+              <small>Api</small>
+            </h2>
+            <p className='text-left-service'>
+              Ich erstelle für Sie die Website, die Sie wirklich benötigen. Ihr
+              neues Webdesign wird kreativ, seriös, übersichtlich und auf allen
+              gängigen Endgeräten optimal dargestellt. Durch die Anwendung von
+              WordPress wird eine einfache Handhabung sichergestellt. Dadurch
+              können Sie Ihre Website selbstständig pflegen und aktualisieren.
+              In einem Beratungsgespräch erörtern wir gemeinsam Ihre Ziele und
+              die Möglichkeiten der Umsetzung.
+            </p>
+            <div className='d-flex justify-content-left frame'>
+              <ButtonDark text='Mehr erfahren' />
+            </div>
+          </div>
+        </div>
+        {/* Support / Wartung */}
+        <div
+          className={`custom-margin-service col fade-in ${
+            visibleTexts[11] ? 'loaded' : ''
+          }`}
+          ref={(el) => (textRefs.current[11] = el)}
+        >
+          <div className='custom-margin-service col fs-5'>
+            <h2 className='custom-text-color-service display-6 fw-bold text-left-service'>
+              <small>Support / Wartung</small>
+            </h2>
+            <p className='text-left-service'>
+              Ich erstelle für Sie die Website, die Sie wirklich benötigen. Ihr
+              neues Webdesign wird kreativ, seriös, übersichtlich und auf allen
+              gängigen Endgeräten optimal dargestellt. Durch die Anwendung von
+              WordPress wird eine einfache Handhabung sichergestellt. Dadurch
+              können Sie Ihre Website selbstständig pflegen und aktualisieren.
+              In einem Beratungsgespräch erörtern wir gemeinsam Ihre Ziele und
+              die Möglichkeiten der Umsetzung.
+            </p>
+            <div className='d-flex justify-content-left frame'>
+              <ButtonDark text='Mehr erfahren' />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
         {/* Seite 4 Portfolio */}
         {/* Carousell */}
         <div className='container'>
