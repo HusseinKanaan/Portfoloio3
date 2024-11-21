@@ -155,7 +155,6 @@ small {
 }
 
 /* ====== Navbar ====== */
-
 /* Hintergrundcontainer für nahtloses Scrollen */
 .background-container {
   position: fixed;
@@ -163,7 +162,8 @@ small {
   left: 0;
   width: 100%;
   height: 80px;
-  z-index: 1001; /* Stellt sicher, dass es über anderen Elementen liegt */
+  z-index: 1001;
+  /* Stellt sicher, dass es über anderen Elementen liegt */
 }
 
 /* Sticky Header-Stile */
@@ -175,14 +175,18 @@ small {
   background: transparent;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, opacity 0.5s ease;
-  z-index: 1000; /* Direkt unter dem Hintergrundcontainer */
+  z-index: 1000;
+  /* Direkt unter dem Hintergrundcontainer */
 }
 
 /* Zustand: Wenn die Navbar gescrollt ist */
 .sticky-header.scrolled {
-  background-color: rgba(255, 255, 255, 0.8); /* Leichte Transparenz */
-  backdrop-filter: blur(10px); /* Leichter Unschärfeeffekt für modernere Optik */
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Feine Trennungslinie */
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Leichte Transparenz */
+  backdrop-filter: blur(10px);
+  /* Leichter Unschärfeeffekt für modernere Optik */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /* Feine Trennungslinie */
 }
 
 /* Zustand: Wenn die Navbar ausgeblendet ist */
@@ -193,12 +197,15 @@ small {
 
 /* Allgemeine Link-Stile */
 a {
-  color: #555555; /* Standardfarbe für Links */
-  text-decoration: none; /* Entfernt Standardunterstreichung */
+  color: #555555;
+  /* Standardfarbe für Links */
+  text-decoration: none;
+  /* Entfernt Standardunterstreichung */
 }
 
 a:hover {
-  color: #16A085; /* Hover-Farbe */
+  color: #16A085;
+  /* Hover-Farbe */
 }
 
 
@@ -220,7 +227,8 @@ a:hover {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background-color: #16A085; /* Die Farbe des Strichs */
+  background-color: #16A085;
+  /* Die Farbe des Strichs */
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.3s ease;
@@ -250,26 +258,31 @@ a:hover {
 
 /* Beim Hover über das Logo */
 .navbar .navbar-brand:hover::after {
-  transform: scaleX(1); /* Der Strich erscheint beim Hover */
+  transform: scaleX(1);
+  /* Der Strich erscheint beim Hover */
 }
 
 /* Wenn das Logo aktiv ist (bei der Startseite) bleibt der Strich */
 .navbar .navbar-brand.active::after {
-  transform: scaleX(1); /* Strich bleibt bei aktivem Zustand */
+  transform: scaleX(1);
+  /* Strich bleibt bei aktivem Zustand */
 }
 
 /* Aktiver Link */
-
 .navbar .menu-item.active a {
-  color: inherit; /* Kein Farbwechsel des Textes */
+  color: inherit;
+  /* Kein Farbwechsel des Textes */
   position: relative;
   display: inline-block;
 }
 
 .navbar li.active a {
-  color: #16A085; /* Farbe für aktiven Link */
-  border-bottom: 2px solid #16A085; /* Unterstreichung für aktive Links */
-  font-weight: bold; /* Stärkerer Text für Hervorhebung */
+  color: #16A085;
+  /* Farbe für aktiven Link */
+  border-bottom: 2px solid #16A085;
+  /* Unterstreichung für aktive Links */
+  font-weight: bold;
+  /* Stärkerer Text für Hervorhebung */
 }
 
 /* color für unterseite ändern */
@@ -280,11 +293,13 @@ a:hover {
 
 /* Animation für Hover-Effekte auf Listen-Elementen */
 .navbar li::after {
-  content: '';  
+  content: '';
   position: absolute;
   width: 0;
-  height: 2px; /* Höhe des Striches */
-  background-color: #16A085; /* Farbe des Striches */
+  height: 2px;
+  /* Höhe des Striches */
+  background-color: #16A085;
+  /* Farbe des Striches */
   bottom: 0;
   left: 0;
   transition: width 0.3s ease, left 0.3s ease;
@@ -295,7 +310,6 @@ a:hover {
   width: 100%;
   left: 0;
 }
-
 
 /* Zusätzliche mobile Anpassungen */
 @media (max-width: 768px) {
@@ -318,6 +332,10 @@ a:hover {
 .sticky-header.hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+.stickyheader-button-container {
+  margin-left: 14px;
 }
 
 /* ------- */
@@ -346,24 +364,26 @@ a:hover {
   background-repeat: no-repeat;
   height: 100vh;
 }
+
 h1 {
   color: #2C3E50;
 }
-.span-header{
+
+.span-header {
   color: #37516757;
-font-style: italic;
+  font-style: italic;
 }
 
-.customText{
+.customText {
   font-size: 20px;
   color: #555555;
 }
 
-.customTextHeading{
+.customTextHeading {
   font-size: 52px;
 }
 
-.customTextSmall{
+.customTextSmall {
   color: #37516757;
   font-size: 16px;
 }
@@ -399,13 +419,12 @@ font-style: italic;
   height: 200px;
 }
 
-
 .abstandhalter {
   width: 100vw;
   height: 30vh;
 }
 
-.abstand{
+.abstand {
   height: 100vh;
 }
 
@@ -448,7 +467,6 @@ font-style: italic;
 }
 
 /* ====== main ====== */
-
 .overlap {
   backdrop-filter: blur(12px) saturate(150%);
   background-color: #37516757;
@@ -462,22 +480,12 @@ font-style: italic;
 
 }
 
-.custom-text-overlap{
+.custom-text-overlap {
   font-size: 18px;
 }
 
 .w-auto {
   width: auto;
-}
-
-.see-more-btn-dark {
-  color: #2C3E50;
-  border: 4px solid #2C3E50 ;
-  
-}
-
-.see-more-btn-light {
-  border: 1px solid #ffffff;
 }
 
 .custom-background-blue {
@@ -490,8 +498,13 @@ font-style: italic;
 
 }
 
-.custom-text-color-service{
+.custom-text-color-service {
   color: #DADFE1;
+  padding-bottom: 24px;
+}
+
+.text-left-service {
+  letter-spacing: 0.2px;
 }
 
 .custom-margin-service {
@@ -509,7 +522,6 @@ font-style: italic;
   width: 100vw;
   margin-bottom: 200px;
   padding-top: 200px;
-
 }
 
 .heading-service {
@@ -518,9 +530,14 @@ font-style: italic;
 
 .heading-service-bgcolor {
   background-color: #AF9075;
-
+  color: #FAFAFA;
 }
 
+
+
+.workflow-container{
+  margin-top: 10rem;
+}
 /* .custom-vw{
   width:80vw;
   margin-left: 10rem;
@@ -536,7 +553,6 @@ font-style: italic;
   opacity: 1;
 }
 
-
 .custom-height-container {
   height: 90vh;
 }
@@ -545,6 +561,9 @@ font-style: italic;
   height: 70vh;
 }
 
+.margin-about {
+  margin-bottom: 8rem;
+}
 
 #divAbsoluteAbout {
   position: absolute;
@@ -571,7 +590,7 @@ font-style: italic;
 
 .custom-text-container {
   margin-left: 104px;
-  width: 617px;
+  width: 677px;
   line-height: 1.75;
 }
 
@@ -580,19 +599,18 @@ font-style: italic;
   font-size: 48px;
   margin-bottom: 2.5rem;
   color: #DADFE1;
-
 }
 
 .custom-about-text-div {
   font-size: 20px;
   font-weight: 100;
   color: #DADFE1;
+  letter-spacing: 0.2px;
 }
 
 .custom-about-text {
   margin-bottom: 1rem;
 }
-
 
 #divAbsoluteHero {
   position: absolute;
@@ -613,8 +631,6 @@ font-style: italic;
   transform: translateY(0);
   /* Zurück in die Ausgangsposition */
 }
-
-/* --- */
 
 /* Allgemeines Carousel-Styling */
 .carousel {
@@ -660,7 +676,8 @@ font-style: italic;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   z-index: 10;
-  border: 2px solid white; /* Umrandung */
+  border: 2px solid white;
+  /* Umrandung */
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -722,7 +739,7 @@ carousel-control-prev-icon,
 
 /* Animationbutton */
 .frame {
-  width: 90%;
+  width: 100%;
   margin: 40px auto;
   text-align: center;
 }
@@ -740,7 +757,6 @@ carousel-control-prev-icon,
   font-size: 1rem;
   font-weight: bold;
   border: 1px solid linear-gradient(0deg, #445154 0%, #445154 100%);
-  ;
   cursor: pointer;
   overflow: hidden;
 }
@@ -767,7 +783,6 @@ carousel-control-prev-icon,
   border-radius: 10px;
   opacity: 0;
   transition: all 0.3s ease;
-
 }
 
 .btn-5::before {
@@ -788,7 +803,6 @@ carousel-control-prev-icon,
   left: 0;
   transform: scaleX(0);
   /* Startwert für die Animation */
-
 }
 
 /* Vertikale Border Animation */
@@ -856,15 +870,27 @@ carousel-control-prev-icon,
   /* Textfarbe wird geändert */
 }
 
-.pie-chart-heading-left{
+.bg-color-heading-piechart {
+  background-color: #FAFAFA;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  padding-top: 200px;
+}
+
+.pie-chart-container-partcoder {
+  padding-left: 1.5rem;
+}
+
+.pie-chart-heading-left {
   color: #606060;
 }
 
-.pie-chart-heading-right{
-  color:#606060;
+.pie-chart-heading-right {
+  color: #606060;
 }
 
-.pie-chart-text{
+.pie-chart-text {
   font-size: 18px;
 }
 
@@ -873,11 +899,12 @@ carousel-control-prev-icon,
   height: 75vh;
   background: #FAFAFA;
   border-bottom: 1px solid #ddd;
-  color:#606060; 
+  color: #606060;
 }
-.pie-char-span{
+
+.pie-chart-span {
   margin-right: 20px;
-  color:#16A085 ;
+  color: #16A085;
 }
 
 .footerBackgroundCollor {
