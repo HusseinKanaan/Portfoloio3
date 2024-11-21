@@ -1,5 +1,6 @@
 import HoverButton from '../components/HoverButton';
 import ScrollControl from './ScrollControl';
+import ButtonLight from './ButtonLight';
 import Link from 'next/link';
 import { useEffect, useState, useCallback } from 'react';
 import Image from 'next/image';
@@ -75,11 +76,11 @@ const StickyHeader = () => {
             <Image priority={true} src="/logo4.png" alt="Logo" width={100} height={100} className="img-fluid max-width-100" />
             <span className="logoSpan" id="logoSchrift"></span>
           </Link>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+{/*           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
             <span className="navbar-toggler-icon"></span>
-          </button>
+          </button> */}
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <ul id="primary-menu" className="m-auto nav-underline list-unstyled d-flex align-items-center">
+            <ul id="primary-menu" className="gap-4 m-auto nav-underline list-unstyled d-flex align-items-center">
               <li className={`menu-item ${router.pathname === '/about' ? 'active' : ''}`}>
                 <Link href="/about" className="text-decoration-none">Über mich</Link>
               </li>
@@ -96,13 +97,16 @@ const StickyHeader = () => {
                 <Link href="/#contact" className="text-decoration-none">Kontakt</Link>
               </li>
             </ul>
-            <div className="d-flex">
+            <div className='stickyheader-button-container'>    
+            <ButtonLight/>
+            </div>
+{/*             <div className="d-flex">
               <button className="custom-btn btn-5">
                 Kontakt
                 <div className="border-left"></div>
                 <div className="border-right"></div>
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -113,4 +117,3 @@ const StickyHeader = () => {
 };
 
 export default StickyHeader;
-    

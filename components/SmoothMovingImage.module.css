@@ -1,8 +1,5 @@
-/* SmoothMovingImage.module.css */
-
 .factsHeading{
     color: #606060;
-
 }
 
 .imageContainer {
@@ -18,7 +15,6 @@
     /* Container-Höhe anpassen */
     position: relative;
     /* Position für das Bild */
-
 }
 
 .movingImage {

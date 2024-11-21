@@ -1,0 +1,84 @@
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.heading {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.paragraph {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+
+.link:hover {
+    color: #3498db; /* Blau als Hover-Effekt */
+}
+
+/* Neuer Button-Stil */
+.btn {
+    background-color: #2C3E50; /* Dunkler Hintergrund */
+    color: #DADFE1; /* Helles Weiß */
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    padding: 12px 24px;
+    border: 1px solid #DADFE1; /* Umrandung ist zunächst unsichtbar */
+/*     border-radius: 5px; */ /* Abgerundete Ecken */
+
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Leichter Schatten für den 3D-Effekt */
+}
+
+/* Hover-Effekt */
+.btn:hover {
+    background-color: #DADFE1; /* Helleres Blau bei Hover */
+    color: #2C3E50; /* Textfarbe bleibt weiß */
+    border-color: #ffffff; /* Helle Umrandung bei Hover */
+    transform: translateY(-5px); /* Button bewegt sich nach oben */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Schatten wird bei Hover verstärkt */
+}
+
+/* Hover-Effekt für den Text */
+.btn:hover span {
+    color: transparenblac; /* Textfarbe bleibt beim Hover ebenfalls weiß */
+}
+
+/* Fokus-Stil */
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+/* Text sichtbar über Effekt */
+.btn span {
+    position: relative;
+    z-index: 1;
+}
+
