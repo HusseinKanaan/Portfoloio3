@@ -136,130 +136,125 @@ export default function Home() {
         </section>
         {/* Seite 3 Service */}
         <div className='custom-background-blue'>
-  <div
-    id='service'
-    className={`heading-service-bgcolor container-heading-service fade-in ${
-      visibleTexts[5] ? 'loaded' : ''
-    }`}
-    ref={(el) => (textRefs.current[5] = el)}
-  >
-    <div className='heading-service'>
-      <h1 className='display-5 heading-service-bgcolor text-center'>
-        Webdesigner für React, Next und Api-Anbindungen usw....
-      </h1>
-    </div>
-  </div>
-  <section className='vh-auto container d-flex flex-column align-items-center'>
-    <div className='custom-text-color-service row custom-height-service container-fluid'>
-      {/* Erste Spalte (React / Webdesign und App) */}
-      <div className='col-md-6 d-flex flex-column align-items-center'>
-        {/* React / Webdesign */}
-        <div
-          className={`custom-margin-service col fade-in ${
-            visibleTexts[6] ? 'loaded' : ''
-          }`}
-          ref={(el) => (textRefs.current[6] = el)}
-        >
-          <div className='custom-margin-service col fs-5'>
-            <h2 className='custom-text-color-service display-6 fw-bold text-left-service'>
-              <small>React / Webdesign</small>
-            </h2>
-            <p className='text-left-service'>
-              Ich erstelle für Sie die Website, die Sie wirklich benötigen. Ihr
-              neues Webdesign wird kreativ, seriös, übersichtlich und auf allen
-              gängigen Endgeräten optimal dargestellt. Durch die Anwendung von
-              WordPress wird eine einfache Handhabung sichergestellt. Dadurch
-              können Sie Ihre Website selbstständig pflegen und aktualisieren.
-              In einem Beratungsgespräch erörtern wir gemeinsam Ihre Ziele und
-              die Möglichkeiten der Umsetzung.
-            </p>
-            <div className='d-flex justify-content-left frame'>
-              <ButtonDark text='Mehr erfahren' />
+          <div
+            id='service'
+            className={`heading-service-bgcolor container-heading-service fade-in ${visibleTexts[5] ? 'loaded' : ''
+              }`}
+            ref={(el) => (textRefs.current[5] = el)}
+          >
+            <div className='heading-service'>
+              <h1 className='display-5 heading-service-bgcolor text-center'>
+                Webdesigner für React, Next und Api-Anbindungen usw....
+              </h1>
             </div>
           </div>
-        </div>
-        {/* App */}
-        <div
-          className={`custom-margin-service col fade-in ${
-            visibleTexts[7] ? 'loaded' : ''
-          }`}
-          ref={(el) => (textRefs.current[7] = el)}
-        >
-          <div className='custom-margin-service col fs-5'>
-            <h2 className='custom-text-color-service display-6 fw-bold text-left-service'>
-              <small>App</small>
-            </h2>
-            <p className='text-left-service'>
-              Ich erstelle für Sie die Website, die Sie wirklich benötigen. Ihr
-              neues Webdesign wird kreativ, seriös, übersichtlich und auf allen
-              gängigen Endgeräten optimal dargestellt. Durch die Anwendung von
-              wird eine einfache Handhabung sichergestellt. Dadurch können Sie
-              Ihre Website selbstständig pflegen und aktualisieren. In einem
-              Beratungsgespräch erörtern wir gemeinsam Ihre Ziele und die
-              Möglichkeiten der Umsetzung.
-            </p>
-            <div className='d-flex justify-content-left frame'>
-              <ButtonDark text='Mehr erfahren' />
+          <section className='vh-auto container d-flex flex-column align-items-center'>
+            <div className='custom-text-color-service row custom-height-service container-fluid'>
+              {/* Erste Spalte (React / Webdesign und App) */}
+              <div className='col-md-6 d-flex flex-column align-items-center'>
+                {/* React / Webdesign */}
+                <div
+                  className={`custom-margin-service col fade-in ${visibleTexts[6] ? 'loaded' : ''
+                    }`}
+                  ref={(el) => (textRefs.current[6] = el)}
+                >
+                  <div className='custom-margin-service col fs-5'>
+                    <h2 className='custom-text-color-service display-6 fw-bold'>
+                      <small>React / Webdesign</small>
+                    </h2>
+                    <p className='text-left-service'>
+                      Ich erstelle für Sie die Website, die Sie wirklich benötigen. Ihr
+                      neues Webdesign wird kreativ, seriös, übersichtlich und auf allen
+                      gängigen Endgeräten optimal dargestellt. Durch die Anwendung von
+                      WordPress wird eine einfache Handhabung sichergestellt. Dadurch
+                      können Sie Ihre Website selbstständig pflegen und aktualisieren.
+                      In einem Beratungsgespräch erörtern wir gemeinsam Ihre Ziele und
+                      die Möglichkeiten der Umsetzung.
+                    </p>
+                    <div className='d-flex justify-content-left frame'>
+                      <ButtonDark text='Mehr erfahren' />
+                    </div>
+                  </div>
+                </div>
+                {/* App */}
+                <div
+                  className={`custom-margin-service col fade-in ${visibleTexts[7] ? 'loaded' : ''
+                    }`}
+                  ref={(el) => (textRefs.current[7] = el)}
+                >
+                  <div className='custom-margin-service col fs-5'>
+                    <h2 className='custom-text-color-service display-6 fw-bold'>
+                      <small>App</small>
+                    </h2>
+                    <p className='text-left-service'>
+                      Ich erstelle für Sie die Website, die Sie wirklich benötigen. Ihr
+                      neues Webdesign wird kreativ, seriös, übersichtlich und auf allen
+                      gängigen Endgeräten optimal dargestellt. Durch die Anwendung von
+                      wird eine einfache Handhabung sichergestellt. Dadurch können Sie
+                      Ihre Website selbstständig pflegen und aktualisieren. In einem
+                      Beratungsgespräch erörtern wir gemeinsam Ihre Ziele und die
+                      Möglichkeiten der Umsetzung.
+                    </p>
+                    <div className='d-flex justify-content-left frame'>
+                      <ButtonDark text='Mehr erfahren' />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* Zweite Spalte (Api und Support / Wartung) */}
+              <div className='col-md-6 d-flex flex-column align-items-center'>
+                {/* Api */}
+                <div
+                  className={`custom-margin-service col fade-in ${visibleTexts[8] ? 'loaded' : ''
+                    }`}
+                  ref={(el) => (textRefs.current[8] = el)}
+                >
+                  <div className='custom-margin-service col fs-5'>
+                    <h2 className='custom-text-color-service display-6 fw-bold'>
+                      <small>Api</small>
+                    </h2>
+                    <p className='text-left-service'>
+                      Ich erstelle für Sie die Website, die Sie wirklich benötigen. Ihr
+                      neues Webdesign wird kreativ, seriös, übersichtlich und auf allen
+                      gängigen Endgeräten optimal dargestellt. Durch die Anwendung von
+                      WordPress wird eine einfache Handhabung sichergestellt. Dadurch
+                      können Sie Ihre Website selbstständig pflegen und aktualisieren.
+                      In einem Beratungsgespräch erörtern wir gemeinsam Ihre Ziele und
+                      die Möglichkeiten der Umsetzung.
+                    </p>
+                    <div className='d-flex justify-content-left frame'>
+                      <ButtonDark text='Mehr erfahren' />
+                    </div>
+                  </div>
+                </div>
+                {/* Support / Wartung */}
+                <div
+                  className={`custom-margin-service col fade-in ${visibleTexts[11] ? 'loaded' : ''
+                    }`}
+                  ref={(el) => (textRefs.current[11] = el)}
+                >
+                  <div className='custom-margin-service col fs-5'>
+                    <h2 className='custom-text-color-service display-6 fw-bold'>
+                      <small>Support / Wartung</small>
+                    </h2>
+                    <p className='text-left-service'>
+                      Ich erstelle für Sie die Website, die Sie wirklich benötigen. Ihr
+                      neues Webdesign wird kreativ, seriös, übersichtlich und auf allen
+                      gängigen Endgeräten optimal dargestellt. Durch die Anwendung von
+                      WordPress wird eine einfache Handhabung sichergestellt. Dadurch
+                      können Sie Ihre Website selbstständig pflegen und aktualisieren.
+                      In einem Beratungsgespräch erörtern wir gemeinsam Ihre Ziele und
+                      die Möglichkeiten der Umsetzung.
+                    </p>
+                    <div className='d-flex justify-content-left frame'>
+                      <ButtonDark text='Mehr erfahren' />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+          </section>
         </div>
-      </div>
-      {/* Zweite Spalte (Api und Support / Wartung) */}
-      <div className='col-md-6 d-flex flex-column align-items-center'>
-        {/* Api */}
-        <div
-          className={`custom-margin-service col fade-in ${
-            visibleTexts[8] ? 'loaded' : ''
-          }`}
-          ref={(el) => (textRefs.current[8] = el)}
-        >
-          <div className='custom-margin-service col fs-5'>
-            <h2 className='custom-text-color-service display-6 fw-bold text-left-service'>
-              <small>Api</small>
-            </h2>
-            <p className='text-left-service'>
-              Ich erstelle für Sie die Website, die Sie wirklich benötigen. Ihr
-              neues Webdesign wird kreativ, seriös, übersichtlich und auf allen
-              gängigen Endgeräten optimal dargestellt. Durch die Anwendung von
-              WordPress wird eine einfache Handhabung sichergestellt. Dadurch
-              können Sie Ihre Website selbstständig pflegen und aktualisieren.
-              In einem Beratungsgespräch erörtern wir gemeinsam Ihre Ziele und
-              die Möglichkeiten der Umsetzung.
-            </p>
-            <div className='d-flex justify-content-left frame'>
-              <ButtonDark text='Mehr erfahren' />
-            </div>
-          </div>
-        </div>
-        {/* Support / Wartung */}
-        <div
-          className={`custom-margin-service col fade-in ${
-            visibleTexts[11] ? 'loaded' : ''
-          }`}
-          ref={(el) => (textRefs.current[11] = el)}
-        >
-          <div className='custom-margin-service col fs-5'>
-            <h2 className='custom-text-color-service display-6 fw-bold text-left-service'>
-              <small>Support / Wartung</small>
-            </h2>
-            <p className='text-left-service'>
-              Ich erstelle für Sie die Website, die Sie wirklich benötigen. Ihr
-              neues Webdesign wird kreativ, seriös, übersichtlich und auf allen
-              gängigen Endgeräten optimal dargestellt. Durch die Anwendung von
-              WordPress wird eine einfache Handhabung sichergestellt. Dadurch
-              können Sie Ihre Website selbstständig pflegen und aktualisieren.
-              In einem Beratungsgespräch erörtern wir gemeinsam Ihre Ziele und
-              die Möglichkeiten der Umsetzung.
-            </p>
-            <div className='d-flex justify-content-left frame'>
-              <ButtonDark text='Mehr erfahren' />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
 
         {/* Seite 4 Portfolio */}
         {/* Carousell */}
@@ -310,7 +305,7 @@ export default function Home() {
               <p className='customText'>Ich betreue Kunden in ganz Deutschland, Österreich und der Schweiz. Mein Kundenkreis umfasst kleine und mittelständische Unternehmen bis hin zu Werbe- und Grafikagenturen. Zu meiner täglichen Arbeit gehört Beratung, Betreuung, individuelles Webdesign, Webentwicklung und Suchmaschinenoptimierung (SEO).
                 Sie hätten gern ein unverbindliches und kostenloses Webdesign-Angebot? Ihre erfolgreiche Website ist nur einen Klick entfernt. Ich freue mich auf Ihre Anfrage, um Ihr Projekt gemeinsam zu verwirklichen.</p>
               <div className='d-flex justify-content-center frame'>
-                <ButtonLight text='Jetzt Kontakt aufnehmen'/>
+                <ButtonLight text='Jetzt Kontakt aufnehmen' />
               </div>
             </div>
           </div>
@@ -325,21 +320,31 @@ export default function Home() {
           {/*         <div className='pie-chart-heading'></div> */}
           <div className="container d-flex align-items-center justify-content-evenly">
             <div className='pie-chart-text'>
-              <p className=' display-6 pie-chart-heading-left mb-4'>Part-Designer</p>
-              <p> <span className='pie-chart-span'>✔</span>BOOTSTRAP</p>
-              <p><span className='pie-chart-span'>✔</span>SASS</p>
-              <p><span className='pie-chart-span'>✔</span>ADOBE XD / FIGMA </p>
-              <p><span className='pie-chart-span'>✔</span>RESPONSIVE WEBDESIGN</p>
-              <p><span className='pie-chart-span'>✔</span>HTML / CSS</p>
+              <p className={`display-6 pie-chart-heading-left mb-4 fade-in ${visibleTexts[22] ? 'loaded' : ''}`} ref={el => textRefs.current[22] = el}>Part-Designer</p>
+
+              <p className={`fade-in ${visibleTexts[12] ? 'loaded' : ''}`} ref={el => textRefs.current[12] = el}> <span className='pie-chart-span'>✔</span  >BOOTSTRAP</p>
+
+              <p className={` fade-in ${visibleTexts[13] ? 'loaded' : ''}`} ref={el => textRefs.current[13] = el}> <span className='pie-chart-span' >✔</span>SASS</p>
+
+              <p className={` fade-in ${visibleTexts[14] ? 'loaded' : ''}`} ref={el => textRefs.current[14] = el}> <span className='pie-chart-span'>✔</span>ADOBE XD / FIGMA </p>
+
+              <p className={` fade-in ${visibleTexts[15] ? 'loaded' : ''}`} ref={el => textRefs.current[15] = el}> <span className='pie-chart-span'>✔</span>RESPONSIVE WEBDESIGN</p>
+
+              <p className={` fade-in ${visibleTexts[16] ? 'loaded' : ''}`} ref={el => textRefs.current[16] = el}> <span className='pie-chart-span'>✔</span>HTML / CSS</p>
             </div>
             <PieChart />
             <div className='pie-chart-text pie-chart-container-partcoder'>
-              <p className=" display-6 pie-chart-heading-right mb-4">Part-Coder</p>
-              <p><span className='pie-chart-span'>✔</span>FRONTEND ENTWICKLUNG</p>
-              <p><span className='pie-chart-span'>✔</span>JAVASCRIPT</p>
-              <p><span className='pie-chart-span'>✔</span>REACT / NEXT</p>
-              <p><span className='pie-chart-span'>✔</span>MEINEN COMPUTER ANSCHREIEN</p>
-              <p><span className='pie-chart-span'>✔</span>PIZZA ESSEN</p>
+              <p className={`display-6 pie-chart-heading-right mb-4 fade-in ${visibleTexts[23] ? 'loaded' : ''}`} ref={el => textRefs.current[23] = el}>Part-Coder</p>
+
+              <p className={`fade-in ${visibleTexts[17] ? 'loaded' : ''}`} ref={el => textRefs.current[17] = el}> <span className='pie-chart-span'>✔</span>FRONTEND ENTWICKLUNG</p>
+
+              <p className={`fade-in ${visibleTexts[18] ? 'loaded' : ''}`} ref={el => textRefs.current[18] = el}> <span className='pie-chart-span'>✔</span>JAVASCRIPT</p>
+
+              <p className={`fade-in ${visibleTexts[19] ? 'loaded' : ''}`} ref={el => textRefs.current[19] = el}> <span className='pie-chart-span'>✔</span>REACT / NEXT</p>
+
+              <p className={`fade-in ${visibleTexts[20] ? 'loaded' : ''}`} ref={el => textRefs.current[20] = el}> <span className='pie-chart-span'>✔</span>MEINEN COMPUTER ANSCHREIEN</p>
+
+              <p className={`fade-in  ${visibleTexts[21] ? 'loaded' : ''}`} ref={el => textRefs.current[21] = el}> <span className='pie-chart-span'>✔</span>PIZZA ESSEN</p>
             </div>
           </div>
         </section>
