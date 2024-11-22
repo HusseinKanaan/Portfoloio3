@@ -473,33 +473,43 @@ h1 {
   color: #DADFE1;
   margin-bottom: 2rem;
   letter-spacing: 0.2px;
-  line-height: 1.8; /* Verbesserte Lesbarkeit */
+  line-height: 1.8;
+  /* Verbesserte Lesbarkeit */
 }
 
 .text-left-service {
   letter-spacing: 0.2px;
-  line-height: 1.8; /* Verbesserte Lesbarkeit */
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Leichtes Schatten-Design */
+  line-height: 1.8;
+  /* Verbesserte Lesbarkeit */
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  /* Leichtes Schatten-Design */
 }
 
 .custom-margin-service {
-  padding-bottom: 6rem; /* Kürzerer Abstand für bessere Balance */
-  width: 90%; /* Dynamische Breite */
-  margin: 0 auto; /* Zentriert */
+  padding-bottom: 6rem;
+  /* Kürzerer Abstand für bessere Balance */
+  width: 90%;
+  /* Dynamische Breite */
+  margin: 0 auto;
+  /* Zentriert */
 }
 
 .custom-height-service {
   max-height: 180vh;
   display: flex;
-  flex-wrap: wrap; /* Elemente ordnen sich dynamisch an */
+  flex-wrap: wrap;
+  /* Elemente ordnen sich dynamisch an */
 }
 
 .custom-height-service {
   max-height: 180vh;
   display: flex;
-  flex-wrap: wrap; /* Elemente ordnen sich dynamisch an */
-  justify-content: center; /* Zentriert die Inhalte */
-  align-items: flex-start; /* Inhalte starten oben */
+  flex-wrap: wrap;
+  /* Elemente ordnen sich dynamisch an */
+  justify-content: center;
+  /* Zentriert die Inhalte */
+  align-items: flex-start;
+  /* Inhalte starten oben */
 }
 
 .container-heading-service {
@@ -513,41 +523,55 @@ h1 {
 }
 
 .heading-service {
-  width: 90%; /* Erhöhte Flexibilität auf kleinen Bildschirmen */
-  max-width: 700px; /* Begrenzte Breite für größere Bildschirme */
-  text-align: center; /* Zentriert den Text */
-  padding: 20px; /* Zusätzlicher Raum für bessere Lesbarkeit */
+  width: 90%;
+  /* Erhöhte Flexibilität auf kleinen Bildschirmen */
+  max-width: 700px;
+  /* Begrenzte Breite für größere Bildschirme */
+  text-align: center;
+  /* Zentriert den Text */
+  padding: 20px;
+  /* Zusätzlicher Raum für bessere Lesbarkeit */
 }
 
 .heading-service h1 {
-  font-size: 2.8rem; /* Große Schrift für den Header */
-  font-weight: 700; /* Fettgedruckte Schrift */
-  color: #dadfe1; /* Helle, moderne Farbe */
-  line-height: 1.5; /* Verbessert die Lesbarkeit */
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Leichtes Schatten-Design */
+  font-size: 2.8rem;
+  /* Große Schrift für den Header */
+  font-weight: 700;
+  /* Fettgedruckte Schrift */
+  color: #dadfe1;
+  /* Helle, moderne Farbe */
+  line-height: 1.5;
+  /* Verbessert die Lesbarkeit */
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  /* Leichtes Schatten-Design */
 }
 
 .heading-service .subheading {
-  font-size: 1.2rem; /* Subheading-Größe */
+  font-size: 1.2rem;
+  /* Subheading-Größe */
   font-weight: 400;
-  color: #c7c7c7; /* Dezente Farbe für Untertitel */
+  color: #c7c7c7;
+  /* Dezente Farbe für Untertitel */
   margin-top: 15px;
 }
 
 .heading-service .highlight {
-  color: #4caf50; /* Optional: Setze eine Akzentfarbe */
+  color: #4caf50;
+  /* Optional: Setze eine Akzentfarbe */
   text-shadow: 0px 0px 8px rgba(76, 175, 80, 0.7);
 }
 
 .heading-service-bgcolor {
-  color: inherit; /* Hintergrundfarbe entfernt, Textfarbe erbt */
+  color: inherit;
+  /* Hintergrundfarbe entfernt, Textfarbe erbt */
 }
 
 
-.workflow-container{
+.workflow-container {
   margin-top: 10rem;
   font-family: "Poppins", "Arial", "sans-serif";
 }
+
 /* .custom-vw{
   width:80vw;
   margin-left: 10rem;
@@ -881,19 +905,30 @@ h1 {
 
 .bg-color-heading-piechart {
   background-color: #FAFAFA;
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-  padding-top: 200px;
+
 }
 
 .pie-chart-container-partcoder {
   padding-left: 1.5rem;
 }
 
+.heading {
+  color: #606060;
+  font-family: "Poppins", "Arial", "sans-serif";
+  width: auto;
+
+}
+
 .heading-piechart {
   padding-left: 5.5em;
-  }
+  background-color: #FAFAFA;
+  display: flex;
+  justify-content: left;
+  align-items:flex-start;
+  width: 500px;
+  height: 400px;
+  padding-top: 200px;
+}
 
 .pie-chart-heading-left {
   color: #606060;
@@ -907,9 +942,13 @@ h1 {
   font-size: 18px;
 }
 
+.sibi{
+  margin-left: 176px;
+}
+
 /* pie-chart height & bg-color */
 .pie-chart-container-height {
-  height: 75vh;
+  height: 90vh;
   background: #FAFAFA;
   border-bottom: 1px solid #ddd;
   color: #606060;
@@ -926,10 +965,4 @@ h1 {
 
 html {
   scroll-behavior: smooth;
-}
-
-.heading{
-  color: #606060;
-  font-family: "Poppins", "Arial", "sans-serif";
-  width: 100vw;
 }
