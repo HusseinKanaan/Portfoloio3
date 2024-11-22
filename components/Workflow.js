@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Collapse } from 'react-bootstrap';
 import styles from './Workflow.module.css'; // Stelle sicher, dass du diese CSS-Datei erstellst.
+import { useMultipleScrollTextAnimation } from '../hooks/useMultipleScrollTextAnimation'; // Neuer Hook für mehrere Texte
 
 const Workflow = () => {
   const [openIndex, setOpenIndex] = useState(null);
+  const { visibleTexts, textRefs } = useMultipleScrollTextAnimation();
 
   const toggleCollapse = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -23,7 +25,9 @@ const Workflow = () => {
       <div className='container-fluid'>
         <div className='container'>
 
-        <h1 className={`mb-5 container-fluid display-5 text-center ${styles.headingWworkflow}`}>Workflow</h1>
+          <h1 className={`mb-5 container-fluid display-5 text-center fade-in ${visibleTexts[23] ? 'loaded' : ''
+            } ${styles.headingWworkflow}`} ref={(el) => (textRefs.current[23] = el)}>Workflow</h1>
+
         </div>
       </div>
       <Row className="justify-content-center">
