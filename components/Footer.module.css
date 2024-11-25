@@ -24,12 +24,15 @@
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
-}
+}   
 
 .footerLogo {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #ffffff; /* Weiß für das Logo */
+    color: #ffffff;
+    margin-top: 20px; /* Name höher positioniert */
+    margin-bottom: 10px; /* Abstand nach unten */
+    text-align: left;
 }
 
 .footerDescription {
@@ -69,6 +72,31 @@
 
 .newsletter button:hover {
     background: #1abc9c; /* Dunklerer Akzent bei Hover */
+}
+
+
+.typewriterContainer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contactIcons {
+    font-size: 1rem;
+    color: #16A085;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.contactIcons {
+    font-size: 1rem;
+    color: #16A085;
+    margin-top: 15px; /* Abstand zwischen Name und Kontaktdaten */
+    line-height: 1.6;
+}
+
+.contactIcons i {
+    margin-right: 8px;
+    color: #2C3E50;
 }
 
 /* Footer Links */
@@ -144,4 +172,11 @@
 
 .footerBottom p {
     color: #BDC3C7; /* Hellerer Grauton für den Copyright-Text */
+}
+
+.footerDescription {
+    margin-top: 20px; /* Mehr Platz unter Kontaktdaten */
+    max-width: 400px;
+    line-height: 1.6;
+    color: #BDC3C7;
 }
