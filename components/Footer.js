@@ -83,7 +83,7 @@ export default function Footer() {
                         <i className="bi bi-twitter"></i>
                         <i className="bi bi-github"></i>
                     </div>
-                    <p>&copy; {new Date().getFullYear()} Freddys Webdesign Portfolio. Alle Rechte vorbehalten.</p>
+                    <p>&copy; {new Date().getFullYear()} H.K Webdesign. Alle Rechte vorbehalten.</p>
                     <a href="#" className={styles.scrollTop}>Nach oben ↑</a>
                 </div>
             </div>
