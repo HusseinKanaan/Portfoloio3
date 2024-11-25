@@ -62,7 +62,7 @@ const Arbeitsweise = () => {
                 alt={step.title}
               />
               <div className="card-body pt-4">
-                <p className={` text-center  pb-2 fw-bold  ${styles.cardTitle}`}>{step.title}</p>
+                <p className={`text-center  pb-2 fw-bold  ${styles.cardTitle}`}>{step.title}</p>
                 <p className={`text-center ${styles.cardText}`}>{step.description}</p>
               </div>
             </div>

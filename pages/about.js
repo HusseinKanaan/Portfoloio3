@@ -16,9 +16,8 @@ export default function about() {
         <SmoothMovingImage />
       </div>
       <VerticalBarChart />
-
       <div>
-        <Arbeitsweise/>
+        <Arbeitsweise />
       </div>
       <Footer />
     </div>
