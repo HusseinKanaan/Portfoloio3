@@ -465,8 +465,8 @@ h1 {
 }
 
 .custom-background-lightblue {
-  background-color: #D6EAF8;
-  /*   background-color: #297fb960; */
+    background-color: #D6EAF8;
+  /* background-color: #297fb960; */
 }
 
 .custom-text-color-service {
@@ -924,7 +924,7 @@ h1 {
   background-color: #FAFAFA;
   display: flex;
   justify-content: left;
-  align-items:flex-start;
+  align-items: flex-start;
   width: 500px;
   height: 400px;
   padding-top: 200px;
@@ -942,7 +942,7 @@ h1 {
   font-size: 18px;
 }
 
-.sibi{
+.sibi {
   margin-left: 176px;
 }
 

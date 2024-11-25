@@ -1,3 +1,147 @@
 .headingColor{
     color: #AF9075;
 }
+
+/* Footer Allgemein */
+.footer {
+    background: #2C3E50; /* Dunkler Hintergrund für den Footer */
+    color: BDC3C7; /* Heller Grauton für Text */
+    padding: 60px 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.footerContainer {
+    max-width: 1200px; /* Begrenzte Breite */
+    margin: 0 auto; /* Zentriert den Inhalt */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Branding und Beschreibung */
+.footerTop {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footerLogo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff; /* Weiß für das Logo */
+}
+
+.footerDescription {
+    max-width: 400px;
+    line-height: 1.6;
+    color: #BDC3C7; /* Heller Grauton für die Beschreibung */
+}
+
+/* Newsletter Sektion */
+.newsletter {
+    background: #34495E; /* Etwas dunklerer Hintergrund für den Newsletter-Block */
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.newsletter input {
+    width: calc(100% - 120px);
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background: #ecf0f1; /* Helles Grau für die Input-Felder */
+    color: #2C3E50;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background: #16A085; /* Akzentfarbe für den Button */
+    border: none;
+    color: #ffffff;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter button:hover {
+    background: #1abc9c; /* Dunklerer Akzent bei Hover */
+}
+
+/* Footer Links */
+.footerLinks {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footerColumn ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerColumn ul li {
+    margin-bottom: 10px;
+}
+
+.footerColumn ul li a {
+    color: #BDC3C7; /* Graue Links */
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footerColumn ul li a:hover {
+    color: #16A085; /* Akzentfarbe beim Hover */
+    text-decoration: underline; /* Unterstrichene Links bei Hover */
+}
+
+/* Social Icons */
+.socialIcons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.socialIcons i {
+    font-size: 1.8rem;
+    color: #BDC3C7; /* Graue Icons */
+    transition: 0.3s;
+}
+
+.socialIcons i:hover {
+    color: #16A085; /* Akzentfarbe bei Hover */
+}
+
+/* Footer Bottom */
+.footerBottom {
+    border-top: 1px solid #34495E; /* Dunklere Linie für den Trennbalken */
+    padding-top: 20px;
+    text-align: center;
+}
+
+.scrollTop {
+    color: #16A085; /* Akzentfarbe für den "Nach oben"-Button */
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+.scrollTop:hover {
+    color: #1abc9c; /* Dunklerer Akzent bei Hover */
+}
+
+/* Anpassung für größere Text- und Hintergrundblöcke */
+.footerColumn h5 {
+    font-size: 1.2rem;
+    color: #ffffff; /* Weiß für die Titel */
+}
+
+.footerBottom p {
+    color: #BDC3C7; /* Hellerer Grauton für den Copyright-Text */
+}

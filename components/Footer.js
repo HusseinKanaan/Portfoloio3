@@ -1,34 +1,80 @@
 import styles from "./Footer.module.css";
-import Typewriter from '../components/Typewriter';
-{/* Footer */ }
+import Typewriter from "../components/Typewriter";
+import Image from "next/image";
+import Link from 'next/link';
 
-export default function uebermich() {
-    return(
-<footer className="container-fluid text-white py-5 footerBackgroundCollor">
-    <div>
-        <Typewriter />
-    </div>
+export default function Footer() {
+    return (
+        <footer className={styles.footer}>
+            <div className={styles.footerContainer}>
+                {/* Branding und Beschreibung */}
+                <div className={styles.footerTop}>
+                    <div>
+                        <Typewriter />
+                        <Link href="/" className="navbar-brand">
+            <Image priority={true} src="/logo4.png" alt="Logo" width={100} height={100} className="img-fluid max-width-100" />
+            <span className="logoSpan" id="logoSchrift"></span>
+          </Link>
+                        <h1 className={styles.footerLogo}>Hussein Kanaan</h1>
+                        <p className={styles.footerDescription}>
+                            Innovatives Webdesign, das Marken auf die nächste Ebene bringt. Wir schaffen digitale Erlebnisse, die beeindrucken.
+                        </p>
+                    </div>
 
-    <div className=" container d-flex flex-column text-center">
-        <a className="fw-bold fs-4 mb-4  text-decoration-none">
-            <i className={`bi bi-bag-heart-fill ${styles.headingColor} me-2 `}>Freddys famous food`</i>
-        </a>
-        <p className='custom-text-color-service'>Follow us</p>
-        <div className='custom-text-color-service'>
-            <i className="bi bi-facebook me-2 fs-4"></i>
-            <i className="bi bi-instagram me-2 fs-4"></i>
-            <i className="bi bi-twitter me-2 fs-4"></i>
-            <i className="bi bi-youtube me-2 fs-4"></i>
-        </div>
-        <hr />
-        <div className="justify-content-center d-flex flex-lg-row flex-column">
-            <a className="custom-text-color-service  me-4 text-decoration-none" href="#">Ein Restaurant empfehlen</a>
-            <a className="custom-text-color-service me-4 text-decoration-none" href="#">Ein Restaurant anmelden</a>
-            <a className="custom-text-color-service me-4 text-decoration-none" href="#">AGB</a>
-            <a className="custom-text-color-service me-4 text-decoration-none" href="#">Datenschutzerklärung</a>
-            <a className="custom-text-color-service me-4 text-decoration-none" href="#">Impressum</a>
-        </div>
-    </div>
-</footer>
-    )
+                    {/* Newsletter Sektion */}
+                    <div className={styles.newsletter}>
+                        <h5>In Verbindung bleiben</h5>
+                        <p>Abonnieren Sie unseren Newsletter, um die neuesten Updates zu erhalten.</p>
+                        <div className="d-flex">
+                            <input type="email" placeholder="Ihre E-Mail-Adresse" />
+                            <button>Abonnieren</button>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Navigationslinks */}
+                <div className={styles.footerLinks}>
+                    <div className={styles.footerColumn}>
+                        <h5>Portfolio</h5>
+                        <ul>
+                            <li><a href="#">Projekte</a></li>
+                            <li><a href="#">Leistungen</a></li>
+                            <li><a href="#">Technologien</a></li>
+                        </ul>
+                    </div>
+
+                    <div className={styles.footerColumn}>
+                        <h5>Informationen</h5>
+                        <ul>
+                            <li><a href="#">Über mich</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div className={styles.footerColumn}>
+                        <h5>Rechtliches</h5>
+                        <ul>
+                            <li><a href="#">Datenschutzerklärung</a></li>
+                            <li><a href="#">AGB</a></li>
+                            <li><a href="#">Impressum</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                {/* Social Media und Bottom Section */}
+                <div className={styles.footerBottom}>
+                    <div className={styles.socialIcons}>
+                        <i className="bi bi-facebook"></i>
+                        <i className="bi bi-instagram"></i>
+                        <i className="bi bi-linkedin"></i>
+                        <i className="bi bi-twitter"></i>
+                        <i className="bi bi-github"></i>
+                    </div>
+                    <p>&copy; {new Date().getFullYear()} Freddys Webdesign Portfolio. Alle Rechte vorbehalten.</p>
+                    <a href="#" className={styles.scrollTop}>Nach oben ↑</a>
+                </div>
+            </div>
+        </footer>
+    );
 }

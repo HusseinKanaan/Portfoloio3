@@ -52,7 +52,7 @@
 .btn:hover {
     background-color: #2C3E50; /* Dunkler Hintergrund bei Hover */
     color: #fff; /* Weiße Textfarbe bei Hover */
-    border-color: #ffffff; /* Helle Umrandung bei Hover */
+/*     border-color: #ffffff; */ /* Helle Umrandung bei Hover */
     transform: translateY(-5px); /* Button bewegt sich nach oben */
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Schatten wird verstärkt */
 }

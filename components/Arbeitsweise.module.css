@@ -80,3 +80,7 @@
 .card:hover .icon {
   filter: brightness(0) saturate(100%) invert(46%) sepia(85%) saturate(556%) hue-rotate(356deg) brightness(90%) contrast(92%);
 }
+
+.card:hover .cardTitle{
+  filter: brightness(0) saturate(100%) invert(46%) sepia(85%) saturate(556%) hue-rotate(356deg) brightness(90%) contrast(92%);
+}
