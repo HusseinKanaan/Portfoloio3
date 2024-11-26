@@ -15,7 +15,7 @@ export default function Footer() {
                 {/* Branding und Beschreibung */}
                 <div className={styles.footerTop}>
                     <div>
-{/*                         <Link href="/" className="navbar-brand">
+                        {/*                         <Link href="/" className="navbar-brand">
                             <Image priority={true} src="/logo4.png" alt="Logo" width={100} height={100} className="img-fluid max-width-100" />
                             <span className="logoSpan" id="logoSchrift"></span>
                         </Link> */}
@@ -77,13 +77,13 @@ export default function Footer() {
                 {/* Social Media und Bottom Section */}
                 <div className={styles.footerBottom}>
                     <div className={styles.socialIcons}>
-                        <i className="bi bi-facebook"></i>
-                        <i className="bi bi-instagram"></i>
-                        <i className="bi bi-linkedin"></i>
+                        <i className="bi bi-dribbble"></i>
                         <i className="bi bi-twitter"></i>
+                        <i className="bi bi-linkedin"></i>
+                        <i className="bi bi-discord"></i>
                         <i className="bi bi-github"></i>
                     </div>
-                    <p>&copy; {new Date().getFullYear()} H.K Webdesign. Alle Rechte vorbehalten.</p>
+                    <p>&copy; {new Date().getFullYear()} H.K</p>
                     <a href="#" className={styles.scrollTop}>Nach oben ↑</a>
                 </div>
             </div>

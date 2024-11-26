@@ -180,3 +180,32 @@
     line-height: 1.6;
     color: #BDC3C7;
 }
+
+/* Social Icons */
+.socialIcons {
+    display: flex;
+    gap: 15px; /* Abstand zwischen Icons */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .socialIcons i,
+  .socialIcons img {
+    font-size: 1.8rem; /* Einheitliche Größe für Icons */
+    color: #BDC3C7; /* Graue Icons */
+    transition: transform 0.3s, color 0.3s; /* Animation für Hover */
+    cursor: pointer; /* Zeige Hand-Cursor */
+  }
+  
+  .socialIcons i:hover,
+  .socialIcons img:hover {
+    transform: scale(1.1); /* Vergrößere beim Hover */
+    color: #16A085; /* Akzentfarbe beim Hover */
+  }
+  
+  .socialIconImage {
+    display: inline-block;
+    width: 28.8px; /* Einheitlich mit den Font-Icons */
+    height: 28.8px;
+    vertical-align: middle; /* Gleiche Ausrichtung wie die Bootstrap-Icons */
+  }
