@@ -5,8 +5,9 @@
 /* Footer Allgemein */
 .footer {
     background: #2C3E50; /* Dunkler Hintergrund für den Footer */
-    color: BDC3C7; /* Heller Grauton für Text */
-    padding: 60px 20px;
+    color: #BDC3C7; /* Heller Grauton für Text */
+    padding-bottom: 60px;
+    padding-top: 2px;
     font-family: 'Inter', sans-serif;
 }
 
@@ -21,16 +22,18 @@
 /* Branding und Beschreibung */
 .footerTop {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+    align-items:center;
     gap: 20px;
     flex-wrap: wrap;
+    margin-bottom: 15rem;
 }   
 
 .footerLogo {
     font-size: 2.5rem;
     font-weight: bold;
     color: #ffffff;
-    margin-top: 20px; /* Name höher positioniert */
+
     margin-bottom: 10px; /* Abstand nach unten */
     text-align: left;
 }

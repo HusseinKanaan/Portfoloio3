@@ -1,3 +1,4 @@
+import Typewriter from './Typewriter';
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import styles from './ContactForm.module.css'; // Stelle sicher, dass du diese CSS-Datei erstellst.
@@ -32,8 +33,9 @@ const ContactForm = () => {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.formHeading}>Kontaktiere Uns</h2>
-      <form onSubmit={handleSubmit} className="p-4 shadow-sm bg-light rounded">
+      <div>
+{/*       <h2 id='kontakt' className={styles.formHeading}>Kontaktiere Uns</h2> */}
+      <form onSubmit={handleSubmit} className="p-4 custom-background-blue">
         <div className="form-group">
           <label htmlFor="name" className={styles.formLabel}>Name</label>
           <input
@@ -59,6 +61,19 @@ const ContactForm = () => {
           />
         </div>
         <div className="form-group">
+          <label htmlFor="anliegeBudget" className={styles.formLabel}>Telefon</label>
+          <input
+            type="text"
+            id="telefon"
+            name="telefon"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            className={`form-control ${styles.formInput}`}
+          />
+        </div>
+
+        <div className="form-group">
           <label htmlFor="message" className={styles.formLabel}>Nachricht</label>
           <textarea
             id="message"
@@ -73,6 +88,7 @@ const ContactForm = () => {
           Nachricht senden
         </button>
       </form>
+    </div>
     </div>
   );
 };
