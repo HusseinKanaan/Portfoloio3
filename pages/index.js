@@ -7,7 +7,6 @@ import FAQAccordion from "../components/FAQAccordion";
 import PieChart from '../components/PieChart';
 import Status from '../components/Status';
 import Workflow from '../components/Workflow';
-import ContactForm from '../components/ContactForm';
 import ButtonDark from '../components/ButtonDark';
 import ButtonLight from '../components/ButtonLight';
 import { useMultipleScrollTextAnimation } from '../hooks/useMultipleScrollTextAnimation'; // Neuer Hook für mehrere Texte
@@ -379,7 +378,6 @@ export default function Home() {
         </div>
         <div className='vh-100'>
         </div>
-        <ContactForm />
         {/* Seite 9 FAQ */}
         <div id='faq'>
           <Container className="py-5">

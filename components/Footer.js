@@ -1,5 +1,6 @@
 import styles from "./Footer.module.css";
 import Typewriter from "../components/Typewriter";
+import ContactForm from "./ContactForm";
 import Image from "next/image";
 import Link from 'next/link';
 
@@ -8,9 +9,9 @@ export default function Footer() {
         <footer className={styles.footer}>
             <div className={styles.footerContainer}>
                 {/* Typewriter oben in der Mitte */}
-                <div className={styles.typewriterContainer}>
-                    {/* <Typewriter /> */}
-                </div>
+{/*                 <div className={styles.typewriterContainer}>
+                    <Typewriter />
+                </div>  */}
 
                 {/* Branding und Beschreibung */}
                 <div className={styles.footerTop}>
@@ -34,13 +35,14 @@ export default function Footer() {
                     </div>
 
                     {/* Newsletter Sektion */}
-                    <div className={styles.newsletter}>
-                        <h5>In Verbindung bleiben</h5>
+                    <div /* className={styles.newsletter} */>
+                        <ContactForm />
+
+                        {/*                         </div>                        <h5>In Verbindung bleiben</h5>
                         <p>Abonnieren Sie unseren Newsletter, um die neuesten Updates zu erhalten.</p>
                         <div className="d-flex">
                             <input type="email" placeholder="Ihre E-Mail-Adresse" />
-                            <button>Abonnieren</button>
-                        </div>
+                            <button>Abonnieren</button> */}
                     </div>
                 </div>
 

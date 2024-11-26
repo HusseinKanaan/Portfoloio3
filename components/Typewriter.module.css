@@ -10,7 +10,7 @@
     overflow: hidden;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
     animation: blinkCaret 0.75s step-end infinite;
-    color: rgb(130, 130, 130);
+    color: #bdc3c72a;
     font-family: 'Courier New', Courier, monospace;
     width:auto;
   }
