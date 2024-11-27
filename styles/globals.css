@@ -106,10 +106,6 @@ small {
   color: #555555;
 }
 
-.cutomTextColor2 {
-  color: #2C3E50;
-}
-
 .custom-logo-color {
   color: #37516757;
 }
@@ -346,11 +342,6 @@ h1 {
   font-style: italic;
 }
 
-.customText {
-  font-size: 20px;
-  color: #555555;
-}
-
 .customTextHeading {
   font-size: 52px;
 }
@@ -462,11 +453,6 @@ h1 {
 
 .custom-background-blue {
   background-color: #34495E;
-}
-
-.custom-background-lightblue {
-    background-color: #D6EAF8;
-  /* background-color: #297fb960; */
 }
 
 .custom-text-color-service {
@@ -591,9 +577,64 @@ h1 {
   height: 90vh;
 }
 
+/* region-service */
 .custom-height-container-umsetzung {
   height: 70vh;
 }
+
+.custom-background-lightblue { /* Hintergrundbild einfügen */
+  position: relative;
+  height: 100%;
+  /* Die Hintergrundfarbe ist nicht mehr nötig, da das Bild als Hintergrund verwendet wird */
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Stellt sicher, dass das Bild im Hintergrund bleibt */
+}
+
+.text-center {   /* Textbereich verbessern */
+  position: relative;
+  z-index: 1; /* Stellt sicher, dass der Text vor dem Bild bleibt */
+}
+
+.customText {
+  font-size: 20px;
+  color: #555555;
+  max-width: 900px; /* Begrenze die Breite des Textes für eine bessere Lesbarkeit */
+  margin: 20px auto;
+  padding: 10px;
+
+  border-radius: 8px;
+}
+
+.frame {         /* Stil für den Button-Bereich */
+  width: 100%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+h2.display-5 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .customText {
+    font-size: 18px; /* Textgröße auf kleinen Bildschirmen anpassen */
+  }
+
+  h2.display-5 {
+    font-size: 2rem; /* Größe der Überschrift auf kleinen Bildschirmen anpassen */
+  }
+}
+
+/* about */
 
 .margin-about {
   margin-bottom: 8rem;
@@ -768,13 +809,6 @@ h1 {
     width: 30px;
     height: 30px;
   }
-}
-
-/* Animationbutton */
-.frame {
-  width: 100%;
-  margin: 40px auto;
-  text-align: center;
 }
 
 .custom-btn {

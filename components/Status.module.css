@@ -3,7 +3,7 @@
     height: auto;
     /* Höhe des Hero-Bereichs */
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     background-color: #f8f9fa00;
     /* Hintergrundfarbe des Hero */

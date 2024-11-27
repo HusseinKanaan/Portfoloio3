@@ -295,18 +295,37 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/*Seite 6 regional-services */}
-        <section id='regional-services' className={`custom-background-lightblue h-25`}>
-          <div className='container custom-height-container d-flex justify-content-center align-items-center'>
-            <div /* width={1000} */ className={`text-center h-25 fade-in ${visibleTexts[2] ? 'loaded' : ''}`} ref={el => textRefs.current[2] = el}>
-              <h2 className='display-5 fw-bold'> Webdesigner für Deutschland,
-                Österreich und die Schweiz</h2>
-              <p className='customText'>Ich betreue Kunden in ganz Deutschland, Österreich und der Schweiz. Mein Kundenkreis umfasst kleine und mittelständische Unternehmen bis hin zu Werbe- und Grafikagenturen. Zu meiner täglichen Arbeit gehört Beratung, Betreuung, individuelles Webdesign, Webentwicklung und Suchmaschinenoptimierung (SEO).
-                Sie hätten gern ein unverbindliches und kostenloses Webdesign-Angebot? Ihre erfolgreiche Website ist nur einen Klick entfernt. Ich freue mich auf Ihre Anfrage, um Ihr Projekt gemeinsam zu verwirklichen.</p>
-              <div className='d-flex justify-content-center frame'>
-                <ButtonLight text='Jetzt Kontakt aufnehmen' />
+        {/* Seite 8 */}
+        <section id="regional-services" className="custom-background-lightblue h-25">
+          <div className="container custom-height-container d-flex justify-content-center align-items-center">
+            <div
+              className={`text-center h-25 fade-in ${visibleTexts[2] ? 'loaded' : ''}`}
+              ref={(el) => (textRefs.current[2] = el)}
+            >
+              <h2 className="display-5 fw-bold">
+                Webdesigner für Deutschland, Österreich und die Schweiz
+              </h2>
+              <p className="customText">
+                Ich betreue Kunden in ganz Deutschland, Österreich und der Schweiz. Mein Kundenkreis umfasst kleine und
+                mittelständische Unternehmen bis hin zu Werbe- und Grafikagenturen. Zu meiner täglichen Arbeit gehört Beratung,
+                Betreuung, individuelles Webdesign, Webentwicklung und Suchmaschinenoptimierung (SEO). Sie hätten gern ein
+                unverbindliches und kostenloses Webdesign-Angebot? Ihre erfolgreiche Website ist nur einen Klick entfernt. Ich
+                freue mich auf Ihre Anfrage, um Ihr Projekt gemeinsam zu verwirklichen.
+              </p>
+              <div className="d-flex justify-content-center frame">
+                <ButtonLight text="Jetzt Kontakt aufnehmen" />
               </div>
             </div>
+          </div>
+          <div className="background-overlay">
+            <Image
+              src="/images/hintergrund.png"
+              alt="Hintergrund"
+              layout="fill" // Das Bild wird den gesamten Container ausfüllen
+              objectFit="cover" // Das Bild wird so skaliert, dass es den Container vollständig ausfüllt
+              objectPosition="center" // Position des Bildes im Container
+              priority
+            />
           </div>
         </section>
         {/* Pie-chart */}
@@ -349,19 +368,37 @@ export default function Home() {
             </div>
           </section>
         </div>
-        {/* Seite 8 */}
-        <section id='regional-services' className={`custom-background-lightblue  h-25`}>
-          <div className='custom-height-container-umsetzung d-flex justify-content-center align-items-center'>
-            <div /* width={1000} */ className={`text-center h-25 fade-in ${visibleTexts[3] ? 'loaded' : ''}`} ref={el => textRefs.current[3] = el}>
-              <h2 className='display-5 fw-bold cutomTextColor2'> Starten wir mit der Umsetzung
-                Ihrer Website!</h2>
-              <p className='customText'>Erläutern Sie Ihre Projektwünsche und erhalten Sie ein unverbindliches und kostenloses Webdesign-Angebot für Ihre neue Webseite.</p>
-              <div className='d-flex justify-content-center frame'>
-                <ButtonLight text='jetzt Kontakt aufnehmen' />
-              </div>
-            </div>
-          </div>
-        </section>
+
+                {/* Seite 8 */}
+<section id="regional-services" className="custom-background-lightblue h-25">
+  <div className="container custom-height-container d-flex justify-content-center align-items-center">
+    <div
+      className={`text-center h-25 fade-in ${visibleTexts[3] ? 'loaded' : ''}`}
+      ref={(el) => (textRefs.current[3] = el)}
+    >
+      <h2 className="display-5 fw-bold">
+      Starten wir mit der Umsetzung Ihrer Website!
+      </h2>
+      <p className="customText">
+      Erläutern Sie Ihre Projektwünsche und erhalten Sie ein unverbindliches und kostenloses Webdesign-Angebot für Ihre neue Webseite.
+      </p>
+      <div className="d-flex justify-content-center frame">
+        <ButtonLight text="Jetzt Kontakt aufnehmen" />
+      </div>
+    </div>
+  </div>
+  <div className="background-overlay">
+    <Image
+      src="/images/hintergrund.png"
+      alt="Hintergrund"
+      layout="fill" // Das Bild wird den gesamten Container ausfüllen
+      objectFit="cover" // Das Bild wird so skaliert, dass es den Container vollständig ausfüllt
+      objectPosition="center" // Position des Bildes im Container
+      priority
+    />
+  </div>
+</section>
+
         {/* Workflow */}
         <div className='workflow-container'>
           <Workflow />
