@@ -5,7 +5,7 @@ const ButtonDark = ({ text = "Kontakt" }) => {
         <div>
             <section className={styles.buttons}>
                 <div className={styles.container}>
-                    <a href="#kontakt" className={styles.btn}>
+                    <a href="#contact" className={styles.btn}>
                         <span>{text}</span>
                     </a>
                 </div>

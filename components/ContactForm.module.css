@@ -1,48 +1,65 @@
-/* styles/ContactForm.module.css */
+/* Container mit Hintergrund */
 .container {
-  width: 500px;
+  width: 500px; /* Originalbreite bleibt */
+  margin: 0 auto;
+  background: #34495E; /* Dunkler Hintergrund */
+  padding: 20px;
 }
 
-.formLabel {
-  font-weight: bold;
-  color: #BDC3C7;
+/* Formular */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Abstand zwischen Inputs */
 }
 
-.formInput {
+/* Inputs: Schmaler gemacht */
+.input {
+  width: calc(100% - 30px); /* Schmaler durch Abzug von 15px auf jeder Seite */
+  margin: 0 auto;
   padding: 10px;
-  /* border-radius: 5px; */
   border: 1px solid #ddd;
-  margin-bottom: 15px;
   background-color: #ecf0f1;
+  color: #2C3E50;
+  font-family: 'Inter', sans-serif;
 }
 
-.formTextarea {
-  min-height: 120px;
+/* Placeholder im Newsletter-Stil */
+.input::placeholder {
+  color: #7f8c8d;
+  font-weight: normal;
+}
+
+/* Textarea: Gleich wie Inputs, aber höher */
+.textarea {
+  width: calc(100% - 30px); /* Schmaler durch Abzug von 15px auf jeder Seite */
+  margin: 0 auto;
+  min-height: 100px;
   padding: 10px;
-  /* border-radius: 5px; */
   border: 1px solid #ddd;
-  margin-bottom: 15px;
-  background-color: #ECF0F1;
+  background-color: #ecf0f1;
+  color: #2C3E50;
+  font-family: 'Inter', sans-serif;
 }
 
-.submitButton {
-  background-color: #16A085;
+.textarea::placeholder {
+  color: #7f8c8d;
+  font-weight: normal;
+}
+
+/* Button: Breiter */
+.button {
+  width: calc(100% - 30px); /* Schmaler durch Abzug von 15px auf jeder Seite */
+  padding: 10px 20px;
+  background: #16A085;
   border: none;
   color: white;
   font-weight: bold;
-  padding: 10px 20px;
-/*   border-radius: 5px; */
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin: 0 auto; /* Zentriert */
 }
 
-.submitButton:hover {
-  background-color: #0056b3;
+.button:hover {
+  background: #1abc9c;
 }
-
-.formHeading {
-  text-align: center;
-  font-size: 24px;
-  color: #BDC3C7;
-}
-
