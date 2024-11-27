@@ -79,11 +79,11 @@ export default function Footer() {
                 {/* Social Media und Bottom Section */}
                 <div className={styles.footerBottom}>
                     <div className={styles.socialIcons}>
+                        <i className="bi bi-linkedin"></i>
+                        <i className="bi bi-github"></i>
                         <i className="bi bi-dribbble"></i>
                         <i className="bi bi-twitter"></i>
-                        <i className="bi bi-linkedin"></i>
                         <i className="bi bi-discord"></i>
-                        <i className="bi bi-github"></i>
                     </div>
                     <p>&copy; {new Date().getFullYear()} H.K</p>
                     <a href="#" className={styles.scrollTop}>Nach oben ↑</a>

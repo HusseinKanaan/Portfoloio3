@@ -1,20 +1,44 @@
 /* Meine Skills */
 .chartHeading {
-    font-weight: 100;
-    text-align: end;
-    width: 100%;
-    top: 10px;
-    opacity: 0;
-    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
-    transform: translateY(20px);
-    color: #606060;
+  font-weight: 100;
+  text-align: end; /* Positionierung des Textes am rechten Rand */
+  opacity: 0;
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+  transform: translateY(20px);
+  color: #606060;
+  margin: 0;
 }
 
-.innerContent{
-    height: 62.5%;
-    color: rgb(0, 0, 0);
-    padding: 20px;
+.innerDiv {
+  width: 100%;
+  max-width: 1050px; /* Maximale Breite */
+  margin-top: 4rem;
+  display: flex;
+  justify-content: flex-end; /* Beibehaltung der Positionierung am rechten Rand */
 }
+
+.innerContent {
+  height: auto;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end; /* Sicherstellen, dass der Inhalt auch innen rechts ausgerichtet bleibt */
+  align-items: center; /* Vertikale Zentrierung */
+}
+
+/* Für kleinere Bildschirme */
+@media (max-width: 768px) {
+  .chartHeading {
+    font-size: 2rem; /* Kleinere Schriftgröße auf mobilen Geräten */
+    padding: 0 15px; /* Etwas Abstand links und rechts */
+  }
+  
+  .innerDiv {
+    margin-top: 2rem; /* Weniger Abstand oben auf mobilen Geräten */
+  }
+}
+
+  /*  */
 
 .verticalBarChartBgcolor {
     background: #FAFAFA;
@@ -35,6 +59,7 @@
     color: #757575;
     /* Farbe der Labels */
 }
+
 
 .line1Label {
     top: 0%;
@@ -73,6 +98,7 @@
     height: 500px;
     background: #FAFAFA;
     border-left: 1px solid #ddd;
+/* margin-top: 200px; */
 }
 
   .loaded {

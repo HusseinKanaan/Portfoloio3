@@ -74,20 +74,20 @@ const VerticalBarChart = () => {
 
   return (
     <section className={` ${styles.verticalBarChartBgcolor}`}>
-          <div
-            className={`container  ${styles.containerGrid}`}
-          >
-            <div className={` ${styles.innerContent}`}>
-              <p
-                className={` container-fluid display-6 ${styles.chartHeading} ${
-                  visibleTexts[0] ? styles.loaded : ""
-                }`}
-                ref={(el) => (textRefs.current[0] = el)}
-                >
-                Meine Skills
-              </p>
-            </div>
+      <div className="d-flex justify-content-center">
+        <div className={`d-flex justify-content-end  ${styles.innerDiv}`}>
+          <div className={` ${styles.innerContent}`}>
+            <p
+              className={` container-fluid display-6 ${styles.chartHeading} ${
+                visibleTexts[0] ? styles.loaded : ""
+              }`}
+              ref={(el) => (textRefs.current[0] = el)}
+            >
+              Meine Skills
+            </p>
           </div>
+        </div>
+      </div>
       <div className="container d-flex justify-content-center vh-75 align-items-end">
         <div className={styles.verticalBarChartContainer}>
           {/* Beschriftungen links neben den Linien */}
