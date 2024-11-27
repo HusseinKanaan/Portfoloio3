@@ -21,12 +21,13 @@
 
 /* Branding und Beschreibung */
 .footerTop {
+    padding-top: 80px;
     display: flex;
     justify-content:space-between;
     align-items:center;
     gap: 20px;
     flex-wrap: wrap;
-    margin-bottom: 15rem;
+    margin-bottom: 5rem;
 }   
 
 .footerLogo {

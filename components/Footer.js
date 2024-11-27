@@ -14,7 +14,7 @@ export default function Footer() {
                 </div>  */}
 
                 {/* Branding und Beschreibung */}
-                <div className={styles.footerTop}>
+                <div id="contact" className={styles.footerTop}>
                     <div>
                         {/*                         <Link href="/" className="navbar-brand">
                             <Image priority={true} src="/logo4.png" alt="Logo" width={100} height={100} className="img-fluid max-width-100" />

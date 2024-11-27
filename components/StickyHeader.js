@@ -93,7 +93,7 @@ const StickyHeader = () => {
               <li className={`menu-item ${router.pathname === '/#faq' ? 'active' : ''}`}>
                 <Link href="/#faq" className="text-decoration-none">FAQ</Link>
               </li>
-              <li className="d-lg-none menu-item">
+              <li className={`d-lg-none menu-item ${router.pathname === '/#contact' ? 'active' : ''}`}>
                 <Link href="/#contact" className="text-decoration-none">Kontakt</Link>
               </li>
             </ul>
