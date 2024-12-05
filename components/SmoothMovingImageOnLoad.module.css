@@ -1,0 +1,35 @@
+/* Textüberschrift */
+.factsHeading {
+    color: #606060;
+  }
+  
+  /* Container */
+  .imageContainer {
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    overflow: hidden; /* Verhindert Anzeige außerhalb des Containers */
+    height: 500px; /* Höhe des Containers */
+    position: relative;
+  }
+  
+  /* Text */
+  .text {
+    opacity: 0; /* Startzustand: unsichtbar */
+    transform: translateX(-100%); /* Startzustand: links außerhalb des Containers */
+    transition: opacity 1s ease, transform 1s ease; /* Animation für Sichtbarkeit und Bewegung */
+    margin-right: 20px; /* Abstand zwischen Text und Bild */
+    text-align: left; /* Linksbündiger Text */
+    color: #34495e;
+    width: 250px;
+  }
+  
+  /* Bild */
+  .movingImage {
+    max-width: 600px; /* Maximalbreite des Bildes */
+    transform: translateX(150%); /* Startzustand: rechts außerhalb des Containers */
+    transition: transform 1s ease; /* Animation für Bewegung */
+  }
+  

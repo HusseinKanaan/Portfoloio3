@@ -329,45 +329,7 @@ export default function Home() {
           </div>
         </section>
         {/* Pie-chart */}
-        <div id='service' className='bg-color-heading-piechart'>
-          <div id='divAbsolute' className='position-absolute heading-piechart text-white container'>
-            <div id='divAbsolute' className='position-absolute sibi'>
-              <h1 className={`display-6 text-left fade-in heading ${visibleTexts[10] ? 'loaded' : ''}`} ref={el => textRefs.current[10] = el}>Skills</h1>
-            </div>
-          </div>
-          <section className='pie-chart-container-height d-flex align-items-center'>
-            {/*         <div className='pie-chart-heading'></div> */}
-            <div className="container d-flex align-items-center justify-content-evenly">
-              <div className='pie-chart-text position-relative'>
-                {/*             <p className={`display-6 pie-chart-heading-left mb-4 fade-in ${visibleTexts[22] ? 'loaded' : ''}`} ref={el => textRefs.current[22] = el}>Part-Designer</p> */}
 
-                <p className={`fade-in ${visibleTexts[12] ? 'loaded' : ''}`} ref={el => textRefs.current[12] = el}> <span className='pie-chart-span'>✔</span  >BOOTSTRAP</p>
-
-                <p className={` fade-in ${visibleTexts[13] ? 'loaded' : ''}`} ref={el => textRefs.current[13] = el}> <span className='pie-chart-span' >✔</span>SASS</p>
-
-                <p className={` fade-in ${visibleTexts[14] ? 'loaded' : ''}`} ref={el => textRefs.current[14] = el}> <span className='pie-chart-span'>✔</span>ADOBE XD / FIGMA </p>
-
-                <p className={` fade-in ${visibleTexts[15] ? 'loaded' : ''}`} ref={el => textRefs.current[15] = el}> <span className='pie-chart-span'>✔</span>RESPONSIVE WEBDESIGN</p>
-
-                <p className={` fade-in ${visibleTexts[16] ? 'loaded' : ''}`} ref={el => textRefs.current[16] = el}> <span className='pie-chart-span'>✔</span>HTML / CSS</p>
-              </div>
-              <PieChart />
-              <div className='pie-chart-text pie-chart-container-partcoder'>
-                {/*           <p className={`display-6 pie-chart-heading-right mb-4 fade-in ${visibleTexts[23] ? 'loaded' : ''}`} ref={el => textRefs.current[23] = el}>Part-Coder</p> */}
-
-                <p className={`fade-in ${visibleTexts[17] ? 'loaded' : ''}`} ref={el => textRefs.current[17] = el}> <span className='pie-chart-span'>✔</span>FRONTEND ENTWICKLUNG</p>
-
-                <p className={`fade-in ${visibleTexts[18] ? 'loaded' : ''}`} ref={el => textRefs.current[18] = el}> <span className='pie-chart-span'>✔</span>JAVASCRIPT</p>
-
-                <p className={`fade-in ${visibleTexts[19] ? 'loaded' : ''}`} ref={el => textRefs.current[19] = el}> <span className='pie-chart-span'>✔</span>REACT / NEXT</p>
-
-                <p className={`fade-in ${visibleTexts[20] ? 'loaded' : ''}`} ref={el => textRefs.current[20] = el}> <span className='pie-chart-span'>✔</span>MEINEN COMPUTER ANSCHREIEN</p>
-
-                <p className={`fade-in  ${visibleTexts[21] ? 'loaded' : ''}`} ref={el => textRefs.current[21] = el}> <span className='pie-chart-span'>✔</span>PIZZA ESSEN</p>
-              </div>
-            </div>
-          </section>
-        </div>
 
                 {/* Seite 8 */}
 <section id="regional-services" className="custom-background-lightblue h-25">

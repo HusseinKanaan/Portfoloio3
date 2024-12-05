@@ -785,7 +785,6 @@ h2.display-5 {
 
 .custom-height-portfolio img {
   object-fit: cover;
-  border-radius: 10px;
   /* Abgerundete Ecken */
   max-height: 100%;
 }
@@ -939,12 +938,41 @@ h2.display-5 {
 
 .bg-color-heading-piechart {
   background-color: #FAFAFA;
+}
 
+.line-piechart {
+  position: relative; /* Für das Pseudo-Element erforderlich */
+}
+
+.line-piechart::after {
+  content: '';
+  position: absolute;
+  bottom: 0; /* Am unteren Rand platzieren */
+  left: 0;
+  right: 0;
+  height: 1px; /* Höhe des Rahmens */
+  background-color: #ddd; /* Farbe des unteren Rahmens */
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2); /* Schatten nach unten */
+  -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1); /* Für Firefox */
 }
 
 .pie-chart-container-partcoder {
-  padding-left: 1.5rem;
+  padding-left: 3.5rem;
 }
+.pie-chart-container-partdesigner {
+  padding-right: 3rem;
+}
+/* pie-chart height & bg-color */
+.pie-chart-container-height {
+  height: 73vh;
+  background: #FAFAFA;
+  border-bottom: 1px solid #ddd;
+  color: #606060;
+}
+
+/* .sibi{
+  margin-left: 320px;
+} */
 
 .heading {
   color: #606060;
@@ -953,7 +981,7 @@ h2.display-5 {
 
 }
 
-.heading-piechart {
+/* .heading-piechart {
   padding-left: 5.5em;
   background-color: #FAFAFA;
   display: flex;
@@ -962,7 +990,7 @@ h2.display-5 {
   width: 500px;
   height: 400px;
   padding-top: 200px;
-}
+} */
 
 .pie-chart-heading-left {
   color: #606060;
@@ -976,17 +1004,10 @@ h2.display-5 {
   font-size: 18px;
 }
 
-.sibi {
+.custom-heading-piechart {
   margin-left: 176px;
 }
 
-/* pie-chart height & bg-color */
-.pie-chart-container-height {
-  height: 90vh;
-  background: #FAFAFA;
-  border-bottom: 1px solid #ddd;
-  color: #606060;
-}
 
 .pie-chart-span {
   margin-right: 20px;

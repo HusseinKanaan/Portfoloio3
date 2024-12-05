@@ -8,13 +8,13 @@ const SmoothMovingImage = () => {
 
   const handleScroll = () => {
     if (imageRef.current && textRef.current) {
-    const { top } = imageRef.current.getBoundingClientRect();
-    if (top < window.innerHeight) {
-      imageRef.current.style.transform = 'translateX(0)'; // Bild bewegen
-      textRef.current.style.opacity = '1'; // Text sichtbar machen
-      textRef.current.style.transform = 'translateX(0)'; // Text bewegen
+      const { top } = imageRef.current.getBoundingClientRect();
+      if (top < window.innerHeight) {
+        imageRef.current.style.transform = 'translateX(0)'; // Bild bewegen
+        textRef.current.style.opacity = '1'; // Text sichtbar machen
+        textRef.current.style.transform = 'translateX(0)'; // Text bewegen
+      }
     }
-  }
   };
 
   useEffect(() => {
@@ -25,27 +25,30 @@ const SmoothMovingImage = () => {
   }, []);
 
   return (
-    <div className={styles.imageContainer}>
+    <div className={`${styles.linePiechart} `}>
+
+    <div className={` ${styles.imageContainer}`}>
       <Image
         ref={imageRef}
         src="/images/yoda.png" // Achte darauf, dass das Bild korrekt ist
         alt="yoda"
-        width={600}
-        height={500}
+        width={625}
+        height={512.5}
         className={styles.movingImage}
-      />
+        />
       <div ref={textRef} className={styles.text}>
-        <p className={`display-6 ${styles.factsHeading}`}>Random Facts</p> 
-        <p>Ich trinke sehr viel Tee</p>
-        <p>Ich interessiere mich für Tastaturen</p>
-        <p>Beim Möbelbau werden Erinnerungen aus Holz.</p>
-        <p>Ich liebe es zu kochen (und zu essen)</p>
-        <p>Ich bin ein bisschen ein Sauberkeitsfanatiker</p>
+        <p className={`display-6 ${styles.factsHeading}`}>Random Facts</p>
+        <p>Ich trinke viel Tee. Fokus braucht Treibstoff</p>
+        <p>Tastaturen? Mein Universum</p>
+        <p>Möbelbau? Erinnerungen aus Holz. Design hört nie auf..</p>
+        <p>Kochen und essen? Beides Kunst</p>
+        <p>Ich mag es sauber. Chaos stört die Pixel</p>
         <p>Ich möchte auf Pandora leben</p>
-        <p>Ich bin leicht süchtig nach Twitter</p>
+        <p>Reddit? Sucht mich</p>
         <p>Yoda ist mein Mentor</p>
       </div>
     </div>
+        </div>
   );
 };
 

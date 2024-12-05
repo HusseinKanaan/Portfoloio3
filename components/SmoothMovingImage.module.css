@@ -11,7 +11,7 @@
     /* Vertikale Ausrichtung */
     overflow: hidden;
     /* Verhindert, dass etwas außerhalb des Containers angezeigt wird */
-    height: 500px;
+    height: 75vh;
     /* Container-Höhe anpassen */
     position: relative;
     /* Position für das Bild */
@@ -22,7 +22,7 @@
     width: auto;  Behalte die Originalbreite bei 
     height: auto; /* Behalte die Originalhöhe bei 
     */
-    max-width: 600px;
+    max-width: 625px;
     /* Maximalbreite des Bildes */
     transform: translateX(-150%);
     /* Start außerhalb des sichtbaren Bereichs */
@@ -39,4 +39,21 @@
     /* Sanfte Animation */
     margin-left: 20px;
     /* Abstand zwischen Bild und Text */
+/*     padding-left: 8rem; */
 }
+
+.linePiechart {
+    position: relative; /* Für das Pseudo-Element erforderlich */
+  }
+  
+  .linePiechart::after {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Am unteren Rand platzieren */
+    left: 0;
+    right: 0;
+    height: 1px; /* Höhe des Rahmens */
+    background-color: #ddd; /* Farbe des unteren Rahmens */
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2); /* Schatten nach unten */
+    -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1); /* Für Firefox */
+  }
