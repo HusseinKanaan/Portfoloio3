@@ -73,7 +73,7 @@ const StickyHeader = () => {
       <div className={`navbar navbar-expand-lg d-flex justify-content-center sticky-header ${isHidden ? 'hidden' : ''} ${isScrolled ? 'scrolled' : ''}`}>
         <div className="container">
           <Link href="/" className="navbar-brand">
-            <Image priority={true} src="/logo4.png" alt="Logo" width={100} height={100} className="img-fluid max-width-100" />
+            <Image src="/logo4.png" alt="Logo" width={100} height={100} className="img-fluid max-width-100" />
             <span className="logoSpan" id="logoSchrift"></span>
           </Link>
 {/*           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">

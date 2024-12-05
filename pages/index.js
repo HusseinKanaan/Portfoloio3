@@ -92,12 +92,12 @@ export default function Home() {
                 <Image
                   style={{ clipPath: "inset(0 0 20% 0)", top: "20%", right: '7rem' }}
                   src="/me.png"
-                  loading="lazy"
                   blurDataURL="/images/meBlur.png"
                   placeholder="blur"
                   alt="Smooth Loaded Image"
                   width={1304}
                   height={997}
+                  priority
                   className={`position-absolute img-fluid fade-in ${heroImageLoaded ? 'loaded' : ''}`}
                   onLoad={() => setHeroImageLoaded(true)}
                 />
@@ -324,7 +324,6 @@ export default function Home() {
               layout="fill" // Das Bild wird den gesamten Container ausfüllen
               objectFit="cover" // Das Bild wird so skaliert, dass es den Container vollständig ausfüllt
               objectPosition="center" // Position des Bildes im Container
-              priority
             />
           </div>
         </section>
@@ -356,7 +355,6 @@ export default function Home() {
       layout="fill" // Das Bild wird den gesamten Container ausfüllen
       objectFit="cover" // Das Bild wird so skaliert, dass es den Container vollständig ausfüllt
       objectPosition="center" // Position des Bildes im Container
-      priority
     />
   </div>
 </section>
