@@ -32,7 +32,7 @@ const Workflow = () => {
       </div>
       <Row className="justify-content-center">
         {workflowSteps.map((step, index) => (
-          <Col key={index} xs={12} md={10} className="mb-4">
+          <Col key={index} xs={12} md={10} className="mb-2">
             <div className={`${styles.workflowItem}`} onClick={() => toggleCollapse(index)}>
               <div className={styles.workflowHeader}>
                 <p className={styles.workflowTitle}>{step.title}</p>

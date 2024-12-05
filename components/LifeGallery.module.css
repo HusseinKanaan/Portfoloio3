@@ -1,0 +1,93 @@
+/* Hauptcontainer */
+.lifeGallery {
+  padding: 50px 20px;
+  text-align: center;
+}
+.lineLifeGallery {
+  width: 56%;
+  border-top: 1px solid #dddddd;
+  animation: fadeOutLine 1s forwards ease-in-out; /* Animation anwenden */
+}
+
+/* Keyframes für das Ausblenden */
+@keyframes fadeOutLine {
+  0% {
+    opacity: 0; /* Linie ist sichtbar */
+  }
+  100% {
+    opacity: 1.5; /* Linie wird unsichtbar */
+  }
+}
+
+/* Überschrift */
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+/* Beschreibung */
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #606060;
+  line-height: 1.6;
+}
+
+/* Horizontaler Container */
+.horizontalContainer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Einzelne Grid-Items */
+.gridItem {
+  opacity: 0;
+  transform: translateY(30px) scale(0.9) rotate(2deg); /* Startzustand */
+  transition: 
+    opacity 0.8s ease, 
+    transform 0.8s ease;
+}
+
+.gridItem img {
+  width: 145px;
+  height: 97px;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px; /* Leicht abgerundete Ecken */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Sichtbar-Klasse */
+.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1) rotate(0); /* Zielzustand */
+}
+
+/* Hover-Effekt */
+.gridItem img:hover {
+  transform: scale(1.05); /* Leichter Zoom beim Hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .horizontalContainer {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .horizontalContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gridItem img {
+    width: 100px;
+    height: 67px;
+  }
+}
