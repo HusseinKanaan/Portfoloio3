@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
 import styles from './ContactForm.module.css'; // Styles für die Komponente
 
 const ContactForm = () => {
@@ -14,26 +13,27 @@ const ContactForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    emailjs.send(
-      'service_83b0nmr',
-      'template_rsfzsqj',
-      formData,
-      'KNNjw1B_wkvFCYv5W'
-    )
-      .then(() => {
-        alert('Nachricht erfolgreich gesendet!');
-      })
-      .catch(() => {
-        alert('Fehler beim Senden der Nachricht.');
-      });
-  };
-
   return (
     <div className={styles.container}>
-      <form onSubmit={handleSubmit} className={styles.form}>
+      {/* Netlify Forms setup: action und hidden inputs */}
+      <form
+        name="ContactForm" // Der Name des Formulars für Netlify
+        method="POST"
+        action="/thank-you" // Seite, die nach dem Senden angezeigt wird
+        data-netlify="true" // Aktiviert Netlify Forms
+        className={styles.form}
+      >
+        {/* Versteckte Felder, die Netlify benötigt */}
+        <input type="hidden" name="form-name" value="ContactForm" />
+        {/* Honeypot-Feld */}
+        <div style={{ display: 'none' }}>
+          <input
+            type="text"
+            name="bot-field"
+            placeholder="Don't fill this out"
+            onChange={handleChange}
+          />
+        </div>
         <input
           type="text"
           name="name"

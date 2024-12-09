@@ -11,7 +11,7 @@
     /* Vertikale Ausrichtung */
     overflow: hidden;
     /* Verhindert, dass etwas außerhalb des Containers angezeigt wird */
-    height: 75vh;
+    height: 70vh;
     /* Container-Höhe anpassen */
     position: relative;
     /* Position für das Bild */
