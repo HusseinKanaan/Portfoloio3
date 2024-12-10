@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 import Image from "next/image";
 import Link from 'next/link';
 
-export default function Footer() {
+const  Footer = () => {
     return (
         <footer className={styles.footer}>
             <div className={styles.footerContainer}>
@@ -70,3 +70,5 @@ export default function Footer() {
         </footer>
     );
 }
+
+export default Footer;
