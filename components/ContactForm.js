@@ -1,80 +1,80 @@
 import React, { useState } from 'react';
-import styles from './ContactForm.module.css'; // Styles für die Komponente
+
+import styles from './ContactForm.module.css'; // Stelle sicher, dass du diese CSS-Datei erstellst.
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    telefon: '',
-    message: ''
-  });
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const [formData, setFormData] = useState({
+      name: '',
+      email: '',
+      message: ''
+    });
+  
+    const handleChange = (e) => {
+      setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+  
+    const handleSubmit = (e) => {
+      e.preventDefault();
+  
+      emailjs.send(
+        'service_83b0nmr',
+        'template_rsfzsqj',
+        formData,
+        'KNNjw1B_wkvFCYv5W'
+      )
+      .then((response) => {
+        alert('Nachricht erfolgreich gesendet!');
+      })
+      .catch((err) => {
+        alert('Fehler beim Senden der Nachricht.');
+      });
+    };
+  
+    return (
+      <div className={styles.container}>
+        <h2 className={styles.formHeading}>Kontaktiere Uns</h2>
+        <form onSubmit={handleSubmit} className="p-4 shadow-sm bg-light rounded">
+          <div className="form-group">
+            <label htmlFor="name" className={styles.formLabel}>Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+              className={`form-control ${styles.formInput}`}
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="email" className={styles.formLabel}>E-Mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              className={`form-control ${styles.formInput}`}
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="message" className={styles.formLabel}>Nachricht</label>
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+              className={`form-control ${styles.formTextarea}`}
+            />
+          </div>
+          <button type="submit" className={`btn btn-primary w-100 ${styles.submitButton}`}>
+            Absenden
+          </button>
+        </form>
+      </div>
+    );
   };
-
-  return (
-    <div className={styles.container}>
-      {/* Netlify Forms setup: action und hidden inputs */}
-      <form
-        name="ContactForm" // Der Name des Formulars für Netlify
-        method="POST"
-        action="/thank-you" // Seite, die nach dem Senden angezeigt wird
-        data-netlify="true" // Aktiviert Netlify Forms
-        className={styles.form}
-      >
-        {/* Versteckte Felder, die Netlify benötigt */}
-        <input type="hidden" name="form-name" value="ContactForm" />
-        {/* Honeypot-Feld */}
-        <div style={{ display: 'none' }}>
-          <input
-            type="text"
-            name="bot-field"
-            placeholder="Don't fill this out"
-            onChange={handleChange}
-          />
-        </div>
-        <input
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          placeholder="Ihr Name"
-          required
-          className={styles.input}
-        />
-        <input
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          placeholder="Ihre E-Mail-Adresse"
-          required
-          className={styles.input}
-        />
-        <input
-          type="text"
-          name="telefon"
-          value={formData.telefon}
-          onChange={handleChange}
-          placeholder="Ihre Telefonnummer"
-          required
-          className={styles.input}
-        />
-        <textarea
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          placeholder="Ihre Nachricht"
-          required
-          className={styles.textarea}
-        />
-        <button type="submit" className={styles.button}>
-          Nachricht senden
-        </button>
-      </form>
-    </div>
-  );
-};
-
-export default ContactForm;
+  
+  export default ContactForm;
