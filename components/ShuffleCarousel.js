@@ -3,7 +3,7 @@ import { useEffect, useState, useMemo } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Image from 'next/image';
 
-export default function ShuffleCarousel() {
+const  ShuffleCarousel= () => {
   // Verwende useMemo, um das slides-Array zu speichern
   const slides = useMemo(() => [
     { id: 1, image: '/images/image1.jpg', alt: 'Slide 1' },
@@ -86,3 +86,5 @@ export default function ShuffleCarousel() {
 
   );
 }
+
+export default ShuffleCarousel;
