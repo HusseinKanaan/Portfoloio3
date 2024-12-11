@@ -342,6 +342,12 @@ h1 {
   font-style: italic;
 }
 
+.uppercase{
+  letter-spacing: 2.8px;
+  text-transform: uppercase !important;
+}
+
+
 .customTextHeading {
   font-size: 52px;
 }
@@ -599,6 +605,7 @@ h1 {
 
 .text-center {   /* Textbereich verbessern */
   position: relative;
+  text-align: center;
   z-index: 1; /* Stellt sicher, dass der Text vor dem Bild bleibt */
 }
 
