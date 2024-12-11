@@ -106,14 +106,26 @@ export default function Home() {
           </div>
           {/*//// Overlap */}
           {/* top-10 start-50  */}
-          <section id="divAbsolute" className="overlap rounded-3 position-absolute bottom-0 start-50 translate-middle-x shadow-lg d-flex align-items-center">
-            <div className="container-fluid  text-center">
-              <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 custom-text-overlap">
-                <div className="col">Responsive Design</div>
-                <div className="col">Programmierung</div>
-                <div className="col">Dev</div>
-                <div className="col">mobile-first</div>
+          <section id="divAbsolute" className="overlap rounded-3 position-absolute bottom-0 start-50 translate-middle-x shadow-lg d-flex align-items-center justify-content-center">
+            <div className="container">
+              <div className="row row-cols-1 row-cols-sm-  custom-text-overlap">
+                <div className=" uppercase"><p>Freelancer &gt;&gt; Next.js | React | Bootstrap | Figma | Responsive Design
+                </p> 
+                </div>
+{/*                 <div className="col">Responsive Webesign</div>
+                <div className="col">Webentwicklung</div>
+                <div className="col">mobile-first</div> */}
               </div>
+              <div>
+
+              <Image
+                src="/icons/undraw_tree.svg"
+                width={50}
+                height={50}
+                className={``}
+                alt='sibi'
+                />
+                </div>
             </div>
           </section>
         </div>
@@ -328,7 +340,7 @@ export default function Home() {
           </div>
         </section>
         {/* Pie-chart */}
-
+<div className='vh-100'></div>
 
                 {/* Seite 8 */}
 <section id="regional-services" className="custom-background-lightblue h-25">
