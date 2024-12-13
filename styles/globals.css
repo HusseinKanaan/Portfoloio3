@@ -48,6 +48,12 @@
   font-style: normal;
 }
 
+
+.tesrr {
+  color: #00FFD5;
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -342,11 +348,70 @@ h1 {
   font-style: italic;
 }
 
-.uppercase{
-  letter-spacing: 2.8px;
-  text-transform: uppercase !important;
+.uppercase {
+  font-family: 'Poppins', sans-serif;  /* Setzt die Schriftart auf Poppins */
+  font-weight: 400;                    /* Setzt das Gewicht für stärkere Buchstaben */
+  letter-spacing: 1.4px;               /* Leichter Abstand zwischen den Buchstaben */
+  text-transform: uppercase;           /* Alle Buchstaben in Großbuchstaben */
+  font-size: 17px;                   /* Kleinere Schriftgröße */
+  color: #ffff;                         /* Dunkelgraue Farbe für den Text */
+  line-height: 1.4;                    /* Zeilenhöhe für bessere Lesbarkeit */
+  margin: 0;                           /* Entfernt Margin */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
+/* Das ">>"-Symbol als modernes Zeichen */
+.uppercase .arrow {
+  font-size: 1.5rem;                   /* Setzt die Größe des Symbols */
+  margin-right: 7.5px;                   /* Abstand zum Text */
+  margin-left: 5px;                   /* Abstand zum Text */
+  transform: scale(0.8);               /* Macht das Symbol etwas kleiner */
+  letter-spacing: -3px;
+  padding-bottom: 4px;
+}
+
+/* Optionale Anpassung für den Text und das Icon */
+.uppercase .text {
+  font-weight: 400;                    /* Schwächerer Textstil für den Haupttext */
+}
+
+.climate-info {
+  margin: 9.6px;
+}
+
+.climate-icon {
+  width: 100%;
+  /* Bild nimmt 100% der Container-Breite ein */
+  height: 100%;
+  /* Bild nimmt 100% der Container-Höhe ein */
+  object-fit: contain;
+  font-weight: 500;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+  line-height: 1.5;
+  font-size: 10.4px;
+  text-align: right;
+}
+
+.container-tree-icon {
+  width: 45px;
+  height: 45px;
+  background-color: #cbe5cc;
+  display: inline-flex;
+  /* Verhindert, dass das div den gesamten Raum einnimmt */
+  justify-content: center;
+  /* Zentriert das Bild horizontal */
+  align-items: center;
+  /* Zentriert das Bild vertikal */
+
+  padding: 5px;
+  /* Optional: Abstand zum Rand des divs */
+  box-sizing: border-box;
+}
 
 .customTextHeading {
   font-size: 52px;
@@ -588,7 +653,8 @@ h1 {
   height: 70vh;
 }
 
-.custom-background-lightblue { /* Hintergrundbild einfügen */
+.custom-background-lightblue {
+  /* Hintergrundbild einfügen */
   position: relative;
   height: 100%;
   /* Die Hintergrundfarbe ist nicht mehr nötig, da das Bild als Hintergrund verwendet wird */
@@ -600,26 +666,31 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Stellt sicher, dass das Bild im Hintergrund bleibt */
+  z-index: -1;
+  /* Stellt sicher, dass das Bild im Hintergrund bleibt */
 }
 
-.text-center {   /* Textbereich verbessern */
+.text-center {
+  /* Textbereich verbessern */
   position: relative;
   text-align: center;
-  z-index: 1; /* Stellt sicher, dass der Text vor dem Bild bleibt */
+  z-index: 1;
+  /* Stellt sicher, dass der Text vor dem Bild bleibt */
 }
 
 .customText {
   font-size: 20px;
   color: #555555;
-  max-width: 900px; /* Begrenze die Breite des Textes für eine bessere Lesbarkeit */
+  max-width: 900px;
+  /* Begrenze die Breite des Textes für eine bessere Lesbarkeit */
   margin: 20px auto;
   padding: 10px;
 
   border-radius: 8px;
 }
 
-.frame {         /* Stil für den Button-Bereich */
+.frame {
+  /* Stil für den Button-Bereich */
   width: 100%;
   margin: 40px auto;
   text-align: center;
@@ -633,11 +704,13 @@ h2.display-5 {
 
 @media (max-width: 767px) {
   .customText {
-    font-size: 18px; /* Textgröße auf kleinen Bildschirmen anpassen */
+    font-size: 18px;
+    /* Textgröße auf kleinen Bildschirmen anpassen */
   }
 
   h2.display-5 {
-    font-size: 2rem; /* Größe der Überschrift auf kleinen Bildschirmen anpassen */
+    font-size: 2rem;
+    /* Größe der Überschrift auf kleinen Bildschirmen anpassen */
   }
 }
 
@@ -948,27 +1021,35 @@ h2.display-5 {
 }
 
 .line-piechart {
-  position: relative; /* Für das Pseudo-Element erforderlich */
+  position: relative;
+  /* Für das Pseudo-Element erforderlich */
 }
 
 .line-piechart::after {
   content: '';
   position: absolute;
-  bottom: 0; /* Am unteren Rand platzieren */
+  bottom: 0;
+  /* Am unteren Rand platzieren */
   left: 0;
   right: 0;
-  height: 1px; /* Höhe des Rahmens */
-  background-color: #ddd; /* Farbe des unteren Rahmens */
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2); /* Schatten nach unten */
-  -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1); /* Für Firefox */
+  height: 1px;
+  /* Höhe des Rahmens */
+  background-color: #ddd;
+  /* Farbe des unteren Rahmens */
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  /* Schatten nach unten */
+  -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  /* Für Firefox */
 }
 
 .pie-chart-container-partcoder {
   padding-left: 3.5rem;
 }
+
 .pie-chart-container-partdesigner {
   padding-right: 3rem;
 }
+
 /* pie-chart height & bg-color */
 .pie-chart-container-height {
   height: 73vh;
