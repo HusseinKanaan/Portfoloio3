@@ -107,26 +107,32 @@ export default function Home() {
           {/*//// Overlap */}
           {/* top-10 start-50  */}
           <section id="divAbsolute" className="overlap rounded-3 position-absolute bottom-0 start-50 translate-middle-x shadow-lg d-flex align-items-center justify-content-center">
-            <div className="container">
-              <div className="row row-cols-1 row-cols-sm-  custom-text-overlap">
-                <div className=" uppercase"><p>Freelancer &gt;&gt; Next.js | React | Bootstrap | Figma | Responsive Design
-                </p> 
-                </div>
-{/*                 <div className="col">Responsive Webesign</div>
-                <div className="col">Webentwicklung</div>
-                <div className="col">mobile-first</div> */}
-              </div>
-              <div>
+          <div className="container">
+  <div className="row justify-content-between align-items-center custom-text-overlap">
+    <div className="col">
+    <p className="uppercase">
+ Freelancer <span className="arrow"> › ›</span> Next.js | React | Bootstrap | Figma
+</p>
+    </div>
+    <div className="col-auto d-flex align-items-center">
+      <div className="climate-info">
+        <p className='no-margin-bottom'>Klimafreundlich entwickelt</p>
+        <p className='no-margin-bottom'>0.18g CO₂ / Seitenaufruf</p>
+      </div>
+      <div className="container-tree-icon">
+        <Image
+          src="/icons/undraw_tree.svg"
+          width={36}
+          height={36}
+          alt="sibi"
+          className='climate-icon'
+        />
+      </div>
+    </div>
+  </div>
+</div>
 
-              <Image
-                src="/icons/undraw_tree.svg"
-                width={50}
-                height={50}
-                className={``}
-                alt='sibi'
-                />
-                </div>
-            </div>
+
           </section>
         </div>
       </header>
