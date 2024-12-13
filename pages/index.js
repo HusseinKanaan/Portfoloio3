@@ -387,15 +387,6 @@ export default function Home() {
         </div>
         <div className='vh-100'>
         </div>
-
-        <div><p></p></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
         {/* Seite 9 FAQ */}
         <div id='faq'>
           <Container className="py-5">
