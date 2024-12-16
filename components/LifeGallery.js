@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./LifeGallery.module.css";
 import Image from "next/image";
 
+
 const LifeGallery = () => {
   const [visibleItems, setVisibleItems] = useState([]);
 
