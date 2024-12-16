@@ -48,6 +48,9 @@
   font-style: normal;
 }
 
+/* styles/globals.css */
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
 
 .tesrr {
   color: #00FFD5;
@@ -56,6 +59,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden; /* Verhindert horizontales Scrollen */
 }
 
 :root {
@@ -350,7 +354,7 @@ h1 {
 
 .uppercase {
   font-family: 'Poppins', sans-serif;  /* Setzt die Schriftart auf Poppins */
-  font-weight: 400;                    /* Setzt das Gewicht für stärkere Buchstaben */
+  font-weight: 350;                    /* Setzt das Gewicht für stärkere Buchstaben */
   letter-spacing: 1.4px;               /* Leichter Abstand zwischen den Buchstaben */
   text-transform: uppercase;           /* Alle Buchstaben in Großbuchstaben */
   font-size: 17px;                   /* Kleinere Schriftgröße */
@@ -662,6 +666,7 @@ h1 {
 
 .background-overlay {
   position: absolute;
+  overflow: hidden; 
   top: 0;
   left: 0;
   width: 100%;

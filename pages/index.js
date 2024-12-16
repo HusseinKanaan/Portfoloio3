@@ -107,30 +107,30 @@ export default function Home() {
           {/*//// Overlap */}
           {/* top-10 start-50  */}
           <section id="divAbsolute" className="overlap rounded-3 position-absolute bottom-0 start-50 translate-middle-x shadow-lg d-flex align-items-center justify-content-center">
-          <div className="container">
-  <div className="row justify-content-between align-items-center custom-text-overlap">
-    <div className="col">
-    <p className="uppercase">
- Freelancer <span className="arrow"> › ›</span> Next.js | React | Bootstrap | Figma
-</p>
-    </div>
-    <div className="col-auto d-flex align-items-center">
-      <div className="climate-info">
-        <p className='no-margin-bottom'>Klimafreundlich entwickelt</p>
-        <p className='no-margin-bottom'>0.18g CO₂ / Seitenaufruf</p>
-      </div>
-      <div className="container-tree-icon">
-        <Image
-          src="/icons/undraw_tree.svg"
-          width={36}
-          height={36}
-          alt="sibi"
-          className='climate-icon'
-        />
-      </div>
-    </div>
-  </div>
-</div>
+            <div className="container">
+              <div className="row justify-content-between align-items-center custom-text-overlap">
+                <div className="col">
+                  <p className="uppercase">
+                    Freelancer <span className="arrow"> › ›</span> Next.js | React | Bootstrap | Figma
+                  </p>
+                </div>
+                <div className="col-auto d-flex align-items-center">
+                  <div className="climate-info">
+                    <p className='no-margin-bottom'>Klimafreundlich entwickelt</p>
+                    <p className='no-margin-bottom'>0.18g CO₂ / Seitenaufruf</p>
+                  </div>
+                  <div className="container-tree-icon">
+                    <Image
+                      src="/icons/undraw_tree.svg"
+                      width={36}
+                      height={36}
+                      alt="sibi"
+                      className='climate-icon'
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
           </section>
@@ -339,43 +339,47 @@ export default function Home() {
             <Image
               src="/images/hintergrund.png"
               alt="Hintergrund"
-              layout="fill" // Das Bild wird den gesamten Container ausfüllen
-              objectFit="cover" // Das Bild wird so skaliert, dass es den Container vollständig ausfüllt
-              objectPosition="center" // Position des Bildes im Container
+              fill // Ersetzt "layout='fill'"
+              style={{
+                objectFit: "cover", // Ersetzt "objectFit"
+                objectPosition: "center", // Ersetzt "objectPosition"
+              }}
             />
           </div>
         </section>
         {/* Pie-chart */}
-<div className='vh-100'></div>
+        <div className='vh-100'></div>
 
-                {/* Seite 8 */}
-<section id="regional-services" className="custom-background-lightblue h-25">
-  <div className="container custom-height-container d-flex justify-content-center align-items-center">
-    <div
-      className={`text-center h-25 fade-in ${visibleTexts[3] ? 'loaded' : ''}`}
-      ref={(el) => (textRefs.current[3] = el)}
-    >
-      <h2 className="display-5 fw-bold">
-      Starten wir mit der Umsetzung Ihrer Website!
-      </h2>
-      <p className="customText">
-      Erläutern Sie Ihre Projektwünsche und erhalten Sie ein unverbindliches und kostenloses Webdesign-Angebot für Ihre neue Webseite.
-      </p>
-      <div className="d-flex justify-content-center frame">
-        <ButtonLight text="Jetzt Kontakt aufnehmen" />
-      </div>
-    </div>
-  </div>
-  <div className="background-overlay">
-    <Image
-      src="/images/hintergrund.png"
-      alt="Hintergrund"
-      layout="fill" // Das Bild wird den gesamten Container ausfüllen
-      objectFit="cover" // Das Bild wird so skaliert, dass es den Container vollständig ausfüllt
-      objectPosition="center" // Position des Bildes im Container
-    />
-  </div>
-</section>
+        {/* Seite 8 */}
+        <section id="regional-services" className="custom-background-lightblue h-25">
+          <div className="container custom-height-container d-flex justify-content-center align-items-center">
+            <div
+              className={`text-center h-25 fade-in ${visibleTexts[3] ? 'loaded' : ''}`}
+              ref={(el) => (textRefs.current[3] = el)}
+            >
+              <h2 className="display-5 fw-bold">
+                Starten wir mit der Umsetzung Ihrer Website!
+              </h2>
+              <p className="customText">
+                Erläutern Sie Ihre Projektwünsche und erhalten Sie ein unverbindliches und kostenloses Webdesign-Angebot für Ihre neue Webseite.
+              </p>
+              <div className="d-flex justify-content-center frame">
+                <ButtonLight text="Jetzt Kontakt aufnehmen" />
+              </div>
+            </div>
+          </div>
+          <div className="background-overlay">
+            <Image
+              src="/images/hintergrund.png"
+              alt="Hintergrund"
+              fill // Ersetzt "layout='fill'"
+              style={{
+                objectFit: "cover", // Ersetzt "objectFit"
+                objectPosition: "center", // Ersetzt "objectPosition"
+              }}
+            />
+          </div>
+        </section>
 
         {/* Workflow */}
         <div className='workflow-container'>

@@ -1,5 +1,5 @@
 
-/* Flexbox Layout für das Container-Element */
+/* Flexbox  für das Container-Element */
 .buttons {
     display: flex;
     flex-direction: column;

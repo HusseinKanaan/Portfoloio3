@@ -1,4 +1,3 @@
-import HoverButton from '../components/HoverButton';
 import ScrollControl from './ScrollControl';
 import ButtonLight from './ButtonLight';
 import Link from 'next/link';
@@ -10,8 +9,9 @@ const StickyHeader = () => {
   const [isHidden, setIsHidden] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [targetId, setTargetId] = useState(null);
+
   const router = useRouter();
+
 
   // Funktion zur Einstellung der 'active' Klasse
   const setActiveLink = useCallback(() => {
@@ -111,7 +111,7 @@ const StickyHeader = () => {
         </div>
       </div>
       {/* ScrollControl Komponente */}
-      <ScrollControl targetId={targetId} />
+
     </div>
   );
 };
