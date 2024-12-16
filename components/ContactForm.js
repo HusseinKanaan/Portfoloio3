@@ -13,27 +13,16 @@ const ContactForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // Funktion zum Senden des Formulars (Hier könntest du API-Calls oder andere Logiken einbauen)
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+    // Hier könnte eine API-Anfrage oder eine andere Logik eingebaut werden, um das Formular zu verarbeiten.
+  };
+
   return (
     <div className={styles.container}>
-      {/* Netlify Forms setup: action und hidden inputs */}
-      <form
-        name="ContactForm" // Der Name des Formulars für Netlify
-        method="POST"
-        action="/thank-you" // Seite, die nach dem Senden angezeigt wird
-        data-netlify="true" // Aktiviert Netlify Forms
-        className={styles.form}
-      >
-        {/* Versteckte Felder, die Netlify benötigt */}
-        <input type="hidden" name="form-name" value="ContactForm" />
-        {/* Honeypot-Feld */}
-        <div style={{ display: 'none' }}>
-          <input
-            type="text"
-            name="bot-field"
-            placeholder="Don't fill this out"
-            onChange={handleChange}
-          />
-        </div>
+      <form onSubmit={handleSubmit} className={styles.form}>
         <input
           type="text"
           name="name"

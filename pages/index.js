@@ -329,6 +329,36 @@ export default function Home() {
                 Betreuung, individuelles Webdesign, Webentwicklung und Suchmaschinenoptimierung (SEO). Sie hätten gern ein
                 unverbindliches und kostenloses Webdesign-Angebot? Ihre erfolgreiche Website ist nur einen Klick entfernt. Ich
                 freue mich auf Ihre Anfrage, um Ihr Projekt gemeinsam zu verwirklichen.
+                Ich betreue Kunden in ganz Deutschland, Österreich und der Schweiz. Mein Kundenkreis umfasst kleine und
+                mittelständische Unternehmen bis hin zu Werbe- und Grafikagenturen. Zu meiner täglichen Arbeit gehört Beratung,
+                Betreuung, individuelles Webdesign, Webentwicklung und Suchmaschinenoptimierung (SEO). Sie hätten gern ein
+                unverbindliches und kostenloses Webdesign-Angebot? Ihre erfolgreiche Website ist nur einen Klick entfernt. Ich
+                freue mich auf Ihre Anfrage, um Ihr Projekt gemeinsam zu verwirklichen.
+                Ich betreue Kunden in ganz Deutschland, Österreich und der Schweiz. Mein Kundenkreis umfasst kleine und
+                mittelständische Unternehmen bis hin zu Werbe- und Grafikagenturen. Zu meiner täglichen Arbeit gehört Beratung,
+                Betreuung, individuelles Webdesign, Webentwicklung und Suchmaschinenoptimierung (SEO). Sie hätten gern ein
+                unverbindliches und kostenloses Webdesign-Angebot? Ihre erfolgreiche Website ist nur einen Klick entfernt. Ich
+                freue mich auf Ihre Anfrage, um Ihr Projekt gemeinsam zu verwirklichen.
+                Ich betreue Kunden in ganz Deutschland, Österreich und der Schweiz. Mein Kundenkreis umfasst kleine und
+                mittelständische Unternehmen bis hin zu Werbe- und Grafikagenturen. Zu meiner täglichen Arbeit gehört Beratung,
+                Betreuung, individuelles Webdesign, Webentwicklung und Suchmaschinenoptimierung (SEO). Sie hätten gern ein
+                unverbindliches und kostenloses Webdesign-Angebot? Ihre erfolgreiche Website ist nur einen Klick entfernt. Ich
+                freue mich auf Ihre Anfrage, um Ihr Projekt gemeinsam zu verwirklichen.
+                Ich betreue Kunden in ganz Deutschland, Österreich und der Schweiz. Mein Kundenkreis umfasst kleine und
+                mittelständische Unternehmen bis hin zu Werbe- und Grafikagenturen. Zu meiner täglichen Arbeit gehört Beratung,
+                Betreuung, individuelles Webdesign, Webentwicklung und Suchmaschinenoptimierung (SEO). Sie hätten gern ein
+                unverbindliches und kostenloses Webdesign-Angebot? Ihre erfolgreiche Website ist nur einen Klick entfernt. Ich
+                freue mich auf Ihre Anfrage, um Ihr Projekt gemeinsam zu verwirklichen.
+                Ich betreue Kunden in ganz Deutschland, Österreich und der Schweiz. Mein Kundenkreis umfasst kleine und
+                mittelständische Unternehmen bis hin zu Werbe- und Grafikagenturen. Zu meiner täglichen Arbeit gehört Beratung,
+                Betreuung, individuelles Webdesign, Webentwicklung und Suchmaschinenoptimierung (SEO). Sie hätten gern ein
+                unverbindliches und kostenloses Webdesign-Angebot? Ihre erfolgreiche Website ist nur einen Klick entfernt. Ich
+                freue mich auf Ihre Anfrage, um Ihr Projekt gemeinsam zu verwirklichen.
+                Ich betreue Kunden in ganz Deutschland, Österreich und der Schweiz. Mein Kundenkreis umfasst kleine und
+                mittelständische Unternehmen bis hin zu Werbe- und Grafikagenturen. Zu meiner täglichen Arbeit gehört Beratung,
+                Betreuung, individuelles Webdesign, Webentwicklung und Suchmaschinenoptimierung (SEO). Sie hätten gern ein
+                unverbindliches und kostenloses Webdesign-Angebot? Ihre erfolgreiche Website ist nur einen Klick entfernt. Ich
+                freue mich auf Ihre Anfrage, um Ihr Projekt gemeinsam zu verwirklichen.
               </p>
               <div className="d-flex justify-content-center frame">
                 <ButtonLight text="Jetzt Kontakt aufnehmen" />
