@@ -4,23 +4,30 @@ import ContactForm from "./ContactForm";
 import Image from "next/image";
 import Link from 'next/link';
 
-const  Footer = () => {
+const Footer = () => {
     return (
         <footer className={styles.footer}>
             <div className={styles.footerContainer}>
                 {/* Branding und Beschreibung */}
                 <div id="contact" className={styles.footerTop}>
                     <div>
-                        <h1 className={styles.footerLogo}>Hussein Kanaan</h1>
+                        <h1 className={styles.footerLogo}>Wie kann ich ihnen <br></br> helfen?</h1>
                         {/* E-Mail und Telefon Icons */}
                         <div className={styles.contactIcons}>
-                            <i className=""></i> E-Mail: husseinkanaan255@gmail.com
+                            <p className={styles.footerDescription}>
+                                Innovatives Webdesign, das Marken auf die nächste Ebene bringt. Wir schaffen digitale Erlebnisse, die beeindrucken.
+                                Innovatives Webdesign, das Marken auf die nächste Ebene bringt. Wir schaffen digitale Erlebnisse, die beeindrucken.
+                            </p>
+                            <div className="">
+                                <i className={`${styles.headingContact}`}> Freelance Webdesigner</i>
+                               
+                            </div>
+                                <i className=""></i> Hussein Kanaan
                             <br />
                             <i className=""></i> Telefon: +49 157 343 66370
+                            <br />  
+                            <i className=""></i> E-Mail: husseinkanaan255@gmail.com
                         </div>
-                        <p className={styles.footerDescription}>
-                            Innovatives Webdesign, das Marken auf die nächste Ebene bringt. Wir schaffen digitale Erlebnisse, die beeindrucken.
-                        </p>
                     </div>
                     {/* Newsletter Sektion */}
                     <div /* className={styles.newsletter} */>
@@ -63,7 +70,7 @@ const  Footer = () => {
                         <i className="bi bi-twitter"></i>
                         <i className="bi bi-discord"></i>
                     </div>
-                    <p>&copy; {new Date().getFullYear()} H.K</p>
+                    <p>&copy; {new Date().getFullYear()} copyright</p>
                     <a href="#" className={styles.scrollTop}>Nach oben ↑</a>
                 </div>
             </div>

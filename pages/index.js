@@ -161,7 +161,7 @@ export default function Home() {
           >
             <div className='heading-service'>
               <h1 className='display-5 heading-service-bgcolor text-center'>
-                Webdesigner für React, Next und Api-Anbindungen usw....
+              Webdesigner für React, Next und Api-Anbindungen usw....
               </h1>
             </div>
           </div>
@@ -324,36 +324,6 @@ export default function Home() {
                 Webdesigner für Deutschland, Österreich und die Schweiz
               </h2>
               <p className="customText">
-                Ich betreue Kunden in ganz Deutschland, Österreich und der Schweiz. Mein Kundenkreis umfasst kleine und
-                mittelständische Unternehmen bis hin zu Werbe- und Grafikagenturen. Zu meiner täglichen Arbeit gehört Beratung,
-                Betreuung, individuelles Webdesign, Webentwicklung und Suchmaschinenoptimierung (SEO). Sie hätten gern ein
-                unverbindliches und kostenloses Webdesign-Angebot? Ihre erfolgreiche Website ist nur einen Klick entfernt. Ich
-                freue mich auf Ihre Anfrage, um Ihr Projekt gemeinsam zu verwirklichen.
-                Ich betreue Kunden in ganz Deutschland, Österreich und der Schweiz. Mein Kundenkreis umfasst kleine und
-                mittelständische Unternehmen bis hin zu Werbe- und Grafikagenturen. Zu meiner täglichen Arbeit gehört Beratung,
-                Betreuung, individuelles Webdesign, Webentwicklung und Suchmaschinenoptimierung (SEO). Sie hätten gern ein
-                unverbindliches und kostenloses Webdesign-Angebot? Ihre erfolgreiche Website ist nur einen Klick entfernt. Ich
-                freue mich auf Ihre Anfrage, um Ihr Projekt gemeinsam zu verwirklichen.
-                Ich betreue Kunden in ganz Deutschland, Österreich und der Schweiz. Mein Kundenkreis umfasst kleine und
-                mittelständische Unternehmen bis hin zu Werbe- und Grafikagenturen. Zu meiner täglichen Arbeit gehört Beratung,
-                Betreuung, individuelles Webdesign, Webentwicklung und Suchmaschinenoptimierung (SEO). Sie hätten gern ein
-                unverbindliches und kostenloses Webdesign-Angebot? Ihre erfolgreiche Website ist nur einen Klick entfernt. Ich
-                freue mich auf Ihre Anfrage, um Ihr Projekt gemeinsam zu verwirklichen.
-                Ich betreue Kunden in ganz Deutschland, Österreich und der Schweiz. Mein Kundenkreis umfasst kleine und
-                mittelständische Unternehmen bis hin zu Werbe- und Grafikagenturen. Zu meiner täglichen Arbeit gehört Beratung,
-                Betreuung, individuelles Webdesign, Webentwicklung und Suchmaschinenoptimierung (SEO). Sie hätten gern ein
-                unverbindliches und kostenloses Webdesign-Angebot? Ihre erfolgreiche Website ist nur einen Klick entfernt. Ich
-                freue mich auf Ihre Anfrage, um Ihr Projekt gemeinsam zu verwirklichen.
-                Ich betreue Kunden in ganz Deutschland, Österreich und der Schweiz. Mein Kundenkreis umfasst kleine und
-                mittelständische Unternehmen bis hin zu Werbe- und Grafikagenturen. Zu meiner täglichen Arbeit gehört Beratung,
-                Betreuung, individuelles Webdesign, Webentwicklung und Suchmaschinenoptimierung (SEO). Sie hätten gern ein
-                unverbindliches und kostenloses Webdesign-Angebot? Ihre erfolgreiche Website ist nur einen Klick entfernt. Ich
-                freue mich auf Ihre Anfrage, um Ihr Projekt gemeinsam zu verwirklichen.
-                Ich betreue Kunden in ganz Deutschland, Österreich und der Schweiz. Mein Kundenkreis umfasst kleine und
-                mittelständische Unternehmen bis hin zu Werbe- und Grafikagenturen. Zu meiner täglichen Arbeit gehört Beratung,
-                Betreuung, individuelles Webdesign, Webentwicklung und Suchmaschinenoptimierung (SEO). Sie hätten gern ein
-                unverbindliches und kostenloses Webdesign-Angebot? Ihre erfolgreiche Website ist nur einen Klick entfernt. Ich
-                freue mich auf Ihre Anfrage, um Ihr Projekt gemeinsam zu verwirklichen.
                 Ich betreue Kunden in ganz Deutschland, Österreich und der Schweiz. Mein Kundenkreis umfasst kleine und
                 mittelständische Unternehmen bis hin zu Werbe- und Grafikagenturen. Zu meiner täglichen Arbeit gehört Beratung,
                 Betreuung, individuelles Webdesign, Webentwicklung und Suchmaschinenoptimierung (SEO). Sie hätten gern ein
