@@ -91,16 +91,17 @@
     line-height: 1.5;
 }
 
-.contactIcons {
-    font-size: 1rem;
-    color: #16A085;
-    margin-top: 15px; /* Abstand zwischen Name und Kontaktdaten */
-    line-height: 1.6;
-}
+
 
 .contactIcons i {
     margin-right: 8px;
     color: #2C3E50;
+    font-weight: bold;
+}
+
+.headingContact{
+    color: #BDC3C7;
+    font-size: 1rem;
 }
 
 /* Footer Links */

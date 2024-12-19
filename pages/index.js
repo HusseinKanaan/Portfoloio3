@@ -161,7 +161,7 @@ export default function Home() {
           >
             <div className='heading-service'>
               <h1 className='display-5 heading-service-bgcolor text-center'>
-                Webdesigner für React, Next und Api-Anbindungen usw....
+              Webdesigner für React, Next und Api-Anbindungen usw....
               </h1>
             </div>
           </div>
