@@ -29,7 +29,7 @@ export default function About() {
             </div>
           </div> */}
 
-        <section className='pie-chart-container-height d-flex align-items-center'>
+        <section id='piechart' className='pie-chart-container-height d-flex align-items-center'>
           {/*         <div className='pie-chart-heading'></div> */}
           <div className=" d-flex vw-100  align-items-center justify-content-center sibi">
             <div className='pie-chart-text position-relative pie-chart-container-partdesigner'>
