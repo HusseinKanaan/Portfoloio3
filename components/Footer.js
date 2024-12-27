@@ -18,15 +18,12 @@ const Footer = () => {
                                 Innovatives Webdesign, das Marken auf die nächste Ebene bringt. Wir schaffen digitale Erlebnisse, die beeindrucken.
                                 Innovatives Webdesign, das Marken auf die nächste Ebene bringt. Wir schaffen digitale Erlebnisse, die beeindrucken.
                             </p>
-                            <div className="">
-                                <i className={`${styles.headingContact}`}> Freelance Webdesigner</i>
-                               
-                            </div>
-                                <i className=""></i> Hussein Kanaan
+
+                                <i className={`${styles.customList}`}>Hussein Kanaan</i>
                             <br />
-                            <i className=""></i> Telefon: +49 157 343 66370
+                            <i className={`${styles.customList}`}> Telefon: +49 157 343 66370</i> 
                             <br />  
-                            <i className=""></i> E-Mail: husseinkanaan255@gmail.com
+                            <i className={`${styles.customList}`}>E-Mail: husseinkanaan255@gmail.com</i>
                         </div>
                     </div>
                     {/* Newsletter Sektion */}
@@ -55,9 +52,9 @@ const Footer = () => {
                     <div className={styles.footerColumn}>
                         <h5>Rechtliches</h5>
                         <ul>
-                            <li><a href="#">Datenschutzerklärung</a></li>
+                            <li><Link href="/datenschutz"> Datenschutz</Link></li>
                             <li><a href="#">AGB</a></li>
-                            <li><a href="#">Impressum</a></li>
+                            <li><Link href="/impressum"> Impressum</Link></li>
                         </ul>
                     </div>
                 </div>

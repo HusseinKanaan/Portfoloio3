@@ -1,0 +1,51 @@
+
+.impressumContainer {
+    margin-top: 20vh;
+    margin-bottom: 15vh;
+    background-color: #f9f9f9;
+    /* Dezentes Hintergrundgrau */
+
+    /* Abgerundete Ecken */
+    padding: 2rem;
+    /* Innenabstände */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Leichter Schatten */
+}
+
+.impressumContainer h1 {
+    font-size: 2.5rem;
+    /* Größere Schrift für die Überschrift */
+    margin-bottom: 1.5rem;
+    /* Mehr Abstand zur nächsten Zeile */
+}
+
+.impressumContainer h2 {
+    margin-top: 2rem;
+    /* Abstand oberhalb der Sektionen */
+    margin-bottom: 1rem;
+    /* Abstand unterhalb der Überschrift */
+}
+
+.impressumContainer p {
+    line-height: 1.6;
+    /* Angenehmer Zeilenabstand */
+    margin-bottom: 1rem;
+    /* Abstand zwischen den Absätzen */
+}
+
+.impressumContainer strong {
+    font-weight: bold;
+    /* Klarere Hervorhebung */
+}
+
+.impressumContainer section {
+    padding-bottom: 1rem;
+    /* Innenabstand am Ende der Sektion */
+    border-bottom: 1px solid #ddd;
+    /* Trennlinie zwischen den Sektionen */
+}
+
+.impressumContainer section:last-child {
+    border-bottom: none;
+    /* Entfernt die Linie unter der letzten Sektion */
+}

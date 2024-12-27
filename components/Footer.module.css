@@ -91,17 +91,19 @@
     line-height: 1.5;
 }
 
-
-
 .contactIcons i {
     margin-right: 8px;
-    color: #2C3E50;
-    font-weight: bold;
+    font-style: normal;
 }
 
 .headingContact{
     color: #BDC3C7;
     font-size: 1rem;
+}
+
+.customList{
+    color: #16A085;
+    font-family: "Poppins", "Arial", "sans-serif";;
 }
 
 /* Footer Links */
