@@ -1,0 +1,9 @@
+.customHeight{
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+
+.customCard{
+    border-radius: none;
+    border: solid 1px #D8D8D8;
+}

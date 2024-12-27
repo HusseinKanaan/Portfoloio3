@@ -6,7 +6,6 @@ import Footer from '../components/Footer';
 import Arbeitsweise from '../components/Arbeitsweise';
 import LifeGallery from '../components/LifeGallery';
 import PieChart from '@/components/PieChart';
-import { useEffect, useRef, useState } from 'react';
 import { useMultipleScrollTextAnimation } from '../hooks/useMultipleScrollTextAnimation'; // Neuer Hook für mehrere Texte
 import { motion } from "framer-motion";
 

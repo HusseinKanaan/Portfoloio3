@@ -52,9 +52,9 @@ const Footer = () => {
                     <div className={styles.footerColumn}>
                         <h5>Rechtliches</h5>
                         <ul>
-                            <li><a href="#">Datenschutzerklärung</a></li>
+                            <li><Link href="/datenschutz"> Datenschutz</Link></li>
                             <li><a href="#">AGB</a></li>
-                            <li><a href="#">Impressum</a></li>
+                            <li><Link href="/impressum"> Impressum</Link></li>
                         </ul>
                     </div>
                 </div>

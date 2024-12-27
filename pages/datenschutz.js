@@ -1,6 +1,8 @@
 // pages/datenschutz.js
 import Head from 'next/head';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import StickyHeader from '../components/StickyHeader';
+import Footer from '../components/Footer';
+import styles from '../styles/datenschutz.module.css'
 
 const Datenschutz = () => {
   return (
@@ -10,9 +12,10 @@ const Datenschutz = () => {
       <Head>
         <title>Datenschutz | Portfolio</title>
       </Head>
-      <main className="container mt-5">
-        <div className="card shadow-sm p-4">
-          <h1 className="mb-4 text-center text-primary">Datenschutzerklärung</h1>
+      <main className={`container mt-5 ${styles.customHeight}`}>
+        <StickyHeader/>
+        <div className={` shadow-sm p-4 ${styles.customCard}`}>
+          <h1 className="mb-4 text-center text">Datenschutzerklärung</h1>
 
           <p className="lead text-center">
             Der Schutz Ihrer persönlichen Daten ist uns wichtig. Hier erfahren Sie, wie wir Ihre Daten verarbeiten und schützen.
@@ -24,17 +27,17 @@ const Datenschutz = () => {
               Verantwortlich für die Datenverarbeitung auf dieser Website ist:
             </p>
             <address>
-              <strong>Ihr Name</strong><br />
-              Ihre Adresse<br />
-              Ihre Telefonnummer<br />
-              Ihre E-Mail-Adresse<br />
+              <strong>Hussein Kanaan</strong><br />
+              Angelnstr.9<br />
+              015734366370<br />
+              husseinkanaan255@gmail.com<br />
             </address>
           </section>
 
           <section className="mb-5">
             <h2 className="text-secondary">2. Erhebung und Speicherung personenbezogener Daten sowie Art und Zweck von deren Verwendung</h2>
 
-            <h3 className="text-info">Beim Besuch der Website</h3>
+            <h3 className="">Beim Besuch der Website</h3>
             <p>
               Beim Aufrufen unserer Website werden durch den auf Ihrem Endgerät zum Einsatz kommenden Browser automatisch Informationen an den Server unserer Website gesendet. Diese Informationen werden temporär in einem sogenannten Logfile gespeichert:
             </p>
@@ -98,6 +101,7 @@ const Datenschutz = () => {
           </section>
         </div>
       </main>
+      <Footer/>
     </>
   );
 }
