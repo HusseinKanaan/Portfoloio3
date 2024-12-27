@@ -1,0 +1,15 @@
+/* styles/CookieBanner.module.css */
+.cookieBanner {
+    z-index: 1050;
+    border-top: 1px solid #ddd;
+  }
+  
+  .cookieBanner p {
+    font-size: 0.9rem;
+  }
+  
+  .cookieBanner h6 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  

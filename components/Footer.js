@@ -3,8 +3,9 @@ import Typewriter from "../components/Typewriter";
 import ContactForm from "./ContactForm";
 import Image from "next/image";
 import Link from 'next/link';
+import CookieBanner from "./cookieBanner";
 
-const Footer = () => {
+const Footer = ({ toggleSettings }) => {
     return (
         <footer className={styles.footer}>
             <div className={styles.footerContainer}>
@@ -37,14 +38,14 @@ const Footer = () => {
                         <h5>Portfolio</h5>
                         <ul>
                             <li><a href="#">Projekte</a></li>
-                            <li><a href="#">Leistungen</a></li>
-                            <li><a href="#">Technologien</a></li>
+                            <li><Link href="#service">Leistungen</Link></li>
+                            <li><Link href="/about/#piechart">Technologien</Link></li>
                         </ul>
                     </div>
                     <div className={styles.footerColumn}>
                         <h5>Informationen</h5>
                         <ul>
-                            <li><a href="#">Über mich</a></li>
+                            <li><Link href="/about">Über mich</Link></li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">FAQ</a></li>
                         </ul>
@@ -53,7 +54,7 @@ const Footer = () => {
                         <h5>Rechtliches</h5>
                         <ul>
                             <li><Link href="/datenschutz"> Datenschutz</Link></li>
-                            <li><a href="#">AGB</a></li>
+                            <li><Link href='/#cookie-settings'>Cookie-Einstellungen</Link></li>
                             <li><Link href="/impressum"> Impressum</Link></li>
                         </ul>
                     </div>
@@ -69,6 +70,7 @@ const Footer = () => {
                     </div>
                     <p>&copy; {new Date().getFullYear()} copyright</p>
                     <a href="#" className={styles.scrollTop}>Nach oben ↑</a>
+<CookieBanner/>
                 </div>
             </div>
         </footer>
