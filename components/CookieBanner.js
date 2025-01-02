@@ -1,10 +1,17 @@
-// components/CookieBanner.js
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './CookieBanner.module.css';
 
 const CookieBanner = ({ toggleSettings }) => {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false); // Startet standardmäßig als unsichtbar
   const [settingsVisible, setSettingsVisible] = useState(false);
+
+  // Beim ersten Render überprüfen, ob ein Consent gespeichert ist
+  useEffect(() => {
+    const consent = localStorage.getItem('cookieConsent');
+    if (!consent) {
+      setIsVisible(true); // Nur anzeigen, wenn kein Consent gespeichert ist
+    }
+  }, []);
 
   const handleAccept = () => {
     localStorage.setItem('cookieConsent', 'accepted');
@@ -18,7 +25,7 @@ const CookieBanner = ({ toggleSettings }) => {
 
   const toggleSettingsHandler = () => {
     setSettingsVisible(!settingsVisible);
-    if (toggleSettings) toggleSettings();  // Optional: Falls eine äußere Funktion übergeben wird.
+    if (toggleSettings) toggleSettings(); // Optional: Falls eine äußere Funktion übergeben wird
   };
 
   if (!isVisible) {

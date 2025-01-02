@@ -19,8 +19,7 @@ const SmoothMovingImageOnLoad = () => {
     <div className={styles.imageContainer}>
       <div ref={textRef} className={styles.text}>
         <h1 className={`${styles.factsHeading} display-6`}>about</h1>
-        <p>Im a product designer based in sunny Sydney, Australia.
-          Since 2005, Ive enjoyed turning complex problems into simple, beautiful and intuitive designs. When Im not pushing pixels, youll find me cooking, gardening or working out in the park</p>
+        <p>Ich bin Frontend-Entwickler aus Norderstedt. Seit Jahren bringe ich Pixel zum Leben und verwandle digitale Ideen in funktionale Websites. Wenn ich nicht im Code versinke, schlemme ich Kaffee oder entdecke neue Technologien.</p>
       </div>
       <Image
         ref={imageRef}
