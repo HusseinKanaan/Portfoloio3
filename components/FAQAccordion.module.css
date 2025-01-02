@@ -3,9 +3,9 @@
     padding: 20px 0; /* Abstand oben und unten */
   }
   
-  .faqItem {
+/*   .faqItem { */
     /* Optional: Füge hier weitere Styles hinzu, um das Element zu stylen */
-  }
+/*   } */
   
   .faqCard {
     transition: transform 0.2s;
@@ -17,9 +17,11 @@
   
   .faqHeader {
     background-color: #f8f9fa; /* Heller Hintergrund für den Header */
+    height: 100px;
   }
   
   .faqButton {
+    height: 100px;
     font-weight: 500;
     font-size: 18px;
     color: #333; /* Dunkle Schriftfarbe */

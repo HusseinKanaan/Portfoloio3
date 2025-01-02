@@ -23,7 +23,7 @@ Tagessatz: 400 € für 8 Arbeitsstunden.`,
    Die Zeit kann je nach Anforderungen variieren.`,
   },
   {
-    question: "Bietest du Wartung und Support an?",
+    question: "Bietest du Wartung und Support an         ?",
     answer: "Ja, ich biete Wartungs- und Supportleistungen für Fullstack-Projekte mit React und Next.js an. Dazu gehört die Fehlerbehebung, das Aktualisieren von Abhängigkeiten, das Optimieren der Performance und das Implementieren neuer Features.",
   },
   {
