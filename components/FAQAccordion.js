@@ -5,28 +5,38 @@ import styles from "./FAQAccordion.module.css"; // Importiere die CSS-Datei
 
 const faqData = [
   {
-    question: "What is Next.js?",
-    answer: "Next.js is a React framework that enables server-side rendering and static site generation.",
+    question: "Wie hoch ist dein Stundensatz?",
+    answer: `Abrechnung in 15-Minuten-Schritten:
+15 Minuten = 12,50 €,
+30 Minuten = 25 €,
+45 Minuten = 37,50 €,
+60 Minuten = 50 €,
+Alternativ:
+Tagessatz: 400 € für 8 Arbeitsstunden.`,
   },
   {
-    question: "How does Next.js handle routing?",
-    answer: "Next.js provides a file-based routing system where each file in the pages directory automatically becomes a route.",
+    question: "Wie lange dauert es, bis meine Website fertig ist?",
+    answer: `Die Entwicklungsdauer hängt vom Projektumfang ab. In der Regel dauert die Erstellung einer Website mit Next.js und dem MERN-Stack etwa 4-6 Wochen. Dies umfasst Design, Entwicklung, Tests und das finalisierte Deployment.
+   Faktoren, die die Dauer beeinflussen:
+   Komplexität der Website (z.B. einfache Seiten oder komplexe Webanwendungen)
+  Benutzeranforderungen (z.B. individuelle Features oder API-Integrationen)
+   Die Zeit kann je nach Anforderungen variieren.`,
   },
   {
-    question: "Is Bootstrap compatible with Next.js?",
-    answer: "Yes! Bootstrap can be easily integrated with Next.js.",
+    question: "Bietest du Wartung und Support an?",
+    answer: "Ja, ich biete Wartungs- und Supportleistungen für Fullstack-Projekte mit React und Next.js an. Dazu gehört die Fehlerbehebung, das Aktualisieren von Abhängigkeiten, das Optimieren der Performance und das Implementieren neuer Features.",
   },
   {
-    question: "What is server-side rendering (SSR)?",
-    answer: "SSR is a method of rendering pages on the server.",
+    question: "Welche Art von Websites erstellst du?",
+    answer: "Ich bin spezialisiert auf die Erstellung von modernen, maßgeschneiderten Websites mit React, Next.js und MERN-Stack. Dazu gehören Unternehmensseiten, Portfolios, Landingpages, Webanwendungen und dynamische Online-Shops. Meine Expertise liegt in der Entwicklung responsiver, performanter und benutzerfreundlicher Frontend-Lösungen.",
   },
   {
-    question: "How do I deploy a Next.js app?",
-    answer: "Next.js apps can be deployed on platforms like Vercel and Netlify.",
+    question: "Womit wurde diese Site erstellt?",
+    answer: "Meine Portfolio-Seite wurde mit dem Next.js-Framework erstellt, das auf React basiert, und verwendet Bootstrap für das Layout sowie CSS für das Styling. Alles wurde hart gecodet – jede Animation, jedes Detail und jeder einzelne Code wurden von mir manuell erstellt, ohne Abkürzungen oder Bibliotheken wie zum Beispiel jQuery oder fertige UI-Bibliotheken. Diese Entscheidung ermöglicht mir eine präzise Kontrolle über das Design und die Funktionalität der Seite.",
   },
   {
-    question: "What is static site generation (SSG)?",
-    answer: "SSG allows Next.js to pre-render pages at build time.",
+    question: "Wo befinden Sie sich? Arbeiten Sie remote?",
+    answer: "Ich lebe in Norderstedt, in der Nähe von Hamburg, und arbeite remote von überall aus. Ein Hybridmodell (z. B. mehrere Tage im Büro) ist ebenfalls möglich, besonders in der Umgebung von Norderstedt und Hamburg. Ich bin flexibel und es spielt keine Rolle, ob Sie vor Ort oder remote arbeiten möchten.",
   },
 ];
 

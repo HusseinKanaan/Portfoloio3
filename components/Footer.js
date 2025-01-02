@@ -3,7 +3,7 @@ import Typewriter from "../components/Typewriter";
 import ContactForm from "./ContactForm";
 import Image from "next/image";
 import Link from 'next/link';
-import CookieBanner from "./cookieBanner";
+import CookieBanner from "./CookieBanner";
 
 const Footer = ({ toggleSettings }) => {
     return (
@@ -16,8 +16,7 @@ const Footer = ({ toggleSettings }) => {
                         {/* E-Mail und Telefon Icons */}
                         <div className={styles.contactIcons}>
                             <p className={styles.footerDescription}>
-                                Innovatives Webdesign, das Marken auf die nächste Ebene bringt. Wir schaffen digitale Erlebnisse, die beeindrucken.
-                                Innovatives Webdesign, das Marken auf die nächste Ebene bringt. Wir schaffen digitale Erlebnisse, die beeindrucken.
+                            Individuelles Webdesign, das Ihre Marke einzigartig präsentiert. Als Freelancer biete ich maßgeschneiderte digitale Erlebnisse, die Eindruck hinterlassen und Ihre Marke weiterbringen.
                             </p>
 
                                 <i className={`${styles.customList}`}>Hussein Kanaan</i>
@@ -37,8 +36,8 @@ const Footer = ({ toggleSettings }) => {
                     <div className={styles.footerColumn}>
                         <h5>Portfolio</h5>
                         <ul>
-                            <li><a href="#">Projekte</a></li>
-                            <li><Link href="#service">Leistungen</Link></li>
+                            <li><Link href="#">Projekte</Link></li>
+                            <li><Link href="/#service">Leistungen</Link></li>
                             <li><Link href="/about/#piechart">Technologien</Link></li>
                         </ul>
                     </div>
@@ -46,8 +45,8 @@ const Footer = ({ toggleSettings }) => {
                         <h5>Informationen</h5>
                         <ul>
                             <li><Link href="/about">Über mich</Link></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">FAQ</a></li>
+                            <li><Link href="/#contact">Kontakt</Link></li>
+                            <li><Link href="/#faq">FAQ</Link></li>
                         </ul>
                     </div>
                     <div className={styles.footerColumn}>
@@ -76,5 +75,6 @@ const Footer = ({ toggleSettings }) => {
         </footer>
     );
 }
+
 
 export default Footer;

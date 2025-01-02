@@ -556,14 +556,14 @@ h1 {
 }
 
 .custom-height-service {
-  max-height: 180vh;
+  max-height: 250vh;
   display: flex;
   flex-wrap: wrap;
   /* Elemente ordnen sich dynamisch an */
 }
 
 .custom-height-service {
-  max-height: 180vh;
+  max-height: 250vh;
   display: flex;
   flex-wrap: wrap;
   /* Elemente ordnen sich dynamisch an */
