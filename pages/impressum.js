@@ -18,7 +18,7 @@ const Impressum = () => {
           <p>
             Hussein Kanaan<br>
             </br>
-            Angelnstr.9 <br />
+            Angelnstr. 9 <br />
             22049 Hamburg <br />
           </p>
         </section>
@@ -36,7 +36,7 @@ const Impressum = () => {
           <h2 className="h5">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h2>
           <p>
             <strong>Hussein Kanaan</strong><br />
-            Angelnstr.9 <br />
+            Angelnstr. 9 <br />
             22049 Hamburg <br />
 
             Telefon: +49 (0) 1573436630 <br />
