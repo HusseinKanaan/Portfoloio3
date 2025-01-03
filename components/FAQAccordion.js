@@ -23,7 +23,7 @@ Tagessatz: 400 € für 8 Arbeitsstunden.`,
    Die Zeit kann je nach Anforderungen variieren.`,
   },
   {
-    question: "Bietest du Wartung und Support an?",
+    question: "Bietest du Wartung und Support an         ?",
     answer: "Ja, ich biete Wartungs- und Supportleistungen für Fullstack-Projekte mit React und Next.js an. Dazu gehört die Fehlerbehebung, das Aktualisieren von Abhängigkeiten, das Optimieren der Performance und das Implementieren neuer Features.",
   },
   {
@@ -31,7 +31,7 @@ Tagessatz: 400 € für 8 Arbeitsstunden.`,
     answer: "Ich bin spezialisiert auf die Erstellung von modernen, maßgeschneiderten Websites mit React, Next.js und MERN-Stack. Dazu gehören Unternehmensseiten, Portfolios, Landingpages, Webanwendungen und dynamische Online-Shops. Meine Expertise liegt in der Entwicklung responsiver, performanter und benutzerfreundlicher Frontend-Lösungen.",
   },
   {
-    question: "Womit wurde diese Site erstellt?",
+    question: "Womit wurde diese Seite erstellt?",
     answer: "Meine Portfolio-Seite wurde mit dem Next.js-Framework erstellt, das auf React basiert, und verwendet Bootstrap für das Layout sowie CSS für das Styling. Alles wurde hart gecodet – jede Animation, jedes Detail und jeder einzelne Code wurden von mir manuell erstellt, ohne Abkürzungen oder Bibliotheken wie zum Beispiel jQuery oder fertige UI-Bibliotheken. Diese Entscheidung ermöglicht mir eine präzise Kontrolle über das Design und die Funktionalität der Seite.",
   },
   {

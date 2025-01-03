@@ -9,6 +9,7 @@ import Status from '../components/Status';
 import Workflow from '../components/Workflow';
 import ButtonDark from '../components/ButtonDark';
 import ButtonLight from '../components/ButtonLight';
+import StepsSection from '../components/StepsSection';
 import { useMultipleScrollTextAnimation } from '../hooks/useMultipleScrollTextAnimation'; // Neuer Hook für mehrere Texte
 import { useEffect, useRef, useState } from 'react';
 import Head from 'next/head';
@@ -67,7 +68,7 @@ export default function Home() {
                 </h3> */}
                 <h1 className="customTextHeading fw-bold mb-3">Professionelles  Webdesign & <br /><span> Webentwicklung</span></h1>
                 <p className="customText mb-5">
-                Frontend-Entwickler mit Full-Stack-Skills aus Norderstedt – ich bringe Ihr Business und Ihre Vision in den Browser.
+                  Frontend-Entwickler mit Full-Stack-Skills aus Norderstedt – ich bringe Ihr Business und Ihre Vision in den Browser.
                 </p>
                 {/*                 <p className=' customTextSmall text-muted'> Front-end Entwickler / Webdesigner </p> */}
                 <div className=' '>
@@ -180,7 +181,7 @@ export default function Home() {
                       <small>React / Webdesign</small>
                     </h2>
                     <p className='text-left-service'>
-                    Mit maßgeschneidertem Webdesign biete ich Ihnen eine funktionale und ansprechende Website. Durch React sorge ich dafür, dass Ihre Seite blitzschnell lädt und sich einfach pflegen lässt. Egal ob Smartphone oder Desktop – Ihre Website sieht auf jedem Gerät immer top aus. In einem persönlichen Gespräch erarbeiten wir gemeinsam Ihre Ziele und die beste Umsetzung.
+                      Mit maßgeschneidertem Webdesign biete ich Ihnen eine funktionale und ansprechende Website. Durch React sorge ich dafür, dass Ihre Seite blitzschnell lädt und sich einfach pflegen lässt. Egal ob Smartphone oder Desktop – Ihre Website sieht auf jedem Gerät immer top aus. In einem persönlichen Gespräch erarbeiten wir gemeinsam Ihre Ziele und die beste Umsetzung.
                     </p>
                     <div className='d-flex justify-content-left frame'>
                       <ButtonDark text='Mehr erfahren' />
@@ -198,7 +199,7 @@ export default function Home() {
                       <small>App</small>
                     </h2>
                     <p className='text-left-service'>
-                    Um das volle Potenzial Ihrer App auszuschöpfen, braucht es ein durchdachtes Design, das einfach funktioniert. Eine benutzerfreundliche App, die auf Ihre Bedürfnisse zugeschnitten ist, sorgt für eine top Nutzererfahrung. Mit modernen Technologien stelle ich sicher, dass die App einfach zu bedienen und unkompliziert zu pflegen ist. Gemeinsam entwickeln wir eine App, die Ihre Ziele erfüllt und auf allen Geräten perfekt läuft.
+                      Um das volle Potenzial Ihrer App auszuschöpfen, braucht es ein durchdachtes Design, das einfach funktioniert. Eine benutzerfreundliche App, die auf Ihre Bedürfnisse zugeschnitten ist, sorgt für eine top Nutzererfahrung. Mit modernen Technologien stelle ich sicher, dass die App einfach zu bedienen und unkompliziert zu pflegen ist. Gemeinsam entwickeln wir eine App, die Ihre Ziele erfüllt und auf allen Geräten perfekt läuft.
                     </p>
                     <div className='d-flex justify-content-left frame'>
                       <ButtonDark text='Mehr erfahren' />
@@ -219,7 +220,7 @@ export default function Home() {
                       <small>Api</small>
                     </h2>
                     <p className='text-left-service'>
-                    Um das volle Potenzial Ihrer Website auszuschöpfen, ist eine smarte API-Integration entscheidend. Ein cooles Design allein reicht nicht aus. Durch die Anbindung von Schnittstellen wie CRM oder Zahlungslösungen verbessern wir die Funktionalität und Nutzererfahrung. Ich helfe Ihnen, Ihre Website technisch und strategisch auf das nächste Level zu bringen.
+                      Um das volle Potenzial Ihrer Website auszuschöpfen, ist eine smarte API-Integration entscheidend. Ein cooles Design allein reicht nicht aus. Durch die Anbindung von Schnittstellen wie CRM oder Zahlungslösungen verbessern wir die Funktionalität und Nutzererfahrung. Ich helfe Ihnen, Ihre Website technisch und strategisch auf das nächste Level zu bringen.
                     </p>
                     <div className='d-flex justify-content-left frame'>
                       <ButtonDark text='Mehr erfahren' />
@@ -237,7 +238,7 @@ export default function Home() {
                       <small>Support / Wartung</small>
                     </h2>
                     <p className='text-left-service'>
-                    Service, Wartung und Updates – ich halte Ihre Website immer up to date. Ich kümmere mich um alle Sicherheitslücken, Schadsoftware und Spam, damit Sie sich keine Sorgen machen müssen. Ihre Inhalte bleiben frisch, und Ihr Online-Shop läuft reibungslos. Regelmäßige Wartung sorgt dafür, dass Ihre Website stabil und performant bleibt. Melden Sie sich einfach, und ich lege sofort direkt los, um alles effizient zu optimieren!
+                      Service, Wartung und Updates – ich halte Ihre Website immer up to date. Ich kümmere mich um alle Sicherheitslücken, Schadsoftware und Spam, damit Sie sich keine Sorgen machen müssen. Ihre Inhalte bleiben frisch, und Ihr Online-Shop läuft reibungslos. Regelmäßige Wartung sorgt dafür, dass Ihre Website stabil und performant bleibt. Melden Sie sich einfach, und ich lege sofort direkt los, um alles effizient zu optimieren!
                     </p>
                     <div className='d-flex justify-content-left frame'>
                       <ButtonDark text='Mehr erfahren' />
@@ -267,7 +268,7 @@ export default function Home() {
                     <p>In der heutigen Zeit ist eine starke digitale Präsenz mehr als nur wichtig, sie ist ein Muss. Gerade jetzt, wo jeder Klick zählt, geht es nicht nur um den ersten Eindruck, sondern um die Wirkung. Mit maßgeschneidertem Webdesign und effizienter Programmierung optimiere ich Ihre Webseite – ich mache sie zu Ihrem digitalen Erfolg. Sie haben eine Vision? Ich helfe Ihnen, sie zu verwirklichen, indem ich die neuesten Technologien nutze, um Ihre Seite heute zukunftssicher zu gestalten. Denn der Erfolg im Web kommt nicht von ungefähr, er entsteht durch die richtigen Schritte zur richtigen Zeit. Und ich bin der Partner, der Ihnen dabei nicht nur zur Seite steht, sondern an Ihrer Seite.</p>
                   </div>
                   <div className='d-flex justify-content-left'>
-                    <ButtonDark text="Jetzt beraten lassen" />  
+                    <ButtonDark text="Jetzt beraten lassen" />
                   </div>
                 </div>
               </div>
@@ -300,7 +301,7 @@ export default function Home() {
                 Webdesigner für Deutschland, Österreich und die Schweiz
               </h2>
               <p className="customText">
-              Ich arbeite mit kleinen und mittelständischen Unternehmen sowie Werbe- und Grafikagenturen aus ganz Deutschland, Österreich und der Schweiz. Was ich täglich mache? Beratung, individuelles Webdesign, Webentwicklung und SEO. Wenn Sie ein unverbindliches und kostenloses Angebot wollen, lassen Sie uns sprechen – Ihre erfolgreiche Website ist nur einen Klick entfernt. Ich freue mich darauf, mit Ihnen zusammenzuarbeiten und Ihr Projekt zum Leben zu erwecken.
+                Ich arbeite mit kleinen und mittelständischen Unternehmen sowie Werbe- und Grafikagenturen aus ganz Deutschland, Österreich und der Schweiz. Was ich täglich mache? Beratung, individuelles Webdesign, Webentwicklung und SEO. Wenn Sie ein unverbindliches und kostenloses Angebot wollen, lassen Sie uns sprechen – Ihre erfolgreiche Website ist nur einen Klick entfernt. Ich freue mich darauf, mit Ihnen zusammenzuarbeiten und Ihr Projekt zum Leben zu erwecken.
               </p>
               <div className="d-flex justify-content-center frame">
                 <ButtonLight text="Jetzt Kontakt aufnehmen" />
@@ -333,7 +334,7 @@ export default function Home() {
                 Starten wir mit der Umsetzung Ihrer Website!
               </h2>
               <p className="customText">
-              Erzählen Sie mir von Ihren Ideen, und erhalten Sie ein unverbindliches, kostenloses Angebot für Ihr neues Webdesign. Der erste Schritt in Richtung Erfolg ist nur ein Gespräch entfernt.
+                Erzählen Sie mir von Ihren Ideen, und erhalten Sie ein unverbindliches, kostenloses Angebot für Ihr neues Webdesign. Der erste Schritt in Richtung Erfolg ist nur ein Gespräch entfernt.
               </p>
               <div className="d-flex justify-content-center frame">
                 <ButtonLight text="Jetzt Kontakt aufnehmen" />
@@ -369,6 +370,7 @@ export default function Home() {
         </div>
         <div className='vh-100'>
         </div>
+            <StepsSection />
         {/* Seite 9 FAQ */}
         <div id='faq'>
           <Container className="py-5">

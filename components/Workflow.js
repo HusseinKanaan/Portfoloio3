@@ -26,7 +26,7 @@ const Workflow = () => {
         <div className='container'>
 
           <h1 className={`mb-5 container-fluid display-5 text-center fade-in ${visibleTexts[23] ? 'loaded' : ''
-            } ${styles.headingWworkflow}`} ref={(el) => (textRefs.current[23] = el)}>Workflow</h1>
+            } ${styles.headingWworkflow}`} ref={(el) => (textRefs.current[23] = el)}> Ablauf</h1>
 
         </div>
       </div>
