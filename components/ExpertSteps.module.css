@@ -1,0 +1,111 @@
+.stepsSection {
+    background-color: #ffffff; /* Weißer Hintergrund für den gesamten Bereich */
+    padding: 5rem 0;
+    width: 100%;
+    max-width: 1296px; /* Maximale Breite für die Komponente */
+    margin: 0 auto; /* Zentrieren innerhalb der maximalen Breite */
+  }
+  
+  .smallHeading {
+    font-size: 1.5rem; /* Kleinere Schriftgröße */
+    font-weight: 600;
+    color: #34495E; /* Dunkelblau */
+    text-align: left; /* Linksbündige Ausrichtung */
+    margin-bottom: 0.5rem;
+  }
+  
+  .largeHeading {
+    font-size: 2.5rem; /* Größere Schriftgröße */
+    font-weight: 700;
+    color: #34495E; /* Dunkelblau */
+    text-align: left; /* Linksbündige Ausrichtung */
+    margin-bottom: 3rem;
+  }
+  
+  .stepNumber {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #bdc9c2; /* Farbe der Zahl */
+    background: none;
+    letter-spacing: 0;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .stepText {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #34495E; /* Dunkelblau für "| Schritt" */
+    margin-left: 0.5rem;
+  }
+  
+  .stepHeader {
+    display: flex;
+    align-items: center;  /* Zentriert die Zahl, den Text und die Linie horizontal */
+    margin-bottom: 1rem;
+  }
+  
+  .stepLine {
+    flex-grow: 1;
+    height: 1px; /* Dünne Linie */
+    background-color: #34495E; /* Dunkelblau für die Linie */
+    margin-left: 1rem; /* Abstand zwischen Zahl und Linie */
+  }
+  
+  .stepTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #34495E; /* Primäre Farbe */
+    margin-top: 1rem;
+  }
+  
+  .stepDescription {
+    font-size: 1.2rem;
+    color: #7f8c8d; /* Grauton für den Text */
+    line-height: 1.6;
+  }
+  
+  .stepBlock {
+    padding: 2rem;
+    background-color: #ffffff; /* Weißer Hintergrund */
+    border-radius: 8px; /* Abgerundete Ecken */
+    transition: transform 0.3s ease; /* Nur der Hover-Effekt */
+  }
+  
+  .stepBlock:hover {
+    transform: translateY(-5px); /* Sanfte Verschiebung beim Hover */
+  }
+  
+  @media (max-width: 767px) {
+    .stepsSection {
+      padding: 2rem 0;
+    }
+  
+    .stepHeader {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .stepLine {
+      margin-top: 1rem;
+      width: 100%;
+    }
+  
+    .smallHeading {
+      font-size: 1.2rem; /* Kleinere Schriftgröße auf mobilen Geräten */
+    }
+  
+    .largeHeading {
+      font-size: 2rem; /* Kleinere Schriftgröße auf mobilen Geräten */
+    }
+  
+    .stepNumber {
+      font-size: 2rem; /* Kleinere Zahl auf mobilen Geräten */
+    }
+  
+    .stepText {
+      font-size: 1.1rem; /* Kleinere Schriftgröße für "| Schritt" */
+    }
+  }
+  

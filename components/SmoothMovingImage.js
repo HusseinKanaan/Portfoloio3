@@ -37,14 +37,14 @@ const SmoothMovingImage = () => {
         className={styles.movingImage}
         />
       <div ref={textRef} className={styles.text}>
-        <p className={`display-6 ${styles.factsHeading}`}>Random Facts</p>
+        <p className={`display-6 ${styles.factsHeading}`}>Random Fakten</p>
         <p>Ich trinke viel Tee. Fokus braucht Treibstoff</p>
         <p>Tastaturen? Mein Universum</p>
         <p>Möbelbau? Erinnerungen aus Holz. Design hört nie auf..</p>
         <p>Kochen und essen? Beides Kunst</p>
         <p>Ich mag es sauber. Chaos stört die Pixel</p>
         <p>Ich möchte auf Pandora leben</p>
-        <p>Facebook? Sucht mich</p>
+        <p>Facebook? Sucht, mich</p>
         <p>Yoda ist mein Mentor</p>
       </div>
     </div>
