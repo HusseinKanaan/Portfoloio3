@@ -4,12 +4,12 @@ import ShuffleCarousel from '../components/ShuffleCarousel';
 import { Container } from "react-bootstrap";
 import { motion } from "framer-motion";
 import FAQAccordion from "../components/FAQAccordion";
-import PieChart from '../components/PieChart';
 import Status from '../components/Status';
 import Workflow from '../components/Workflow';
 import ButtonDark from '../components/ButtonDark';
 import ButtonLight from '../components/ButtonLight';
 import StepsSection from '../components/StepsSection';
+import ExpertSteps from '../components/ExpertSteps';
 import { useMultipleScrollTextAnimation } from '../hooks/useMultipleScrollTextAnimation'; // Neuer Hook für mehrere Texte
 import { useEffect, useRef, useState } from 'react';
 import Head from 'next/head';
@@ -290,7 +290,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* Seite 8 */}
+        {/* Seite 6 */}
         <section id="regional-services" className="custom-background-lightblue h-25">
           <div className="container custom-height-container d-flex justify-content-center align-items-center">
             <div
@@ -320,9 +320,8 @@ export default function Home() {
             />
           </div>
         </section>
-        {/* Pie-chart */}
-        <div className='vh-100'></div>
-
+        {/* Seite 7 */}
+<ExpertSteps/>
         {/* Seite 8 */}
         <section id="regional-services" className="custom-background-lightblue h-25">
           <div className="container custom-height-container d-flex justify-content-center align-items-center">
@@ -355,9 +354,9 @@ export default function Home() {
         </section>
 
         {/* Workflow */}
-        <div className='workflow-container'>
+{/*         <div className='workflow-container'>
           <Workflow />
-        </div>
+        </div> */}
         {/*Random Facts */}
         {/*         <div>
           <SmoothMovingImage />
@@ -366,10 +365,10 @@ export default function Home() {
         {/*         <div className=''>
           <VerticalBarChart />
         </div> */}
-        <div className='vh-100'>
+{/*         <div className='vh-100'>
         </div>
         <div className='vh-100'>
-        </div>
+        </div> */}
             <StepsSection />
         {/* Seite 9 FAQ */}
         <div id='faq'>
