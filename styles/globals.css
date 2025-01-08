@@ -649,11 +649,6 @@ h1 {
 }
 
 .custom-height-container {
-  height: 90vh;
-}
-
-/* region-service */
-.custom-height-container-umsetzung {
   height: 70vh;
 }
 
@@ -662,17 +657,7 @@ h1 {
   position: relative;
   height: 100%;
   /* Die Hintergrundfarbe ist nicht mehr nötig, da das Bild als Hintergrund verwendet wird */
-}
-
-.background-overlay {
-  position: absolute;
-  overflow: hidden; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  /* Stellt sicher, dass das Bild im Hintergrund bleibt */
+  padding: 40px 0; /* Zusätzlicher Abstand oben und unten */
 }
 
 .text-center {
@@ -684,13 +669,12 @@ h1 {
 }
 
 .customText {
-  font-size: 20px;
+  Font-size: 20px;
   color: #555555;
   max-width: 900px;
   /* Begrenze die Breite des Textes für eine bessere Lesbarkeit */
   margin: 20px auto;
   padding: 10px;
-
   border-radius: 8px;
 }
 

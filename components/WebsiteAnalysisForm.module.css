@@ -1,0 +1,89 @@
+.customBackgroundLightblue {
+    position: relative;
+    height: 100%;
+    /* Die Hintergrundfarbe ist nicht mehr nötig, da das Bild als Hintergrund verwendet wird */
+    padding: 40px 0; /* Zusätzlicher Abstand oben und unten */
+}
+
+.customHeightContainer {
+    height: 70vh;
+}
+
+.customText {
+    font-size: 20px;
+    color: #555555;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.customForm {
+    max-width: 400px;
+    width: 100%; /* Nimmt die gesamte Breite an, bleibt aber innerhalb des Containers */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Mehr Abstand zwischen den Feldern */
+    margin: 0 auto;
+}
+
+.customInput {
+    margin: 0 auto;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+    background-color: transparent;
+    color: #333;
+    text-align: center;
+    /* Eckige Ecken bleiben wie gewünscht */
+    border-radius: 0; /* Kein Border-Radius */
+    font-family: 'Inter', sans-serif; /* Schriftart */
+    width: 100%;
+    max-width: 500px; /* Maximale Breite für bessere Lesbarkeit */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Sanftere Übergänge */
+}
+
+.customInput::placeholder {
+    color: #7f8c8d;
+    font-weight: normal;
+}
+
+.customInput:focus::placeholder {
+    color: transparent; /* Placeholder verschwindet bei Fokus */
+}
+
+.customInput:focus {
+    border-color: #16A085;
+    box-shadow: 0 0 5px rgba(22, 160, 133, 0.5);
+    outline: none;
+}
+
+.backgroundOverlay {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Stellt sicher, dass das Bild im Hintergrund bleibt */
+}
+
+.heading {
+    color: #333; /* Eine dunklere Farbe für den Haupttitel */
+    font-size: 2em; /* Größerer Titel */
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
