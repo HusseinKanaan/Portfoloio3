@@ -44,7 +44,7 @@ const SmoothMovingImage = () => {
         <p>Kochen und essen? Beides Kunst</p>
         <p>Ich mag es sauber. Chaos stört die Pixel</p>
         <p>Ich möchte auf Pandora leben</p>
-        <p>Facebook? Sucht, mich</p>
+        <p>Facebook? Sucht,  mich</p>
         <p>Yoda ist mein Mentor</p>
       </div>
     </div>

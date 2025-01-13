@@ -1,3 +1,9 @@
+.headingForm{
+    font-size: 48px;
+    /* Große Schrift für den Header */
+    font-weight: 700;
+}
+
 .customBackgroundLightblue {
     position: relative;
     height: 100%;
@@ -10,7 +16,7 @@
 }
 
 .customText {
-    font-size: 20px;
+    font-size: 24px;
     color: #555555;
     max-width: 600px;
     margin: 20px auto;

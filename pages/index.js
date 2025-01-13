@@ -141,12 +141,12 @@ export default function Home() {
       {/*/// Main Content */}
       <main>
         {/* Seite 2 Vorteile */}
-        <section id='vorteile' className={`container h-25}`} >
-          <div className=' text-center vh-100 d-flex justify-content-center align-items-center'>
-            <div /* width={1000} */ className={`h-25 fade-in ${visibleTexts[0] ? 'loaded' : ''}`} ref={el => textRefs.current[0] = el}>
-              <h2 className='display-5  fw-bold cutomTextColor2'>Heben Sie sich von Ihrer Konkurrenz ab und gewinnen Sie neue Kunden!</h2>
+        <section id='vorteile' className={`container py-5}`} >
+          <div className='vh-100 d-flex flex-column justify-content-center align-items-center text-center'>
+            <div /* width={1000} */ className={`heading-vorteile  fade-in ${visibleTexts[0] ? 'loaded' : ''}`} ref={el => textRefs.current[0] = el}>
+              <h2 className='fw-bold mb-5'>Heben Sie sich von Ihrer Konkurrenz ab und gewinnen Sie neue Kunden!</h2>
               <strong className='customText'>Ihr digitaler Auftritt – maßgeschneidert, modern und perfekt für Suchmaschinen.</strong>
-              <p className='customText'>Ich erstelle Websites, die sowohl optisch überzeugen als auch technisch auf dem neuesten Stand sind. Mit blitzschnellen Ladezeiten und einem responsiven Design. Je nach Projekt arbeite ich mit einem erfahrenen Team zusammen, um Ihre Ziele effektiv umzusetzen.</p>
+              <p className='customText '>Ich erstelle Websites, die sowohl optisch überzeugen als auch technisch auf dem neuesten Stand sind. Mit blitzschnellen Ladezeiten und einem responsiven Design. Je nach Projekt arbeite ich mit einem erfahrenen Team zusammen, um Ihre Ziele effektiv umzusetzen.</p>
               <div className='frame'>
                 <ButtonLight text="Projekt Anfragen" />
               </div>
@@ -295,14 +295,14 @@ export default function Home() {
         <section id="regional-services" className="custom-background-lightblue h-25">
           <div className="container custom-height-container d-flex justify-content-center align-items-center">
             <div
-              className={`text-center h-25 fade-in ${visibleTexts[2] ? 'loaded' : ''}`}
+              className={`heading-vorteile text-center fade-in ${visibleTexts[2] ? 'loaded' : ''}`}
               ref={(el) => (textRefs.current[2] = el)}
             >
-              <h2 className="display-5 fw-bold">
+              <h2 className="">
                 Webdesigner für Deutschland, Österreich und die Schweiz
               </h2>
               <p className="customText">
-                Ich arbeite mit kleinen und mittelständischen Unternehmen sowie Werbe- und Grafikagenturen aus ganz Deutschland, Österreich und der Schweiz. Was ich täglich mache? Beratung, individuelles Webdesign, Webentwicklung und SEO. Wenn Sie ein unverbindliches und kostenloses Angebot wollen, lassen Sie uns sprechen – Ihre erfolgreiche Website ist nur einen Klick entfernt. Ich freue mich darauf, mit Ihnen zusammenzuarbeiten und Ihr Projekt zum Leben zu erwecken.
+                Ich arbeite mit kleinen und mittelständischen Unternehmen sowie Werbe- und Grafikagenturen aus ganz Deutschland, Österreich und der Schweiz. Was ich täglich mache? Beratung, individuelles Webdesign, Webentwicklung und SEO. Wenn Sie ein unverbindliches und kostenloses Angebot wollen, lassen Sie uns sprechen – Ihre erfolgreiche Website ist nur einen Klick entfernt.
               </p>
               <div className="d-flex justify-content-center frame">
                 <ButtonLight text="Jetzt Kontakt aufnehmen" />
