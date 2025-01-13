@@ -37,16 +37,18 @@ const steps = [
 const StepsSection = () => {
   return (
     <section className={styles.stepsSection}>
-      <div className="container">
-        <h3 className={styles.smallHeading}>In 6 Schritten zur neuen Website</h3>
+      <div className="">
+      <div className={`container ${styles.headingBlock}`}>
+        <p className={styles.smallHeading}>IN 6 SCHRITTEN ZUR NEUEN WEBSITE</p>
         <h2 className={styles.largeHeading}>Mein Ablauf für Ihr neues Webdesign</h2>
+        </div>
         <div className="row">
           {steps.map((step, index) => (
             <div className="col-md-6 mb-4" key={index}>
               <div className={styles.stepBlock}>
                 <div className={styles.stepHeader}>
                   <span className={styles.stepNumber}>{step.step}</span>
-                  <span className={styles.stepText}> | Schritt</span>
+                  <span className={styles.stepText}> | SCHRITT</span>
                   <div className={styles.stepLine}></div>
                 </div>
                 <h3 className={styles.stepTitle}>{step.title}</h3>

@@ -49,7 +49,7 @@ const Arbeitsweise = () => {
     <div className={`container ${styles.container}`}>
       {/* <Image src="/logo4.png" alt="Logo" width={100} height={100} className="img-fluid max-width-100" /> */}
       <h2 className={styles.title}>WIE ICH ARBEITE</h2>
-      <p className={`${styles.subTitle}`}>Zukunft heute gestalten</p>
+      <p className={`${styles.subTitle}`}>Neue Wege, neue Möglichkeiten</p>
       <div className="row">
         {steps.map((step, index) => (
           <div className="col-md-4" key={index}>

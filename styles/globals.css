@@ -607,6 +607,27 @@ h1 {
   /* Leichtes Schatten-Design */
 }
 
+.heading-vorteile {
+  width: 90%;
+  /* Erhöhte Flexibilität auf kleinen Bildschirmen */
+  max-width: 950px;
+  /* Begrenzte Breite für größere Bildschirme */
+  text-align: center;
+  /* Zentriert den Text */
+  padding: 5px;
+  /* Zusätzlicher Raum für bessere Lesbarkeit */
+}
+
+.heading-vorteile h2 {
+  font-size: 48px;
+  /* Große Schrift für den Header */
+  font-weight: 700;
+  /* Fettgedruckte Schrift */
+
+  /* Verbessert die Lesbarkeit */
+
+}
+
 .heading-service .subheading {
   font-size: 1.2rem;
   /* Subheading-Größe */
@@ -649,7 +670,7 @@ h1 {
 }
 
 .custom-height-container {
-  height: 70vh;
+  height: 80vh;
 }
 
 .custom-background-lightblue {
@@ -669,12 +690,12 @@ h1 {
 }
 
 .customText {
-  Font-size: 20px;
+  Font-size: 24px;
   color: #555555;
   max-width: 900px;
   /* Begrenze die Breite des Textes für eine bessere Lesbarkeit */
   margin: 20px auto;
-  padding: 10px;
+
   border-radius: 8px;
 }
 

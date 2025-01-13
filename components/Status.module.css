@@ -17,7 +17,7 @@
     height: 7px; /* Festgelegte Höhe des Indikators */
     background-color: #16A085; /* Neue Farbe des Indikators */
     border-radius: 50%; /* Rundes Design */
-    margin-right: 15px; /* Abstand zwischen Punkt und Text */
+    margin-right: 8px; /* Abstand zwischen Punkt und Text */
     animation: pulse 1.5s infinite; /* Pulsierende Animation */
     box-shadow: 0 0 10px rgba(22, 160, 133, 0.5); /* Weicher Glüheffekt in der neuen Farbe */
     flex-shrink: 0; /* Verhindert das Schrumpfen des Indikators */

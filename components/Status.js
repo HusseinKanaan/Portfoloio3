@@ -9,7 +9,7 @@ const Status = () => {
         <Col xs={12} md={8}>
           <div className='d-flex align-items-center'>
             <div className={`${styles.statusIndicator}`}></div>
-            <p className={`${styles.statusMessage}`}>Online</p>
+            <p className={`${styles.statusMessage}`}>Verfügbarkeit: Frei</p>
           </div>
         </Col>
       </Row>
