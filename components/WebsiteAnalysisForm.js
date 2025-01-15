@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import styles from './WebsiteAnalysisForm.module.css'; // Sicherstellen, dass diese Datei existiert
+import { useMultipleScrollTextAnimation } from '../hooks/useMultipleScrollTextAnimation'; // Neuer Hook für mehrere Texte
 import ButtonLight from '../components/ButtonLight';
 
 const WebsiteAnalysisForm = () => {
+  // Für Text-Animationen
+  const { visibleTexts, textRefs } = useMultipleScrollTextAnimation();
+
   const [formData, setFormData] = useState({
     website: '',
     email: '',
@@ -19,7 +23,7 @@ const WebsiteAnalysisForm = () => {
   };
 
   return (
-    <section id="regional-services" className={`${styles.customBackgroundLightblue} py-5`}>
+    <section id="regional-services" className={`${styles.customBackgroundLightblue} py-5 fade-in ${visibleTexts[8] ? 'loaded' : ''}`}  ref={(el) => (textRefs.current[8] = el)}>
       <div className={`${styles.customHeightContainer} d-flex flex-column justify-content-center align-items-center text-center`}>
         <h2 className={` fw-bold mb-4 ${styles.headingForm}`}>Website kostenlos prüfen</h2>
         <p className={`${styles.customText} mb-4`}>

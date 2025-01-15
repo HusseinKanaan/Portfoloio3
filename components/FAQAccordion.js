@@ -64,12 +64,12 @@ const FAQAccordion = () => {
                 <Card.Header className={styles.faqHeader}>
                   <div
                     onClick={() => toggleAccordion(index)}
-                    className="d-flex justify-content-between align-items-center w-100 px-3 py-3"
+                    className={`d-flex justify-content-between align-items-center w-100 px-3 py-3 ${styles.sibi}`}
                     style={{ cursor: "pointer" }}
                   >
                     <Button
                       variant="link"
-                      className={`d-flex w-100 justify-content-between text-dark text-decoration-none ${styles.faqButton}`}
+                      className={`d-flex w-100 justify-content-between  text-decoration-none ${styles.faqButton}`}
                     >
                       {item.question}
                       <motion.i

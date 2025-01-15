@@ -23,7 +23,7 @@
     margin-right: 20px; /* Abstand zwischen Text und Bild */
     text-align: left; /* Linksbündiger Text */
     color: #34495e;
-    width: 250px;
+    width: 330px;
   }
   
   /* Bild */
@@ -32,4 +32,18 @@
     transform: translateX(150%); /* Startzustand: rechts außerhalb des Containers */
     transition: transform 1s ease; /* Animation für Bewegung */
   }
+
+  .heroDescription {
+    font-size: 17px;
+    color: #555555;
+    /* Grauton für den Text */
+    line-height: 1.5;
+    font-family: "Pangea", "sans-serif", Courier, monospace;
+  }
   
+  .heroTitle{
+    font-size:24px ;
+    color: #757575;
+    line-height: 1.3;
+    font-family: "Pangea", "sans-serif", Courier, monospace;
+  }

@@ -5,7 +5,6 @@ import { Container } from "react-bootstrap";
 import { motion } from "framer-motion";
 import FAQAccordion from "../components/FAQAccordion";
 import Status from '../components/Status';
-import Workflow from '../components/Workflow';
 import ButtonDark from '../components/ButtonDark';
 import ButtonLight from '../components/ButtonLight';
 import StepsSection from '../components/StepsSection';
@@ -157,9 +156,9 @@ export default function Home() {
         <div className='custom-background-blue'>
           <div
             id='service'
-            className={`heading-service-bgcolor container-heading-service fade-in ${visibleTexts[5] ? 'loaded' : ''
+            className={`heading-service-bgcolor container-heading-service fade-in ${visibleTexts[1] ? 'loaded' : ''
               }`}
-            ref={(el) => (textRefs.current[5] = el)}
+            ref={(el) => (textRefs.current[1] = el)}
           >
             <div className='heading-service'>
               <h1 className='display-5 heading-service-bgcolor text-center'>
@@ -173,9 +172,9 @@ export default function Home() {
               <div className='col-md-6 d-flex flex-column align-items-center'>
                 {/* React / Webdesign */}
                 <div
-                  className={`custom-margin-service col fade-in ${visibleTexts[6] ? 'loaded' : ''
+                  className={`custom-margin-service col fade-in ${visibleTexts[2] ? 'loaded' : ''
                     }`}
-                  ref={(el) => (textRefs.current[6] = el)}
+                  ref={(el) => (textRefs.current[2] = el)}
                 >
                   <div className='custom-margin-service col fs-5'>
                     <h2 className='custom-text-color-service display-6 fw-bold'>
@@ -191,9 +190,9 @@ export default function Home() {
                 </div>
                 {/* App */}
                 <div
-                  className={`custom-margin-service col fade-in ${visibleTexts[7] ? 'loaded' : ''
+                  className={`custom-margin-service col fade-in ${visibleTexts[3] ? 'loaded' : ''
                     }`}
-                  ref={(el) => (textRefs.current[7] = el)}
+                  ref={(el) => (textRefs.current[3] = el)}
                 >
                   <div className='custom-margin-service col fs-5'>
                     <h2 className='custom-text-color-service display-6 fw-bold'>
@@ -212,9 +211,9 @@ export default function Home() {
               <div className='col-md-6 d-flex flex-column align-items-center'>
                 {/* Api */}
                 <div
-                  className={`custom-margin-service col fade-in ${visibleTexts[8] ? 'loaded' : ''
+                  className={`custom-margin-service col fade-in ${visibleTexts[4] ? 'loaded' : ''
                     }`}
-                  ref={(el) => (textRefs.current[8] = el)}
+                  ref={(el) => (textRefs.current[4] = el)}
                 >
                   <div className='custom-margin-service col fs-5'>
                     <h2 className='custom-text-color-service display-6 fw-bold'>
@@ -230,9 +229,9 @@ export default function Home() {
                 </div>
                 {/* Support / Wartung */}
                 <div
-                  className={`custom-margin-service col fade-in ${visibleTexts[11] ? 'loaded' : ''
+                  className={`custom-margin-service col fade-in ${visibleTexts[5] ? 'loaded' : ''
                     }`}
-                  ref={(el) => (textRefs.current[11] = el)}
+                  ref={(el) => (textRefs.current[5] = el)}
                 >
                   <div className='custom-margin-service col fs-5'>
                     <h2 className='custom-text-color-service display-6 fw-bold'>
@@ -259,7 +258,7 @@ export default function Home() {
         {/* Seite 5 About */}
         <div className='vh-100 margin-about'>
           <div id='divRelative' className={` d-flex align-items-center custom-height-about custom-background-blue container position-relative shadow-lg fade-in ${scrollImageLoaded ? 'loaded' : ''}`}>
-            <section id='vorteile' className={`container  fade-in ${visibleTexts[9] ? 'loaded' : ''}`} ref={el => textRefs.current[9] = el}>
+            <section id='vorteile' className={`container  fade-in ${visibleTexts[6] ? 'loaded' : ''}`} ref={el => textRefs.current[6] = el}>
               <div className=''>
                 <div /* width={1000} */ className='h-25 custom-text-container '>
                   <h1 className='fw-bold display-4 about-heading'> Ihr Webdesigner <br></br>
@@ -295,8 +294,8 @@ export default function Home() {
         <section id="regional-services" className="custom-background-lightblue h-25">
           <div className="container custom-height-container d-flex justify-content-center align-items-center">
             <div
-              className={`heading-vorteile text-center fade-in ${visibleTexts[2] ? 'loaded' : ''}`}
-              ref={(el) => (textRefs.current[2] = el)}
+              className={`heading-vorteile text-center fade-in ${visibleTexts[7] ? 'loaded' : ''}`}
+              ref={(el) => (textRefs.current[7] = el)}
             >
               <h2 className="">
                 Webdesigner für Deutschland, Österreich und die Schweiz

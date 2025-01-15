@@ -18,8 +18,9 @@ const SmoothMovingImageOnLoad = () => {
   return (
     <div className={styles.imageContainer}>
       <div ref={textRef} className={styles.text}>
-        <h1 className={`${styles.factsHeading} display-6`}>about</h1>
-        <p>Ich bin Frontend-Entwickler aus Norderstedt. Seit Jahren bringe ich Pixel zum Leben und verwandle digitale Ideen in funktionale Websites. Wenn ich nicht im Code versinke, schlemme ich Kaffee oder entdecke neue Technologien.</p>
+        <h1 className={`${styles.factsHeading} display-6`}>Uber mich.</h1>
+        <p className={styles.heroTitle}>Ich bin Frontend-Entwickler aus Norderstedt. </p>
+        <p className={styles.heroDescription}>Seit Jahren bringe ich Pixel zum Leben und verwandle digitale Ideen in funktionale Websites. Wenn ich nicht im Code versinke, schlemme ich Kaffee oder entdecke neue Technologien.</p>
       </div>
       <Image
         ref={imageRef}

@@ -1,6 +1,7 @@
 .faqRow {
     margin: 0 auto;
     padding: 20px 0; /* Abstand oben und unten */
+
   }
   
 /*   .faqItem { */
@@ -9,6 +10,7 @@
   
   .faqCard {
     transition: transform 0.2s;
+
   }
   
   .faqCard:hover {
@@ -24,11 +26,11 @@
     height: 100px;
     font-weight: 500;
     font-size: 18px;
-    color: #333; /* Dunkle Schriftfarbe */
+    color: #34495E; /* Dunkle Schriftfarbe */
   }
   
   .faqBody {
     background-color: #ffffff; /* Weißer Hintergrund für den Body */
     border-top: 1px solid #e9ecef; /* Trennlinie oben */
   }
-  
+
