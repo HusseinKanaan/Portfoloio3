@@ -54,11 +54,13 @@ const FAQAccordion = () => {
       {faqData.map((item, index) => (
         <Col md={4} key={index} className="mb-3"> {/* Verwende nur 4 Spalten für 3 in einer Reihe */}
           <motion.div
+            whileHover={{ color: '#16A085' }} // Ändert die Farbe beim Hover
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: index * 0.2 }} // verzögert die Animation basierend auf dem Index
             className={styles.faqItem} // Hinzufügen der CSS-Klasse für das FAQ-Element
           >
+            
             <Accordion activeKey={activeKey}>
               <Card className={`border-0 shadow-sm rounded ${styles.faqCard}`}>
                 <Card.Header className={styles.faqHeader}>
