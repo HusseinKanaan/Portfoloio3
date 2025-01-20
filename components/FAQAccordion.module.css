@@ -10,7 +10,6 @@
   
   .faqCard {
     transition: transform 0.2s;
-
   }
   
   .faqCard:hover {
@@ -33,4 +32,8 @@
     background-color: #ffffff; /* Weißer Hintergrund für den Body */
     border-top: 1px solid #e9ecef; /* Trennlinie oben */
   }
+
+  .btn-link:hover{
+    color: #e9ecef;
+    }
 

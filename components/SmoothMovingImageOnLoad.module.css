@@ -1,6 +1,7 @@
 /* Textüberschrift */
 .factsHeading {
-    color: #606060;
+    color: #2C3E50;
+font-size: 103px;
   }
   
   /* Container */
@@ -34,16 +35,20 @@
   }
 
   .heroDescription {
+    font-weight: 500;
     font-size: 17px;
-    color: #555555;
+    color: #2c3e50;
     /* Grauton für den Text */
     line-height: 1.5;
-    font-family: "Pangea", "sans-serif", Courier, monospace;
+    font-family: 'Poppins', sans-serif;  /* Setzt die Schriftart auf Poppins */
+/*     font-family: "Pangea", "sans-serif", Courier, monospace; */
   }
   
   .heroTitle{
+    font-weight: 500;
     font-size:24px ;
-    color: #757575;
+    color: #7A7A7A;
     line-height: 1.3;
-    font-family: "Pangea", "sans-serif", Courier, monospace;
+    font-family: 'Poppins', sans-serif;  /* Setzt die Schriftart auf Poppins */
+/*     font-family: "Pangea", "sans-serif", Courier, monospace; */
   }
