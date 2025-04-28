@@ -32,7 +32,7 @@ Tagessatz: 400 € für 8 Arbeitsstunden.`,
   },
   {
     question: "Womit wurde diese Seite erstellt?",
-    answer: "Meine Portfolio-Seite wurde mit dem Next.js-Framework erstellt, das auf React basiert, und verwendet Bootstrap für das Layout sowie CSS für das Styling. Alles wurde hart gecodet – jede Animation, jedes Detail und jeder einzelne Code wurden von mir manuell erstellt, ohne Abkürzungen oder Bibliotheken wie zum Beispiel jQuery oder fertige UI-Bibliotheken. Diese Entscheidung ermöglicht mir eine präzise Kontrolle über das Design und die Funktionalität der Seite.",
+    answer: "Meine Portfolio-Seite wurde mit dem Next.js-Framework erstellt, das auf React basiert, und verwendet Bootstrap für das Layout sowie CSS für das Styling. Alles wurde hart gecodet  jede Animation, jedes Detail und jeder einzelne Code wurden von mir manuell erstellt, ohne Abkürzungen oder Bibliotheken wie zum Beispiel jQuery oder fertige UI-Bibliotheken. Diese Entscheidung ermöglicht mir eine präzise Kontrolle über das Design und die Funktionalität der Seite.",
   },
   {
     question: "Wo befinden Sie sich? Arbeiten Sie remote?",

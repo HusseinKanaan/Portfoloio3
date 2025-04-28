@@ -68,7 +68,7 @@ export default function Home() {
                 </h3> */}
                 <h1 className="customTextHeading fw-bold mb-3">Professionelles  Webdesign & <br /><span> Webentwicklung</span></h1>
                 <p className="customText mb-5">
-                  Frontend-Entwickler mit Full-Stack-Skills aus Norderstedt – ich bringe Ihr Business und Ihre Vision in den Browser.
+                  Frontend-Entwickler mit Full-Stack-Skills aus Norderstedt, ich bringe Ihr Business und Ihre Vision in den Browser.
                 </p>
                 {/*                 <p className=' customTextSmall text-muted'> Front-end Entwickler / Webdesigner </p> */}
                 <div className=' '>
@@ -144,7 +144,7 @@ export default function Home() {
           <div className='vh-100 d-flex flex-column justify-content-center align-items-center text-center'>
             <div /* width={1000} */ className={`heading-vorteile  fade-in ${visibleTexts[0] ? 'loaded' : ''}`} ref={el => textRefs.current[0] = el}>
               <h2 className='fw-bold mb-5'>Heben Sie sich von Ihrer Konkurrenz ab und gewinnen Sie neue Kunden!</h2>
-              <strong className='customText'>Ihr digitaler Auftritt – maßgeschneidert, modern und perfekt für Suchmaschinen.</strong>
+              <strong className='customText'>Ihr digitaler Auftritt, maßgeschneidert, modern und perfekt für Suchmaschinen.</strong>
               <p className='customText '>Ich erstelle Websites, die sowohl optisch überzeugen als auch technisch auf dem neuesten Stand sind. Mit blitzschnellen Ladezeiten und einem responsiven Design. Je nach Projekt arbeite ich mit einem erfahrenen Team zusammen, um Ihre Ziele effektiv umzusetzen.</p>
               <div className='frame'>
                 <ButtonLight text="Projekt Anfragen" />
@@ -181,7 +181,7 @@ export default function Home() {
                       <small>React / Webdesign</small>
                     </h2>
                     <p className='text-left-service'>
-                      Mit maßgeschneidertem Webdesign biete ich Ihnen eine funktionale und ansprechende Website. Durch React sorge ich dafür, dass Ihre Seite blitzschnell lädt und sich einfach pflegen lässt. Egal ob Smartphone oder Desktop – Ihre Website sieht auf jedem Gerät immer top aus. In einem persönlichen Gespräch erarbeiten wir gemeinsam Ihre Ziele und die beste Umsetzung.
+                      Mit maßgeschneidertem Webdesign biete ich Ihnen eine funktionale und ansprechende Website. Durch React sorge ich dafür, dass Ihre Seite blitzschnell lädt und sich einfach pflegen lässt. Egal ob Smartphone oder Desktop Ihre Website sieht auf jedem Gerät immer top aus. In einem persönlichen Gespräch erarbeiten wir gemeinsam Ihre Ziele und die beste Umsetzung.
                     </p>
                     <div className='d-flex justify-content-left frame'>
                       <ButtonDark text='Mehr erfahren' />
@@ -238,7 +238,7 @@ export default function Home() {
                       <small>Support / Wartung</small>
                     </h2>
                     <p className='text-left-service'>
-                      Service, Wartung und Updates – ich halte Ihre Website immer up to date. Ich kümmere mich um alle Sicherheitslücken, Schadsoftware und Spam, damit Sie sich keine Sorgen machen müssen. Ihre Inhalte bleiben frisch, und Ihr Online-Shop läuft reibungslos. Regelmäßige Wartung sorgt dafür, dass Ihre Website stabil und performant bleibt. Melden Sie sich einfach, und ich lege sofort direkt los, um alles effizient zu optimieren!
+                      Service, Wartung und Updates ich halte Ihre Website immer up to date. Ich kümmere mich um alle Sicherheitslücken, Schadsoftware und Spam, damit Sie sich keine Sorgen machen müssen. Ihre Inhalte bleiben frisch, und Ihr Online-Shop läuft reibungslos. Regelmäßige Wartung sorgt dafür, dass Ihre Website stabil und performant bleibt. Melden Sie sich einfach, und ich lege sofort direkt los, um alles effizient zu optimieren!
                     </p>
                     <div className='d-flex justify-content-left frame'>
                       <ButtonDark text='Mehr erfahren' />
@@ -265,7 +265,7 @@ export default function Home() {
                     <span>in HH und Norderstedt</span></h1>
                   <div className='custom-about-text-div mb-5'>
                     <p className=''>Hallo ich bin Hussein Kanaan, Webdesigner / Frontend Entwickler in Norderstedt und Hamburg. Ich arbeite als Webdesign Freelancer sowie projektbezogen im Auftrag von Agenturen.</p>
-                    <p>In der heutigen Zeit ist eine starke digitale Präsenz mehr als nur wichtig, sie ist ein Muss. Gerade jetzt, wo jeder Klick zählt, geht es nicht nur um den ersten Eindruck, sondern um die Wirkung. Mit maßgeschneidertem Webdesign und effizienter Programmierung optimiere ich Ihre Webseite – ich mache sie zu Ihrem digitalen Erfolg. Sie haben eine Vision? Ich helfe Ihnen, sie zu verwirklichen, indem ich die neuesten Technologien nutze, um Ihre Seite heute zukunftssicher zu gestalten. Denn der Erfolg im Web kommt nicht von ungefähr, er entsteht durch die richtigen Schritte zur richtigen Zeit. Und ich bin der Partner, der Ihnen dabei nicht nur zur Seite steht, sondern an Ihrer Seite.</p>
+                    <p>In der heutigen Zeit ist eine starke digitale Präsenz mehr als nur wichtig, sie ist ein Muss. Gerade jetzt, wo jeder Klick zählt, geht es nicht nur um den ersten Eindruck, sondern um die Wirkung. Mit maßgeschneidertem Webdesign und effizienter Programmierung optimiere ich Ihre Webseite, ich mache sie zu Ihrem digitalen Erfolg. Sie haben eine Vision? Ich helfe Ihnen, sie zu verwirklichen, indem ich die neuesten Technologien nutze, um Ihre Seite heute zukunftssicher zu gestalten. Denn der Erfolg im Web kommt nicht von ungefähr, er entsteht durch die richtigen Schritte zur richtigen Zeit. Und ich bin der Partner, der Ihnen dabei nicht nur zur Seite steht, sondern an Ihrer Seite.</p>
                   </div>
                   <div className='d-flex justify-content-left'>
                     <ButtonDark text="Jetzt beraten lassen" />
@@ -302,7 +302,7 @@ export default function Home() {
                 Webdesigner für Deutschland, Österreich und die Schweiz
               </h2>
               <p className="customText">
-                Ich arbeite mit kleinen und mittelständischen Unternehmen sowie Werbe- und Grafikagenturen aus ganz Deutschland, Österreich und der Schweiz. Was ich täglich mache? Beratung, individuelles Webdesign, Webentwicklung und SEO. Wenn Sie ein unverbindliches und kostenloses Angebot wollen, lassen Sie uns sprechen – Ihre erfolgreiche Website ist nur einen Klick entfernt.
+                Ich arbeite mit kleinen und mittelständischen Unternehmen sowie Werbe- und Grafikagenturen aus ganz Deutschland, Österreich und der Schweiz. Was ich täglich mache? Beratung, individuelles Webdesign, Webentwicklung und SEO. Wenn Sie ein unverbindliches und kostenloses Angebot wollen, lassen Sie uns sprechen, ihre erfolgreiche Website ist nur einen Klick entfernt.
               </p>
               <div className="d-flex justify-content-center frame">
                 <ButtonLight text="Jetzt Kontakt aufnehmen" />

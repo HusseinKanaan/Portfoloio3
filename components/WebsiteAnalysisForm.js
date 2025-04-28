@@ -27,7 +27,7 @@ const WebsiteAnalysisForm = () => {
       <div className={`${styles.customHeightContainer} d-flex flex-column justify-content-center align-items-center text-center`}>
         <h2 className={` fw-bold mb-4 ${styles.headingForm}`}>Website kostenlos prüfen</h2>
         <p className={`${styles.customText} mb-4`}>
-          Lass deine Website analysieren – Usability, Performance und SEO im Fokus. Du erhältst eine professionelle Auswertung in Kürze, kostenlos!
+          Lass deine Website analysieren  Usability, Performance und SEO im Fokus. Du erhältst eine professionelle Auswertung in Kürze, kostenlos!
         </p>
 
         <form onSubmit={handleSubmit} className={`${styles.customForm} w-100 d-flex flex-column align-items-center`}>

@@ -32,7 +32,7 @@ verstehen`,
   {
     title: `An Herausforderungen
 wachsen`,
-    description: "Jedes Projekt bringt neue Herausforderungen – ich helfe, das volle Potenzial Ihrer Marke zu entfalten.​",
+    description: "Jedes Projekt bringt neue Herausforderungen ich helfe, das volle Potenzial Ihrer Marke zu entfalten.​",
     icon: "/icons/growth.svg",
     /* icon: "/images/stage.png", */
   },
