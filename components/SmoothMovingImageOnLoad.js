@@ -22,14 +22,15 @@ const SmoothMovingImageOnLoad = () => {
         <p className={styles.heroTitle}>Ich bin Frontend-Entwickler aus Norderstedt. </p>
         <p className={styles.heroDescription}>Seit Jahren bringe ich Pixel zum Leben und verwandle digitale Ideen in funktionale Websites. Wenn ich nicht im Code versinke, schlemme ich Kaffee oder entdecke neue Technologien.</p>
       </div>
-      <Image
+      {/* <----------------------------- */}
+{/*       <Image
         ref={imageRef}
         src="/me.png" // Bild-URL anpassen
         alt="yoda"
         width={600}
         height={500}
         className={styles.movingImage}
-      />
+      /> */}
     </div>
   );
 };
