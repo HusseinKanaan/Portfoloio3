@@ -6,7 +6,7 @@ const steps = [
     step: "01",
     label: "UX / UI DESIGN",
     title: "Wordpress",
-    description: "Als Freelancer bleibe ich Ihr direkter Ansprechpartner – persönlich und flexibel. Für Projekte, die mehr als eine Person erfordern, arbeite ich mit vertrauten Experten wie Mahmoud Kanaan zusammen der ein erfahrener Fullstack WordPress-Entwickler, PHP-Experte und Spezialist für Facebook Advertising ist. Auch für Fotografie habe ich die richtigen Partner an meiner Seite. So stellen wir sicher, dass alle Anforderungen professionell und effizient umgesetzt werden."
+    description: "Als Freelancer bleibe ich Ihr direkter Ansprechpartner  persönlich und flexibel. Für Projekte, die mehr als eine Person erfordern, arbeite ich mit vertrauten Experten wie Mahmoud Kanaan zusammen der ein erfahrener Fullstack WordPress-Entwickler, PHP-Experte und Spezialist für Facebook Advertising ist. Auch für Fotografie habe ich die richtigen Partner an meiner Seite. So stellen wir sicher, dass alle Anforderungen professionell und effizient umgesetzt werden."
   },
   {
     step: "02",
@@ -24,7 +24,7 @@ const steps = [
     step: "04",
     label: "RUNDUM ABGESICHERT",
     title: "Rechtliches",
-    description: "Die Welt von Technik und Recht wird immer komplexer. Deshalb ist mein Rechtsanwalt seit 2012 auf IT- und Medienrecht spezialisiert und kümmert sich um Ihre rechtlichen Anliegen – schnell und unkompliziert."
+    description: "Die Welt von Technik und Recht wird immer komplexer. Deshalb ist mein Rechtsanwalt seit 2012 auf IT- und Medienrecht spezialisiert und kümmert sich um Ihre rechtlichen Anliegen  schnell und unkompliziert."
   }
 ];
 
