@@ -44,13 +44,14 @@ const LifeGallery = () => {
             }`}
           >
             <div className={styles.imageWrapper}>
-              <Image
+              {/* <--------------------------------- */}
+{/*               <Image
                 src={url}
                 alt={`Lebensbild ${index + 1}`}
                 width={145}
                 height={97}
                 className={styles.image}
-              />
+              /> */}
             </div>
           </div>
         ))}

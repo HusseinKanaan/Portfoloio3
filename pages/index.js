@@ -87,8 +87,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* Hero Image */}
-            <div id=' divRelative' className="col-md-8 d-flex align-items-end position-relative">
+            {/* Hero Image <---------------------------------------------------------------- */} 
+{/*             <div id=' divRelative' className="col-md-8 d-flex align-items-end position-relative">
               <div id="divAbsoluteHero" className='position-absolute'>
                 <Image
                   style={{ clipPath: "inset(0 0 20% 0)", top: "20%", right: '7rem' }}
@@ -103,7 +103,7 @@ export default function Home() {
                   onLoad={() => setHeroImageLoaded(true)}
                 />
               </div>
-            </div>
+            </div> */}
           </div>
           {/*//// Overlap */}
           {/* top-10 start-50  */}
@@ -274,7 +274,8 @@ export default function Home() {
               </div>
             </section>
             <div id="divAbsoluteAbout" className="position-absolute translate-middle-y" style={{ clipPath: "inset(0 0 30% 0)", right: "-1rem", top: "25%" }}>
-              <Image
+              {/* <-------------------------------------- */}
+{/*               <Image
                 ref={scrollImageRef}
                 className={`position-absolute top-50 translate-middle-y translate-middle fade-in ${scrollImageLoaded ? 'loaded' : ''}`}
                 placeholder="blur"
@@ -286,7 +287,7 @@ export default function Home() {
                 height={611}
                 style={{ clipPath: "inset(0 0 30% 0)", right: "-15rem" }}
                 onLoad={() => setScrollImageLoaded(true)} // Nur hier notwendig
-              />
+              /> */}
             </div>
           </div>
         </div>
